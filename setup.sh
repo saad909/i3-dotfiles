@@ -30,7 +30,7 @@ sudo pacman -S base-devel --needed;\
        thunar pcmanfm python-pip npm ueberzug xwallpaper atool \
        xcape tmux zsh cmus qutebrowser firefox galculator \
        youtube-dl arandr xrandr putty zsh-autosuggestions fzf \
-       zsh-syntax-highlighting stow  libvirt --noconfirm 
+       zsh-syntax-highlighting stow  libvirt gromit-mpx --noconfirm 
 # install aur programs
 echo "(3/9)installing aur programs"
 paru -S neovim-nightly-bin ly-git i3-gaps-rounded-git \
