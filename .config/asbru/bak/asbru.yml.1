@@ -1,0 +1,755 @@
+---
+__PAC__EXPORTED__FULL__: 1
+config version: 2
+config version change: Added keybindings settings
+defaults:
+  allow more instances: ''
+  append group name: 1
+  audible bell: ''
+  auto accept key: 1
+  auto cluster: {}
+  auto hide button bar: ''
+  auto hide connections list: ''
+  auto save: 1
+  autostart shell upon PAC start: ''
+  autostart shell upon start: 0
+  back color: '#000000000000'
+  bold color: '#555555555555'
+  bold color like text: ''
+  bold is brigth: 1
+  capture xterm title: 0
+  change main title: 1
+  check versions at start: 0
+  close terminal on disconnect: ''
+  close to tray: 1
+  color black: '#000000000000'
+  color blue: '#34346565a4a4'
+  color bright black: '#555557575353'
+  color bright blue: '#72729f9fcfcf'
+  color bright cyan: '#3434e2e2e2e2'
+  color bright green: '#8a8ae2e23434'
+  color bright magenta: '#adad7f7fa8a8'
+  color bright red: '#efef29292929'
+  color bright white: '#eeeeeeeeecec'
+  color bright yellow: '#fcfce9e94f4f'
+  color cyan: '#060698209a9a'
+  color green: '#4e4e9a9a0606'
+  color magenta: '#757550507b7b'
+  color red: '#cccc00000000'
+  color white: '#d3d3d7d7cfcf'
+  color yellow: '#c4c4a0a00000'
+  command prompt: '[#%\$>]|\:\/\s*$'
+  config version: 1
+  confirm chains: 1
+  confirm exit: ''
+  connected color: '#0c0cbaba0000'
+  ctrl tab: next
+  cursor shape: underline
+  debug: ''
+  disable ALT key bindings: ''
+  disable CTRL key bindings: ''
+  disable SHIFT key bindings: 1
+  disconnected color: '#ffff00000000'
+  enable tree lines: ''
+  force split tabs to 50%: ''
+  global variables: {}
+  gui password: ''
+  hide connections submenu: ''
+  hide on connect: ''
+  hostkey changed prompt: '^.+ontinue connecting \(([^/]+)\/([^/]+)(?:[^)]+)?\)\?\s*$'
+  how to switch tabs: 1
+  info font: Cascadia Mono PL 12
+  jump ip: ''
+  jump key: ''
+  jump pass: ''
+  jump port: 22
+  jump user: ''
+  keepass:
+    database: ''
+    keyfile: ''
+    password: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pathcli: ''
+    use_keepass: 0
+  keybindings:
+    pacmain:
+      Alt+n:
+        - Main Window
+        - showconnections
+        - Show/Hide connections list
+      Ctrl+T:
+        - Main Window
+        - localshell
+        - Open a local shell
+      Ctrl+f:
+        - Main Window
+        - find
+        - Find in connection tree
+      Ctrl+q:
+        - Main Window
+        - quit
+        - Exit Ásbrú
+    pactabs:
+      Ctrl+F4:
+        - Tabs
+        - close
+        - Close current Tab
+      Ctrl+Page_Down:
+        - Tabs
+        - next
+        - Next Tab
+      Ctrl+Page_Up:
+        - Tabs
+        - previous
+        - Previous Tab
+      Ctrl+Tab:
+        - Tabs
+        - last
+        - Last focused Tab
+      undef-infotab:
+        - Tabs
+        - infotab
+        - Got to Info Tab
+    terminal:
+      Alt+e:
+        - Terminal
+        - edit_node
+        - Edit Connection
+      Alt+n:
+        - Terminal
+        - showconnections
+        - Show/Hide connections list
+      AltCtrl+X:
+        - Terminal
+        - reset-clear
+        - Reset Terminal and Clear window
+      AltCtrl+s:
+        - Terminal
+        - sftp
+        - Open SFTP session
+      AltCtrl+x:
+        - Terminal
+        - reset
+        - Reset Terminal
+      Ctrl+0:
+        - Terminal
+        - zoomreset
+        - Zoom reset text
+      Ctrl+D:
+        - Terminal
+        - duplicate
+        - Duplicate connection
+      Ctrl+F3:
+        - Terminal
+        - find-terminal
+        - Find Terminal
+      Ctrl+I:
+        - Terminal
+        - infotab
+        - Show the Info tab
+      Ctrl+Insert:
+        - Terminal
+        - copy
+        - Copy selection to clipboard
+      Ctrl+N:
+        - Terminal
+        - close-disconected
+        - Close disconnected sessions
+      Ctrl+R:
+        - Terminal
+        - restart
+        - Restart connection (close and start)
+      Ctrl+Return:
+        - Terminal
+        - start
+        - Start Terminal
+      Ctrl+V:
+        - Terminal
+        - paste
+        - Paste clipboard into terminal
+      Ctrl+W:
+        - Terminal
+        - disconnect
+        - Disconnect Terminal
+      Ctrl+ampersand:
+        - Terminal
+        - cisco
+        - Send Cisco interrupt keypress
+      Ctrl+b:
+        - Terminal
+        - paste-delete
+        - Paste and regex delete
+      Ctrl+f:
+        - Terminal
+        - find
+        - Find in connection tree
+      Ctrl+g:
+        - Terminal
+        - hostname
+        - Guess hostname
+      Ctrl+minus:
+        - Terminal
+        - zoomout
+        - Zoom out text
+      Ctrl+p:
+        - Terminal
+        - paste-passwd
+        - Paste terminal password
+      Ctrl+plus:
+        - Terminal
+        - zoomin
+        - Zoom in text
+      Ctrl+q:
+        - Terminal
+        - quit
+        - Exit Ásbrú
+      Ctrl+w:
+        - Terminal
+        - close
+        - Close Terminal
+      CtrlAlt+r:
+        - Terminal
+        - remove_from_cluster
+        - Remove terminal from cluster
+      CtrlShift+F4:
+        - Terminal
+        - closealltabs
+        - Close all tabs
+      F11:
+        - Terminal
+        - fullscreen
+        - Go full screen
+      Shift+Insert:
+        - Terminal
+        - paste-primary
+        - Paste selection into terminal
+    treeClusters:
+      Alt+e:
+        - Clusters Tree
+        - edit_node
+        - Edit selected node
+    treeConnections:
+      Alt+F:
+        - Connections Tree
+        - del_favourite
+        - Remove connection from favourites
+      Alt+c:
+        - Connections Tree
+        - connect_node
+        - Connect selected node
+      Alt+e:
+        - Connections Tree
+        - edit_node
+        - Edit selected node
+      Alt+f:
+        - Connections Tree
+        - add_favourite
+        - Add connection to favourites
+      Alt+r:
+        - Connections Tree
+        - protection
+        - Toggle protection
+      Ctrl+c:
+        - Connections Tree
+        - copy
+        - Copy node
+      Ctrl+d:
+        - Connections Tree
+        - clone
+        - Clone connection
+      Ctrl+f:
+        - Connections Tree
+        - find
+        - Find in connection tree
+      Ctrl+r:
+        - Connections Tree
+        - expand_all
+        - Expand tree completly
+      Ctrl+t:
+        - Connections Tree
+        - collaps_all
+        - Collaps tree completly
+      Ctrl+v:
+        - Connections Tree
+        - paste
+        - Paste node
+      Ctrl+x:
+        - Connections Tree
+        - cut
+        - Cut node
+      F2:
+        - Connections Tree
+        - rename
+        - Rename node
+    treeFavourites:
+      Alt+F:
+        - Favourites Tree
+        - del_favourite
+        - Remove connection from favourites
+      Alt+e:
+        - Favourites Tree
+        - edit_node
+        - Edit selected node
+    treeHistory:
+      Alt+e:
+        - History Tree
+        - edit_node
+        - Edit selected node
+  layout: Compact
+  layout previous: Compact
+  layout traditional settings: 1
+  local commands: []
+  log timestamp: ''
+  lt auto save: 1
+  lt close to tray: ''
+  lt start iconified: ''
+  lt tabs in main window: 1
+  max retry on disconnect: 50
+  new data color: '#00008888ffff'
+  open connections in tabs: 1
+  password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+  ping port before connect: ''
+  ping port timeout: 1
+  press any key prompt: .*(any key to continue|tecla para continuar).*
+  prevent F11: ''
+  prevent mouse over show tree: 1
+  protected color: '#6c6bdbf8fbfb'
+  protected set: foreground
+  proxy: No
+  proxy ip: ''
+  proxy pass: ''
+  proxy port: 8080
+  proxy user: ''
+  remember main size: 1
+  remote commands: []
+  remote host changed prompt: .*ffending .*key in (.+?)\:(\d+).*
+  remove control chars: ''
+  save on exit: 1
+  save session logs: ''
+  screenshots external viewer: /usr/bin/xdg-open
+  screenshots use external viewer: ''
+  selection to clipboard: 1
+  session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+  session logs amount: 10
+  session logs folder: /home/saad/.config/asbru/session_logs
+  shell binary: /bin/zsh
+  shell directory: /home/saad
+  shell options: ''
+  show commands box: 1
+  show connections tooltips: 1
+  show favourites in unity: ''
+  show global commands box: ''
+  show screenshots: 1
+  show statistics: 1
+  show tray icon: 1
+  show tree titles: ''
+  skip first chain expect: 1
+  sort groups first: 1
+  start PAC tree on: connections
+  start at session startup: 0
+  start iconified: ''
+  start main maximized: ''
+  start maximized: ''
+  sudo password: 53616c7465645f5f3132333435363738246b8c24e7c1a87e58018a4945fd0de0
+  sudo prompt: '[__PAC__SUDO__PROMPT__]'
+  sudo show password: ''
+  tabs in main window: ''
+  tabs position: left
+  terminal backspace: auto
+  terminal character encoding: ANSI_X3.110-1983
+  terminal font: Ubuntu Mono 14
+  terminal scrollback lines: 5000
+  terminal show status bar: 1
+  terminal support transparency: ''
+  terminal transparency: 0.0206185567010309
+  terminal windows hsize: 800
+  terminal windows vsize: 600
+  text color: '#ffffa3a34848'
+  theme: system
+  timeout command: 60
+  timeout connect: 40
+  tree font: Cascadia Mono 10
+  tree on right side: 1
+  tree overlay scrolling: 1
+  unprotected color: '#ffffb0b02222'
+  unprotected set: foreground
+  unsplit disconnected terminals: ''
+  use bw icon: ''
+  use gui password: ''
+  use gui password tray: ''
+  use login shell to connect: ''
+  use proxy: 0
+  use system proxy: 1
+  username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
+  version: 6.3.0
+  when no more tabs: 0
+  word characters: -.:_/
+environments:
+  5821c281-97dd-4cfa-a098-d088c6a5758a:
+    KPX title regexp: .*R1.*
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: manual
+    autoreconnect: ''
+    autossh: ''
+    children: {}
+    cluster: []
+    description: Connection with 'R1'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: localhost
+    jump ip: ''
+    jump key: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    mac: ''
+    macros: []
+    method: Telnet
+    name: R1
+    options: ' -e "^]"'
+    parent: 9e4a7902-2dd1-4392-9d41-c88e93bd26c3
+    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase user: ''
+    port: 5005
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    public key: ''
+    quote command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/saad/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: ''
+    terminal options:
+      audible bell: ''
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '[#%\$>]|\:\/\s*$'
+      cursor shape: block
+      disable ALT key bindings: ''
+      disable CTRL key bindings: ''
+      disable SHIFT key bindings: ''
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
+    title: R1
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: ''
+    variables: []
+  9e4a7902-2dd1-4392-9d41-c88e93bd26c3:
+    _is_group: 1
+    _protected: 0
+    children:
+      5821c281-97dd-4cfa-a098-d088c6a5758a: 1
+      9ec5d63a-6c77-4c8d-bddc-49bcf7056188: 1
+      bb6438a9-5955-4daf-88d7-b634225f9a84: 1
+    description: Connection group 'network automation'
+    name: network automation
+    parent: __PAC__ROOT__
+    screenshots: []
+  9ec5d63a-6c77-4c8d-bddc-49bcf7056188:
+    KPX title regexp: .*S1.*
+    _is_group: 0
+    _protected: 0
+    auth fallback: ''
+    auth type: manual
+    autoreconnect: ''
+    autossh: ''
+    children: {}
+    cluster: []
+    description: Connection with 'S1'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: localhost
+    jump ip: ''
+    jump key: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    mac: ''
+    macros: []
+    method: Telnet
+    name: S1
+    options: ' -e "^]"'
+    parent: 9e4a7902-2dd1-4392-9d41-c88e93bd26c3
+    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase user: ''
+    port: 5002
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    public key: ''
+    quote command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/saad/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: ''
+    terminal options:
+      audible bell: ''
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '[#%\$>]|\:\/\s*$'
+      cursor shape: block
+      disable ALT key bindings: ''
+      disable CTRL key bindings: ''
+      disable SHIFT key bindings: ''
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
+    title: S1
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: ''
+    variables: []
+  __PAC_SHELL__:
+    KPX title regexp: .*Local.*
+    _protected: 0
+    auth fallback: 1
+    auth type: manual
+    autoreconnect: 0
+    autossh: 0
+    cluster: []
+    description: A shell on the local machine
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: bash
+    local after: []
+    local before: []
+    local connected: []
+    mac: ''
+    macros: []
+    method: PACShell
+    name: PACShell
+    options: ''
+    parent: __PAC__ROOT__
+    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase user: ''
+    port: 22
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    public key: ''
+    quote command: 0
+    remove control chars: 0
+    save session logs: 0
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: 0
+    send string every: 60
+    send string intro: 1
+    send string txt: ''
+    session log pattern: PACShell_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/saad/.config/asbru/session_logs
+    startup launch: 0
+    startup script: 0
+    startup script name: ''
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '(\]\#|\$\s)+'
+      cursor shape: block
+      disable ALT key bindings: 0
+      disable CTRL key bindings: 0
+      disable SHIFT key bindings: 0
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: 0
+      use tab back color: 0
+      username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
+    title: Local
+    use prepend command: 0
+    use proxy: 0
+    use sudo: 0
+    user: ''
+    variables: []
+  __PAC__ROOT__:
+    children:
+      9e4a7902-2dd1-4392-9d41-c88e93bd26c3: 1
+    cluster: []
+    expect: []
+    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    screenshots: []
+    variables: []
+  bb6438a9-5955-4daf-88d7-b634225f9a84:
+    KPX title regexp: .*S1.*
+    _is_group: 0
+    _protected: 0
+    auth fallback: ''
+    auth type: manual
+    autoreconnect: ''
+    autossh: ''
+    children: {}
+    cluster: []
+    description: Connection with 'S1'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: localhost
+    jump ip: ''
+    jump key: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    mac: ''
+    macros: []
+    method: Telnet
+    name: Ubuntu
+    options: ' -e "^]"'
+    parent: 9e4a7902-2dd1-4392-9d41-c88e93bd26c3
+    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase user: ''
+    port: 5000
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    public key: ''
+    quote command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/saad/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: ''
+    terminal options:
+      audible bell: ''
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '[#%\$>]|\:\/\s*$'
+      cursor shape: block
+      disable ALT key bindings: ''
+      disable CTRL key bindings: ''
+      disable SHIFT key bindings: ''
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
+    title: Ubuntu
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: ''
+    variables: []
+tmp:
+  changed: 0
+  log file: '/home/saad/.config/asbru/tmp/asbru_PID{43705}_n3.txt'
+  socket: '/home/saad/.config/asbru/sockets/asbru_PID{43705}_n3.socket'
+  socket exec: '/home/saad/.config/asbru/sockets/asbru_PID{43705}_n3.exec.socket'
+  tray available: warning
+  uuid: 'asbru_PID{43705}_n3'

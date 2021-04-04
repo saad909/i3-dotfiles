@@ -1,0 +1,7 @@
+pgrep -x setbg > /dev/null || setbg &
+pgrep -x touchpad > /dev/null || touchpad &
+pgrep -x compton > /dev/null || compton &
+pgrep -x remaps > /dev/null || remaps &
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+

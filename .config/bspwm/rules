@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Format
+# bspc rule -a <class> desktop=<workspace no.> follow=<on off> state=floating focus=on
+
+bspc rule -a qutebrowser desktop=^2 follow=on
+bspc rule -a GNS3 desktop=^4 follow=off
+bspc rule -a mpv desktop=^3 follow=on
+bspc rule -a main.py state=floating
+
+

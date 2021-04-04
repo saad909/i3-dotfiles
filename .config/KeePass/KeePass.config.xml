@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Meta>
+		<PreferUserConfiguration>false</PreferUserConfiguration>
+		<OmitItemsWithDefaultValues>true</OmitItemsWithDefaultValues>
+		<DpiFactorX>1</DpiFactorX>
+		<DpiFactorY>1</DpiFactorY>
+	</Meta>
+	<Application>
+		<LastUpdateCheck>2021-04-04T06:16:53Z</LastUpdateCheck>
+		<LastUsedFile>
+			<Path>../../../home/saad/keepass/keepass_database.kdbx</Path>
+			<CredProtMode>Obf</CredProtMode>
+			<CredSaveMode>NoSave</CredSaveMode>
+		</LastUsedFile>
+		<MostRecentlyUsed>
+			<MaxItemCount>12</MaxItemCount>
+			<Items>
+				<ConnectionInfo>
+					<Path>../../../home/saad/keepass/keepass_database.kdbx</Path>
+					<CredProtMode>Obf</CredProtMode>
+					<CredSaveMode>NoSave</CredSaveMode>
+				</ConnectionInfo>
+				<ConnectionInfo>
+					<Path>../../../home/saad/Dropbox/.keys_database (latitude's conflicted copy 2021-03-29).kdbx</Path>
+					<CredProtMode>Obf</CredProtMode>
+					<CredSaveMode>NoSave</CredSaveMode>
+				</ConnectionInfo>
+				<ConnectionInfo>
+					<Path>../../../home/saad/Dropbox/.keys_database.kdbx</Path>
+					<CredProtMode>Obf</CredProtMode>
+					<CredSaveMode>NoSave</CredSaveMode>
+				</ConnectionInfo>
+				<ConnectionInfo>
+					<Path>../../../home/saad/.keys_database.kdbx</Path>
+					<CredProtMode>Obf</CredProtMode>
+					<CredSaveMode>NoSave</CredSaveMode>
+				</ConnectionInfo>
+			</Items>
+		</MostRecentlyUsed>
+		<WorkingDirectories>
+			<Item>Database@../../../home/saad/Dropbox</Item>
+			<Item>Import@../../../home/saad/Downloads</Item>
+			<Item>KeyFile@../../../home/saad</Item>
+			<Item>Sync@../../../home/saad</Item>
+		</WorkingDirectories>
+		<Start>
+			<CheckForUpdate>true</CheckForUpdate>
+			<CheckForUpdateConfigured>true</CheckForUpdateConfigured>
+		</Start>
+		<FileOpening />
+		<AutoSaveAfterEntryEdit>true</AutoSaveAfterEntryEdit>
+		<FileClosing>
+			<AutoSave>true</AutoSave>
+		</FileClosing>
+		<TriggerSystem>
+			<Triggers>
+				<Trigger>
+					<Guid>XnC3rH1BPkGdiFjVjDcxdA==</Guid>
+					<Name>Backup main database</Name>
+					<Events>
+						<Event>
+							<TypeGuid>s6j9/ngTSmqcXdW6hDqbjg==</TypeGuid>
+							<Parameters>
+								<Parameter>0</Parameter>
+								<Parameter>/home/saad/.keys_database.kdbx</Parameter>
+							</Parameters>
+						</Event>
+					</Events>
+					<Conditions />
+					<Actions>
+						<Action>
+							<TypeGuid>D5prW87VRr65NO2xP5RIIg==</TypeGuid>
+							<Parameters>
+								<Parameter>/home/saad/.keys_database.bak</Parameter>
+								<Parameter>kdbx</Parameter>
+								<Parameter />
+								<Parameter />
+							</Parameters>
+						</Action>
+					</Actions>
+				</Trigger>
+				<Trigger>
+					<Guid>CMx7S5PpGEOflJjh6VbhFQ==</Guid>
+					<Name>sync with dropbox</Name>
+					<Events>
+						<Event>
+							<TypeGuid>s6j9/ngTSmqcXdW6hDqbjg==</TypeGuid>
+							<Parameters>
+								<Parameter>0</Parameter>
+								<Parameter>/home/saad/.keys_database.kdbx</Parameter>
+							</Parameters>
+						</Event>
+					</Events>
+					<Conditions />
+					<Actions>
+						<Action>
+							<TypeGuid>2uX4OwcwTBOe7y66y27kxw==</TypeGuid>
+							<Parameters>
+								<Parameter>/home/saad/Dropbox/passwords.kdbx</Parameter>
+								<Parameter />
+								<Parameter>False</Parameter>
+								<Parameter>0</Parameter>
+								<Parameter />
+							</Parameters>
+						</Action>
+					</Actions>
+				</Trigger>
+			</Triggers>
+		</TriggerSystem>
+		<PluginCompatibility>
+			<Item>@FNa2WjAClOxFSo+gZCHvXP+E87FlBQ5mOqyjj9rW1ow=@2.47.0.18911@1</Item>
+			<Item>@oSyCHRUPaGKtsf91E7UBaqyA3ihdz0b+PLVHtPAtZ40=@2.47.0.18911@1</Item>
+			<Item>@JC+a0wKI7jmjaLnGKHeznUwCTK6xtKHS5+IDD3gWCYY=@2.47.0.18911@1</Item>
+			<Item>@HIU7S3h/uLgKvY60quVx9Oc+ZEFQ+/8psybnlQk9n2s=@2.47.0.18911@1</Item>
+		</PluginCompatibility>
+	</Application>
+	<Logging />
+	<MainWindow>
+		<X>23</X>
+		<Y>23</Y>
+		<Width>1328</Width>
+		<Height>722</Height>
+		<SplitterHorizontalFrac>0.83420593368237339</SplitterHorizontalFrac>
+		<SplitterVerticalFrac>0.25151515151515152</SplitterVerticalFrac>
+		<CloseButtonMinimizesWindow>true</CloseButtonMinimizesWindow>
+		<MinimizeToTray>true</MinimizeToTray>
+		<MinimizeAfterClipboardCopy>true</MinimizeAfterClipboardCopy>
+		<MinimizeAfterAutoType>true</MinimizeAfterAutoType>
+		<ToolBar />
+		<EntryView />
+		<TanView />
+		<EntryListColumnCollection>
+			<Column>
+				<Type>Title</Type>
+				<Width>279</Width>
+			</Column>
+			<Column>
+				<Type>UserName</Type>
+				<Width>122</Width>
+			</Column>
+			<Column>
+				<Type>Password</Type>
+				<Width>122</Width>
+				<HideWithAsterisks>true</HideWithAsterisks>
+			</Column>
+			<Column>
+				<Type>Url</Type>
+				<Width>122</Width>
+			</Column>
+			<Column>
+				<Type>Notes</Type>
+				<Width>122</Width>
+			</Column>
+		</EntryListColumnCollection>
+		<EntryListColumnDisplayOrder>0 1 2 3 4</EntryListColumnDisplayOrder>
+		<ListSorting>
+			<Column>0</Column>
+			<Order>Ascending</Order>
+		</ListSorting>
+	</MainWindow>
+	<UI>
+		<TrayIcon />
+		<Hiding />
+		<StandardFont>
+			<Family>FiraCode Nerd Font Mono</Family>
+			<Size>11</Size>
+			<GraphicsUnit>Point</GraphicsUnit>
+			<Style>Regular</Style>
+			<OverrideUIDefault>true</OverrideUIDefault>
+		</StandardFont>
+		<PasswordFont>
+			<Family>FiraCode Nerd Font Mono</Family>
+			<Size>11</Size>
+			<GraphicsUnit>Point</GraphicsUnit>
+			<Style>Regular</Style>
+			<OverrideUIDefault>true</OverrideUIDefault>
+		</PasswordFont>
+		<BannerStyle>WinVistaBlack</BannerStyle>
+		<DataEditorFont>
+			<Family>Microsoft Sans Serif</Family>
+			<Size>8.25</Size>
+			<GraphicsUnit>Point</GraphicsUnit>
+			<Style>Regular</Style>
+			<OverrideUIDefault>false</OverrideUIDefault>
+		</DataEditorFont>
+		<UIFlags>0</UIFlags>
+		<KeyCreationFlags>0</KeyCreationFlags>
+		<KeyPromptFlags>0</KeyPromptFlags>
+	</UI>
+	<Security>
+		<WorkspaceLocking>
+			<LockAfterTime>0</LockAfterTime>
+			<LockAfterGlobalTime>0</LockAfterGlobalTime>
+		</WorkspaceLocking>
+		<Policy />
+		<MasterPassword>
+			<MinimumLength>0</MinimumLength>
+			<MinimumQuality>0</MinimumQuality>
+		</MasterPassword>
+	</Security>
+	<Native />
+	<PasswordGenerator>
+		<AutoGeneratedPasswordsProfile>
+			<GeneratorType>CharSet</GeneratorType>
+			<Length>20</Length>
+			<CharSetRanges>ULD_______</CharSetRanges>
+		</AutoGeneratedPasswordsProfile>
+		<LastUsedProfile>
+			<Name>(Derive from previous password)</Name>
+			<GeneratorType>CharSet</GeneratorType>
+			<Length>4</Length>
+			<CharSetRanges>__D_______</CharSetRanges>
+		</LastUsedProfile>
+		<UserProfiles />
+	</PasswordGenerator>
+	<Search>
+		<LastUsedProfile>
+			<SearchMode>Simple</SearchMode>
+			<ComparisonMode>InvariantCultureIgnoreCase</ComparisonMode>
+		</LastUsedProfile>
+		<UserProfiles />
+	</Search>
+	<Defaults>
+		<OptionsTabIndex>4</OptionsTabIndex>
+		<KeySources>
+			<Association>
+				<DatabasePath>../../../home/saad/.keys_database.kdbx</DatabasePath>
+				<Password>true</Password>
+			</Association>
+			<Association>
+				<DatabasePath>../../../home/saad/Dropbox/.keys_database.kdbx</DatabasePath>
+				<Password>true</Password>
+			</Association>
+			<Association>
+				<DatabasePath>../../../home/saad/Dropbox/.keys_database (latitude's conflicted copy 2021-03-29).kdbx</DatabasePath>
+				<Password>true</Password>
+			</Association>
+			<Association>
+				<DatabasePath>../../../home/saad/keepass/keepass_database.kdbx</DatabasePath>
+				<Password>true</Password>
+			</Association>
+		</KeySources>
+	</Defaults>
+	<Integration>
+		<HotKeyGlobalAutoType>0</HotKeyGlobalAutoType>
+		<HotKeyGlobalAutoTypePassword>0</HotKeyGlobalAutoTypePassword>
+		<HotKeyShowWindow>0</HotKeyShowWindow>
+		<UrlSchemeOverrides>
+			<BuiltInOverridesEnabled>1</BuiltInOverridesEnabled>
+			<CustomOverrides />
+		</UrlSchemeOverrides>
+		<AutoTypeMatchByUrlInTitle>true</AutoTypeMatchByUrlInTitle>
+		<AutoTypeMatchByUrlHostInTitle>true</AutoTypeMatchByUrlHostInTitle>
+		<AutoTypeMatchByTagInTitle>true</AutoTypeMatchByTagInTitle>
+		<AutoTypeAllowInterleaved>true</AutoTypeAllowInterleaved>
+		<AutoTypeAbortOnWindows />
+	</Integration>
+	<Custom>
+		<Item>
+			<Key>KeePassRPC.version.major</Key>
+			<Value>1</Value>
+		</Item>
+		<Item>
+			<Key>KeePassRPC.version.minor</Key>
+			<Value>14</Value>
+		</Item>
+		<Item>
+			<Key>KeePassRPC.version.build</Key>
+			<Value>0</Value>
+		</Item>
+		<Item>
+			<Key>KeePassRPC.KeeFox.autoCommit</Key>
+			<Value>true</Value>
+		</Item>
+		<Item>
+			<Key>KeePassRPC.KeeFox.editNewEntries</Key>
+			<Value>true</Value>
+		</Item>
+		<Item>
+			<Key>KeePassRPC.KeeFox.backupNewPasswords</Key>
+			<Value>true</Value>
+		</Item>
+		<Item>
+			<Key>KeePassRPC.AuthorisationExpiryTime</Key>
+			<Value>31536000</Value>
+		</Item>
+		<Item>
+			<Key>KeePassRPC.SecurityLevel</Key>
+			<Value>2</Value>
+		</Item>
+		<Item>
+			<Key>KeePassRPC.SecurityLevelClientMinimum</Key>
+			<Value>2</Value>
+		</Item>
+		<Item>
+			<Key>KeePassRPC.webSocket.port</Key>
+			<Value>12000</Value>
+		</Item>
+		<Item>
+			<Key>KeePassRPC.Key.066fb77a-a97e-489e-a8a3-9b055895ce84</Key>
+			<Value>AC0BKK1VwXPY6dkTphCZGmWcj8fY5lSdGZJBkiad81bhCzTl2PLPzaYrZEK0KY9qUc92mg9Pxq3P/IzNoyINKWAiOH1Urq6UhOLRb56pp4lIbRsN6xIPkQzKGF+QP0mv1ruPJFk+K7vySYAErP5J90hAp8D8GGHLtrCITwSIb3lfPnNqXtp49yy1UczkR4U1clSxWud6n/eM8Fs4zPu8616FhSlfakBgsyy4s5dCg47KbhlzBVaSyf1FrMHk+Y4vU4m8yHN5xSUfM/Ujwn4jsng/hbGn3EGxnO1/iP8mny3HoMX5r/HWr4bRRX5nixnHD5A89MHABKmcsMf4UPAATbL2IeRkAnROcZnnCpJrX+xpxWkuJMJffbWH39IhNwPQ1z2AybZvlwu3aRjDky2rxjIKuZedf5eQfd0/W6xSNsl2+8PteG+nH3FOQ4kpVRlNOY56XheT5CCJwLGvsjIyMhUj82MJ8XbYQKB/R4WsdyvnFJAQ1xCd9y7ADbLsbYUz+HWjaT06xHA81LUJu0r8BsnkjoWkdjxvVuC1GikrxREIsbGKBFmo7QTuhEnSXQ5Msmvvu3+d6al9qMGreUXbbAl/hS3PyKuRolHOjGFhZRinFsIcq+RqWFPjYdMuH4EhiIOt/kNn8CnIBx+HemrbQbCDs8epY3wiwyL6N3KC0lWqGe6KkjR1iUthHdO/LJzJOJC477dLe91q6CcEl3Sg/0NHoJ2njfB06bTlgye3Jw1mJF5MMdeCgnCsFcdHXN//Kivv8FLYNtHhkjH6VHmkiQ==</Value>
+		</Item>
+		<Item>
+			<Key>KeePassRPC.KeeFoxWelcomeDisplayed</Key>
+			<Value>true</Value>
+		</Item>
+		<Item>
+			<Key>KeeOneDrive</Key>
+			<Value>{"/home/saad/Dropbox/.keys_database (latitude's conflicted copy 2021-03-29).kdbx":{"RefreshToken":null,"RefreshTokenStorage":null,"OneDriveName":null,"RemoteDatabasePath":null,"RemoteFolderId":null,"RemoteDriveId":null,"RemoteItemId":null,"RemoteFileName":null,"DoNotSync":false,"LocalFileHash":null,"ETag":null,"LastSyncedAt":null,"LastCheckedAt":null,"CloudStorageType":4},"/home/saad/keepass/keepass_database.kdbx":{"RefreshToken":"M.R3_BAY.CdAhnpHWebmEqyphDzCjPUiaKsUcILHo2MGg*GJdSOwIfB6IoeUnETd56eWik*eSpOW5bdy0fI*P*RpfFCi1x2s4KYS3M1aQMEIxfu1gh5UZHuFCZbgePCHtBpdIYw4TZU4O2iCTPUhdkamXuN7k71fpamtqDcTyHZaJhr2BB0EI2kECyzUn9853Mf9zDBBGnRvBBQahfxh39hkH73Fqv43Mg3WxjL*NNO1yoz1lrVJkwT8IUd5PDg1x!XR8KGUjDqFVRJCfwivjLydvd8j6fshLKBiqLWWoHEYaM3wmVBlLJ!ODoS8KrInVPZSxBrSkurptuFZnJVJA7MHHGKsPvRwxFfFplFJmNvLBvzFkRrl4ADRIUjOHdtgHl2HA9ScOdHNS1iaT1h1aIFcpbP3Uxz73OdGS9Tt2atygpOCEUrcc","RefreshTokenStorage":null,"OneDriveName":"Abuhurraira Saad","RemoteDatabasePath":"/root/keepass_database.kdbx","RemoteFolderId":"45C5ABEDE57012E8!199","RemoteDriveId":"45c5abede57012e8","RemoteItemId":"45C5ABEDE57012E8!208","RemoteFileName":"keepass_database.kdbx","DoNotSync":false,"LocalFileHash":"93185C0E6D1FDF5A2D08434FE5A7314B4E27B44F","ETag":"aYzo0NUM1QUJFREU1NzAxMkU4ITIwOC4yOTA","LastSyncedAt":"2021-04-04T11:17:02.580186+05:00","LastCheckedAt":"2021-04-04T11:17:02.580193+05:00","CloudStorageType":4}}</Value>
+		</Item>
+	</Custom>
+</Configuration>

@@ -1,0 +1,60 @@
+win-sel-cur 
+win-sel-cur ?
+set 
+colorscheme gruvbox
+colorscheme gruvbox-alt
+colorscheme default
+set altformat_current
+set status_display_program=cmus_song
+:set status_display_program=cmus_song
+:set status_display_program=YourSciptName
+pl-create nazams
+live-filter 
+q!
+pl-create James Author
+colorscheme dracula
+setkk
+pl-create Umer Songs
+q
+pl-create dbz
+stop
+player-next
+pl-create audioBoooks
+live-filter LL
+live-filter LLL
+?
+help hidden
+help 
+colorscheme
+set color_error
+hidd
+col
+colorscheme gray-88
+pl-export
+live-filter LLKKKKK
+colorscheme green
+colorscheme solarized-light
+colorscheme zenburn
+colorscheme xterm-white
+colorscheme solarized-dark
+colorscheme night
+colorscheme jellybeans
+colorscheme cyan
+colorscheme random
+live-filter L
+toggle play_library
+toggle play_sorted
+help
+help togggle
+toggle ?
+live-filter co
+cmu
+bindhh2
+colorscheme 
+colorscheme green-mono-88
+s
+pl-create recites
+pl-create 
+view tree
+view 
+pl-create favourite songs

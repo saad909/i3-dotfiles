@@ -1,0 +1,37 @@
+snippet meta "meta date" br
+\documentclass[${1:a4paper,12pt}]{${2:report}}
+\author{$3}
+\title{$4}
+\date{\today}
+\begin{document}
+  \maketitle
+  $5
+
+\end{document}
+endsnippet
+
+snippet bg "begin" br
+\begin{${1:env}}
+	$2
+\end{${1:env}}
+endsnippet
+
+snippet mc1 "Multi columng" br
+\setlength\columnseprule{${1:size}pt}
+\setlength\columnsep{${2:size}pt}
+\begin{multicols}{${3:No. of columns}}
+	$4
+\end{multicols}
+endsnippet
+
+snippet mc2 "Multi columng using parcolumns" br
+\begin{parcolumns}${1:[rulebetween=true,colwidths={1=.5\textwidth,2=.5\textwidth}]}{${2:2}}
+\colchunk{
+${3:Enter the content of column No. 1}
+}
+
+\colchunk{
+${4:Enter the content of column No. 2}
+}
+\end{parcolumns}
+endsnippet
