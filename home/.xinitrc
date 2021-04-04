@@ -11,7 +11,7 @@
 # export STATUSBAR="i3blocks" # Uncomment this line when using i3.
 
 #. ~/.xprofile
-. ~/.config/startup
+. $HOME/.config/startup
 # wal -i "$(< "${HOME}/.cache/wal/wal")"
 # Your default LARBS WM is determined in your `~/.profile` on login.  Here we
 # run the proper command to run when the graphical environment starts.
@@ -20,5 +20,5 @@
 # check the i3blocks line above.
 #ssh-agent dwm
 #also can use this line
-exec i3
+#exec i3
 #ssh-agent i3
