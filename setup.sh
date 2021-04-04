@@ -1,4 +1,4 @@
-installation_for_networking(){
+my_setup(){
 	# install vmware
 	echo "(7/9)installing vmware"
 	paru -S  vmware-workstation --noconfirm --needed
@@ -11,6 +11,8 @@ installation_for_networking(){
 	echo "(9/9)installing gns3"
 	sudo pacman -S lib32-openssl lib32-gcc-libs ubridge --noconfirm --needed
 	paru -S gns3-gui gns3-server  ubridge --noconfirm --needed
+	# install keepass and add its plugins
+	#install nvidia drivers
 }
 
 # install paru
@@ -33,7 +35,7 @@ echo "(3/9)installing aur programs"
 paru -S neovim-nightly-bin ly-git i3-gaps-rounded-git \
 	autotiling arch-wiki-dmenu polybar aic94xx-firmware \
 	udiskie-dmenu-git networkmanager-dmenu btmenu \
-       	upd72020x-fw --noconfirm 
+       	upd72020x-fw  wd719x-firmware --noconfirm
 
 # install dot files
 echo "(4/9)installing dotfiles"
@@ -72,7 +74,7 @@ printf "Want to setup for networking?"
 read selection
 if [[ $selection -eq 'y' || $selection -eq 'Y' ]]
 then
-	installation_for_networking
+	my_setup
 elif [[ $selection -eq 'n' || $selection -eq 'N' ]]
 then
 	exit 0
