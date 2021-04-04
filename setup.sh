@@ -9,10 +9,11 @@ my_setup(){
 	cd scrt; chmod +x ./installation.txt;./installation.txt
 	# install gns3
 	echo "(9/9)installing gns3"
-	sudo pacman -S lib32-openssl lib32-gcc-libs ubridge --noconfirm --needed
+	sudo pacman -S lib32-openssl lib32-gcc-libs --noconfirm --needed
 	paru -S gns3-gui gns3-server  ubridge --noconfirm --needed
-	# install keepass and add its plugins
+	#install keepass and add its plugins
 	#install nvidia drivers
+	#setup for my fyp
 }
 
 # install paru
@@ -29,7 +30,7 @@ sudo pacman -S base-devel --needed;\
        thunar pcmanfm python-pip npm ueberzug xwallpaper atool \
        xcape tmux zsh cmus qutebrowser firefox galculator \
        youtube-dl arandr xrandr putty zsh-autosuggestions fzf \
-       zsh-syntax-highlighting stow --noconfirm 
+       zsh-syntax-highlighting stow  libvirt --noconfirm 
 # install aur programs
 echo "(3/9)installing aur programs"
 paru -S neovim-nightly-bin ly-git i3-gaps-rounded-git \
