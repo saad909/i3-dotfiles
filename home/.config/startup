@@ -3,6 +3,6 @@ sxhkd &
 touchpad &
 remaps &
 autotiling &
-compton &
+picom &
 setbg &
 $HOME/.config/polybar/launch.sh 
