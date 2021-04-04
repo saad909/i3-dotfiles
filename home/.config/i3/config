@@ -69,7 +69,7 @@ set $left h
 set $right l
 # 1}}}
 # exec_always {{{1
-exec_always --no-startup-id xrdb -load ~/.Xresources
+# exec_always --no-startup-id xrdb -load ~/.Xresources
 # 1}}}
 # rofi {{{1
 # needed for super to launch rofi through ksuperkey, see ~/.xprofile
@@ -379,17 +379,17 @@ floating_modifier $Mod
 # }}}
 # exec commands {{{1
 #exec_always --no-startup-id /home/$USER/.config/i3blocks/scripts/i3-battery-popup
-exec_always --no-startup-id $HOME/.config/polybar/forest/launch.sh &
+# exec_always --no-startup-id $HOME/.config/polybar/forest/launch.sh &
 
-exec setbg
+# exec setbg
 #exec_always setbg "/home/ExternalHDD/Pictures/pop"
 # exec setbg 
 # exec echo 123 | sudo -S virsh net-autostart default
 #exec echo " " > /tmp/recordingicon
-exec touchpad
-exec remaps
-exec compton
-exec_always autotiling
+# exec touchpad
+# exec remaps
+# exec compton
+# exec_always autotiling
 # }}}
 ##### i3-gaps ##############
 for_window [class=".*"] border pixel 3 #*
@@ -403,7 +403,7 @@ border_radius 3
 # exec '/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)'
 # exec flameshot
 # bindsym $mod+return exec kitty
-exec_always key_changed
+# exec_always key_changed
 title_align center
 # bindsym $mod+F1 exec i3-resurrect restore -w $ws3
 # Moving workspaces between screens 
@@ -426,10 +426,10 @@ workspace 10 output VGA-1
 # workspace 5 outpuLVDSGA1 LVDS1
 
 for_window [class="mpv"] focus
-exec  nm-applet
-exec blueman-applet
-exec flameshot
-exec xfce4-power-manager
+# exec  nm-applet
+# exec blueman-applet
+# exec flameshot
+# exec xfce4-power-manager
 
 # bindsym $MOD1+1 exec $HOME/.config/i3/i3_focus_or_run.sh 1
 # bindsym $MOD1+2 exec $HOME/.config/i3/i3_focus_or_run.sh 2
@@ -440,7 +440,7 @@ exec xfce4-power-manager
 
 
 # set sensitivity
-exec xinput --set-prop 15 'libinput Accel Speed' 1
+# exec xinput --set-prop 15 'libinput Accel Speed' 1
 
 # scratchpad
 # exec --no-startup-id alacritty --config-file=$HOME/.config/alacritty/alacritty_dropdown.yml --class terminal_dropdown &

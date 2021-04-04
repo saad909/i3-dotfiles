@@ -1,8 +1,7 @@
 remaps &
 sxhkd &
 touchpad &
-remaps &
 autotiling &
-picom &
 setbg &
-$HOME/.config/polybar/launch.sh 
+$HOME/.config/polybar/launch.sh &
+picom &

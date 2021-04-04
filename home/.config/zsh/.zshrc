@@ -1,8 +1,8 @@
 # oh-my-zsh
 export ZSH="/home/saad/.oh-my-zsh"
 # ZSH_THEME="crunch"
-ZSH_THEME="arrow"
-# ZSH_THEME="robbyrussell"
+# ZSH_THEME="arrow"
+ZSH_THEME="robbyrussell"
 plugins=(git extract zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
