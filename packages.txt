@@ -42,3 +42,4 @@ stow
 libvirt
 lib32-gcc-libs
 lib32-openssl
+lsd

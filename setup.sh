@@ -7,17 +7,17 @@ install_paru(){
 }
 install_packages(){
 	# install pacman programs
-	sudo pacman -S - < packages.txt --noconfirm --needed
+	paru -S - < packages.txt --noconfirm --needed
 }
 install_aur_packages(){
 	# install aur programs
-	paru -S - < aur_packages.txt --noconfirm --needed
+	paru -S - < aur_packages --noconfirm --needed
 }
 install_dotfiles(){
 	# move previous dotfiles
 	mkdir $HOME/prev_dotfiles;mv $HOME/.* $HOME/prev_dotfiles
+	mv  $HOME/prev_dotfiles/.dotfiles ~
 	# install dot files
-	git clone http://github.com/saad909/i3-dotfiles
 	cd $HOME/.dotfiles
 	stow home
 }
@@ -53,8 +53,8 @@ setup_for_networking(){
 	read selection
 	if [[ $selection == 'y' || $selection == 'Y' ]]
 	then
-		install_vmware()
-		install_securecrt()
+		install_vmware
+		install_securecrt
 		echo "Done ........"
 		return
 	else
@@ -66,8 +66,8 @@ change_shell(){
 	chsh -s /bin/zsh $USER
 }
 # functions
-printf "\n\n\t\t------------------------ Step(1/7) - Installing paru ------------------------\n\n"
-install_paru
+#printf "\n\n\t\t------------------------ Step(1/7) - Installing paru ------------------------\n\n"
+#install_paru
 printf "\n\n\t\t------------------------ Step(2/7) install packages ------------------------\n\n"
 install_packages
 printf "\n\n\t\t------------------------ Step(3/7) installing aur packages ------------------------\n\n"
@@ -84,3 +84,5 @@ change_shell
 printf "\n\n\t\t------------------------ Networking Section ------------------------\n\n"
 setup_for_networking
 # enable service of ly
+
+# need to setup android
