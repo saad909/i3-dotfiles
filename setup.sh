@@ -1,11 +1,14 @@
 installation_for_networking(){
 	# install vmware
-	paru -S  vmware-workstation --noconfirm --neeeded
+	echo "(7/9)installing vmware"
+	paru -S  vmware-workstation --noconfirm --needed
 	# install securecrt
+	echo "(8/9)installation securecrt"
 	cd /tmp
 	git clone https://github.com/saad909/securecrt-1 scrt
 	cd scrt; chmod +x ./installation.txt;./installation.txt
 	# install gns3
+	echo "(9/9)installing gns3"
 	sudo pacman -S lib32-openssl lib32-gcc-libs ubridge --noconfirm --needed
 	paru -S gns3-gui gns3-server  ubridge --noconfirm --needed
 }
@@ -19,17 +22,18 @@ cd paru; makepkg -si
 
 # install pacman programs
 echo "(2/9)installing programs"
-sudo pacman -S base-devel --needed;sudo pacman -S git glibc \  
-       rofi ranger alacritty picom dmenu vim xclip sxhkd \
-       pcmanfm python-pip npm ueberzug xwallpaper atool \
+sudo pacman -S base-devel --needed;\
+	sudo pacman -S git glibc rofi ranger alacritty picom dmenu vim xclip sxhkd \
+       thunar pcmanfm python-pip npm ueberzug xwallpaper atool \
        xcape tmux zsh cmus qutebrowser firefox galculator \
-       youtube-dl arandr xrandr putty zsh-autosuggestion \
-       zsh-syntax-highlighting --noconfirm --neeeded
+       youtube-dl arandr xrandr putty zsh-autosuggestions fzf \
+       zsh-syntax-highlighting stow --noconfirm 
 # install aur programs
 echo "(3/9)installing aur programs"
-paru -S neovim-nightly-git ly-git i3-gaps-rounded-git \
+paru -S neovim-nightly-bin ly-git i3-gaps-rounded-git \
 	autotiling arch-wiki-dmenu polybar aic94xx-firmware \
-       	upd72020x-fw --noconfirm --neeeded
+	udiskie-dmenu-git networkmanager-dmenu btmenu \
+       	upd72020x-fw --noconfirm 
 
 # install dot files
 echo "(4/9)installing dotfiles"
@@ -37,18 +41,44 @@ cd $HOME/.dotfiles
 stow home
 # install gtk theme
 echo "(5/9)installing gtk themes"
-paru -S yaru-icon-them yaru-sound-theme yaru-gtk-theme\
-	--noconfirm --neeeded
+paru -S yaru-icon-theme-git yaru-sound-theme-git yaru-gtk-theme-git\
+	--noconfirm --needed
+
 # setup wallpaper
 echo "(6/9)setting wallpaper"
-$HOME/.config/scripts/setbg wallpaper.jpg
-pprint "Want to setup for networking?"
+$HOME/.config/scripts/setbg $HOME/.dotfiles/wallpaper.jpg
+
+# android setup
+echo "(7/9)android setup"
+puru --needed -S mtpfs jmtpfs gvfs-mtp gvfs-gphoto2  --noconfirm
+
+# bluetooth setup
+echo "(8/9)Bluetooth setup"
+sudo pacman -S bluez bluez-utils-compat blueman --noconfirm
+sudo cp /etc/bluetooth/main.conf{,.bak}
+echo "
+AutoEnable=yes
+" | sudo tee - a/etc/bluetooth/main.conf
+sudo pacman -S pulseaudio pulseaudio-bluetooth pavucontrol --noconfirm
+
+# enabling services at startup
+echo "(9/9)Enabling services"
+sudo systemctl enable ly
+sudo systemctl start bluetooth.service
+sudo systemctl enable bluetooth.service
+
+################### Networking ###############################
+printf "Want to setup for networking?"
 read selection
-if [[ $seclection -eq 'y' || $selection -eq 'Y ]]
+if [[ $selection -eq 'y' || $selection -eq 'Y' ]]
 then
 	installation_for_networking
-	clear_directory
-else
+elif [[ $selection -eq 'n' || $selection -eq 'N' ]]
+then
 	exit 0
 fi
+
+# enable service of ly
+# android and bluetooth setup remaining
+echo "Done........"
 
