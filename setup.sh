@@ -14,7 +14,10 @@ install_aur_packages(){
 	paru -S - < aur_packages.txt --noconfirm --needed
 }
 install_dotfiles(){
+	# move previous dotfiles
+	mkdir $HOME/prev_dotfiles;mv $HOME/.* $HOME/prev_dotfiles
 	# install dot files
+	git clone http://github.com/saad909/i3-dotfiles
 	cd $HOME/.dotfiles
 	stow home
 }
