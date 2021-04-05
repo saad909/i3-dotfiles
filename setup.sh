@@ -22,7 +22,7 @@ set_wallpaper(){
 	# setup wallpaper
 	$HOME/.config/scripts/setbg $HOME/.dotfiles/wallpaper.jpg
 }
-install_bluetooth(){
+setting_up_bluetooth(){
 	# bluetooth setup
 	sudo cp /etc/bluetooth/main.conf{,.bak}
 	echo "
@@ -59,19 +59,24 @@ setup_for_networking(){
 		return
 	fi
 }
+change_shell(){
+	chsh -s /bin/zsh $USER
+}
 # functions
-printf "\n\n\t\t------------------------ Step(1/6) - Installing paru ------------------------\n\n"
+printf "\n\n\t\t------------------------ Step(1/7) - Installing paru ------------------------\n\n"
 install_paru
-printf "\n\n\t\t------------------------ Step(2/6) install packages ------------------------\n\n"
+printf "\n\n\t\t------------------------ Step(2/7) install packages ------------------------\n\n"
 install_packages
-printf "\n\n\t\t------------------------ Step(3/6) installing aur packages ------------------------\n\n"
+printf "\n\n\t\t------------------------ Step(3/7) installing aur packages ------------------------\n\n"
 install_aur_packages
-printf "\n\n\t\t------------------------ Step(4/6) installing dotfiles ------------------------\n\n"
+printf "\n\n\t\t------------------------ Step(4/7) installing dotfiles ------------------------\n\n"
 install_dotfiles
-printf "\n\n\t\t------------------------ Step(5/6) setting up wallpaper ------------------------\n\n"
+printf "\n\n\t\t------------------------ Step(5/7) setting up wallpaper ------------------------\n\n"
 set_wallpaper
-printf "\n\n\t\t------------------------ Step(6/6) setting up bluetooth ------------------------\n\n"
-settingup_bluetooth
+printf "\n\n\t\t------------------------ Step(6/7) setting up bluetooth ------------------------\n\n"
+setting_up_bluetooth
+printf "\n\n\t\t------------------------ Step(7/7)  changing shell to zsh ------------------------\n\n"
+change_shell
 # for networking setup
 printf "\n\n\t\t------------------------ Networking Section ------------------------\n\n"
 setup_for_networking
