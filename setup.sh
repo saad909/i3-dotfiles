@@ -30,7 +30,7 @@ setting_up_bluetooth(){
 	# bluetooth setup
 	sudo cp /etc/bluetooth/main.conf{,.bak}
 	echo "
-	AutoEnable=true
+	AutoEnable=yes
 	" | sudo tee -a /etc/bluetooth/main.conf
 	sudo systemctl start bluetooth.service
 	sudo systemctl enable bluetooth.service
