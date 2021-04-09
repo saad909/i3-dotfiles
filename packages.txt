@@ -43,3 +43,4 @@ libvirt
 lib32-gcc-libs
 lib32-openssl
 lsd
+polkit-gnome
