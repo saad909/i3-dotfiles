@@ -28,6 +28,7 @@ set_wallpaper(){
 }
 setting_up_bluetooth(){
 	# bluetooth setup
+	sudo pacman -S bluez bluez-utils-compat blueman --noconfirm --needed
 	sudo cp /etc/bluetooth/main.conf{,.bak}
 	echo "
 	AutoEnable=yes
