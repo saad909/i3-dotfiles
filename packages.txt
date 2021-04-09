@@ -42,3 +42,4 @@ lsd
 polkit-gnome
 lxappearance
 i3-gaps
+lftp
