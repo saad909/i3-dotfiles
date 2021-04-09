@@ -399,7 +399,7 @@ gaps outer 10
 ################# i3-radius #######################
 smart_borders on
 smart_borders no_gaps
-border_radius 3
+#border_radius 3
 # exec '/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)'
 # exec flameshot
 # bindsym $mod+return exec kitty

@@ -1,17 +1,18 @@
 # install paru
 install_paru(){
 	cd /tmp
-	sudo pacman -S git
-	git clone https://aur.archlinux.org/paru.git
-	cd paru; makepkg -si
+	git clone https://aur.archlinux.org/paru-bin.git
+	cd paru-bin; makepkg -si
 }
 install_packages(){
 	# install pacman programs
-	paru -S - < packages.txt --noconfirm --needed
+	cd ~/.dotfiles
+	sudo pacman -S - < $HOME/.dotfiles/packages.txt --noconfirm --needed
 }
 install_aur_packages(){
 	# install aur programs
-	paru -S - < aur_packages --noconfirm --needed
+	paru -S - < $HOME/.dotfiles/aur_packages --noconfirm --needed
+
 }
 install_dotfiles(){
 	# move previous dotfiles
@@ -40,6 +41,7 @@ install_vmware(){
 }
 install_securecrt(){
 	# install securecrt
+	paru -S icu63
 	cd /tmp
 	git clone https://github.com/saad909/securecrt-1 scrt
 	cd scrt; chmod +x ./installation.txt;./installation.txt && cd rm ../scrt -rf && cd $HOME/.dotfiles
@@ -55,6 +57,7 @@ setup_for_networking(){
 	then
 		install_vmware
 		install_securecrt
+		install_gns3
 		echo "Done ........"
 		return
 	else
@@ -68,23 +71,34 @@ change_shell(){
 android_automount_setup(){
 	paru -S mtpfs jmtpfs gvfs-mtp gvfs-gphoto2  --noconfirm
 }
+stop(){
+	read test
+}
 # functions
-printf "\n\n\t\t------------------------ Step(1/8) - Installing paru ------------------------\n\n"
-install_paru
-printf "\n\n\t\t------------------------ Step(2/8) install packages ------------------------\n\n"
+printf "\n\n\t\t------------------------ Step(1/8) install packages ------------------------\n\n"
 install_packages
+stop
+printf "\n\n\t\t------------------------ Step(2/8) - Installing paru ------------------------\n\n"
+install_paru
+stop
 printf "\n\n\t\t------------------------ Step(3/8) installing aur packages ------------------------\n\n"
 install_aur_packages
+stop
 printf "\n\n\t\t------------------------ Step(4/8) installing dotfiles ------------------------\n\n"
 install_dotfiles
+stop
 printf "\n\n\t\t------------------------ Step(5/8) setting up wallpaper ------------------------\n\n"
 set_wallpaper
+stop
 printf "\n\n\t\t------------------------ Step(6/8) setting up bluetooth ------------------------\n\n"
 setting_up_bluetooth
+stop
 printf "\n\n\t\t------------------------ Step(7/8)  changing shell to zsh ------------------------\n\n"
 change_shell
+stop
 printf "\n\n\t\t------------------------ Step(8/8)  android setup ------------------------\n\n"
 android_automount_setup
+stop
 # for networking setup
 printf "\n\n\t\t------------------------ Networking Section ------------------------\n\n"
 setup_for_networking
