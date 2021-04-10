@@ -63,3 +63,5 @@ p7zip
 network-manager-applet
 redshift
 dunst
+msgpack-c
+noevim-qt
