@@ -10,7 +10,7 @@ so /home/ExternalHDD/SoftwaresAndTricks/Linux/LinuxSoftwares
 sO /home/ExternalHDD/SoftwaresAndTricks/Windows/WindowsSoftwares
 tR /home/ExternalHDD/SoftwaresAndTricks/Windows/Tricks
 lm /home/ExternalHDD/Courses/Networking/Cisco/lab_material
-sc /home/saad/.local/bin
+sc /home/saad/.config/scripts
 D ~/Downloads
 do ~/Documents
 os /home/ExternalHDD/OSs

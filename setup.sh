@@ -91,30 +91,38 @@ echo"
 UUID=43EE29300D321D27   /home/ExternalHDD       ntfs-3g         defaults,rw     0 0 
 " | sudo tee -a /etc/fstab
 }
+install_fonts(){
+	mkdir $HOME/.local/share/fonts; cd $HOME/.local/share/fonts;
+	curl -LO https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/FiraCode/Regular/complete/Fira%20Code%20Regular%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.ttf
+	curl -LO https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/FantasqueSansMono/Regular/complete/Fantasque%20Sans%20Mono%20Regular%20Nerd%20Font%20Complete%20Windows%20Compatible.ttf
+}
 # functions
-printf "\n\n\t\t------------------------ Step(1/8) install packages ------------------------\n\n"
+printf "\n\n\t\t------------------------ Step(1/9) install packages ------------------------\n\n"
 install_packages
 stop
-printf "\n\n\t\t------------------------ Step(2/8) - Installing paru ------------------------\n\n"
+printf "\n\n\t\t------------------------ Step(2/9) - Installing paru ------------------------\n\n"
 install_paru
 stop
-printf "\n\n\t\t------------------------ Step(3/8) installing aur packages ------------------------\n\n"
+printf "\n\n\t\t------------------------ Step(3/9) installing aur packages ------------------------\n\n"
 install_aur_packages
 stop
-printf "\n\n\t\t------------------------ Step(4/8) installing dotfiles ------------------------\n\n"
+printf "\n\n\t\t------------------------ Step(4/9) installing dotfiles ------------------------\n\n"
 install_dotfiles
 stop
-printf "\n\n\t\t------------------------ Step(5/8) setting up wallpaper ------------------------\n\n"
+printf "\n\n\t\t------------------------ Step(5/9) setting up wallpaper ------------------------\n\n"
 set_wallpaper
 stop
-printf "\n\n\t\t------------------------ Step(6/8) setting up bluetooth ------------------------\n\n"
+printf "\n\n\t\t------------------------ Step(6/9) setting up bluetooth ------------------------\n\n"
 setting_up_bluetooth
 stop
-printf "\n\n\t\t------------------------ Step(7/8)  changing shell to zsh ------------------------\n\n"
+printf "\n\n\t\t------------------------ Step(7/9)  changing shell to zsh ------------------------\n\n"
 change_shell
 stop
-printf "\n\n\t\t------------------------ Step(8/8)  android setup ------------------------\n\n"
+printf "\n\n\t\t------------------------ Step(8/9)  android setup ------------------------\n\n"
 android_automount_setup
+stop
+printf "\n\n\t\t------------------------ Step(9/9)  android setup ------------------------\n\n"
+install_fonts()
 stop
 # for networking setup
 printf "\n\n\t\t------------------------ Networking Section ------------------------\n\n"

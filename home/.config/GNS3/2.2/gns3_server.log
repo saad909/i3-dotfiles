@@ -161,3 +161,76 @@ gns3server.compute.error.NodeError: NAT interface virbr0 is missing, please inst
 2021-04-10 11:32:43 INFO web_log.py:206 ::1 [10/Apr/2021:11:32:43 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.20"
 2021-04-10 11:39:07 INFO web_log.py:206 ::1 [10/Apr/2021:11:39:07 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.20"
 2021-04-10 11:44:11 INFO web_log.py:206 ::1 [10/Apr/2021:11:44:11 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.20"
+2021-04-10 11:50:01 INFO web_log.py:206 ::1 [10/Apr/2021:11:50:01 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.20"
+2021-04-10 11:55:48 INFO web_log.py:206 ::1 [10/Apr/2021:11:55:48 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.20"
+2021-04-10 12:00:44 INFO web_log.py:206 ::1 [10/Apr/2021:12:00:44 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.20"
+2021-04-10 12:00:46 INFO web_log.py:206 ::1 [10/Apr/2021:12:00:46 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.20"
+2021-04-10 12:06:32 INFO web_log.py:206 ::1 [10/Apr/2021:12:06:32 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.20"
+2021-04-10 12:11:18 INFO web_log.py:206 ::1 [10/Apr/2021:12:11:18 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.20"
+2021-04-10 12:17:07 INFO web_log.py:206 ::1 [10/Apr/2021:12:17:07 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.20"
+2021-04-10 12:21:49 INFO web_log.py:206 ::1 [10/Apr/2021:12:21:49 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.20"
+2021-04-10 12:25:49 INFO web_log.py:206 ::1 [10/Apr/2021:12:25:49 +0000] "PUT /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4 HTTP/1.1" 200 322 "-" "Python/3.9 aiohttp/3.7.4"
+2021-04-10 12:25:49 INFO web_log.py:206 ::1 [10/Apr/2021:12:25:49 +0000] "PUT /v2/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4 HTTP/1.1" 200 765 "-" "GNS3 QT Client v2.2.20"
+2021-04-10 12:25:49 INFO web_log.py:206 127.0.0.1 [10/Apr/2021:12:25:49 +0000] "PUT /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4 HTTP/1.1" 200 322 "-" "Python/3.9 aiohttp/3.7.4"
+2021-04-10 12:25:49 INFO web_log.py:206 ::1 [10/Apr/2021:12:25:49 +0000] "PUT /v2/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4 HTTP/1.1" 200 765 "-" "GNS3 QT Client v2.2.20"
+2021-04-10 12:25:49 INFO web_log.py:206 ::1 [10/Apr/2021:12:25:49 +0000] "PUT /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4 HTTP/1.1" 200 322 "-" "Python/3.9 aiohttp/3.7.4"
+2021-04-10 12:25:49 INFO web_log.py:206 ::1 [10/Apr/2021:12:25:49 +0000] "PUT /v2/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4 HTTP/1.1" 200 765 "-" "GNS3 QT Client v2.2.20"
+2021-04-10 12:25:51 INFO web_log.py:206 127.0.0.1 [10/Apr/2021:12:25:51 +0000] "PUT /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4 HTTP/1.1" 200 322 "-" "Python/3.9 aiohttp/3.7.4"
+2021-04-10 12:25:51 INFO web_log.py:206 ::1 [10/Apr/2021:12:25:51 +0000] "PUT /v2/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4 HTTP/1.1" 200 764 "-" "GNS3 QT Client v2.2.20"
+2021-04-10 12:25:51 INFO web_log.py:206 ::1 [10/Apr/2021:12:25:51 +0000] "PUT /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4 HTTP/1.1" 200 322 "-" "Python/3.9 aiohttp/3.7.4"
+2021-04-10 12:25:51 INFO web_log.py:206 ::1 [10/Apr/2021:12:25:51 +0000] "PUT /v2/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4 HTTP/1.1" 200 764 "-" "GNS3 QT Client v2.2.20"
+2021-04-10 12:25:52 INFO web_log.py:206 127.0.0.1 [10/Apr/2021:12:25:52 +0000] "PUT /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4 HTTP/1.1" 200 322 "-" "Python/3.9 aiohttp/3.7.4"
+2021-04-10 12:25:52 INFO web_log.py:206 ::1 [10/Apr/2021:12:25:52 +0000] "PUT /v2/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4 HTTP/1.1" 200 764 "-" "GNS3 QT Client v2.2.20"
+2021-04-10 12:25:54 INFO web_log.py:206 ::1 [10/Apr/2021:12:25:54 +0000] "PUT /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4 HTTP/1.1" 200 322 "-" "Python/3.9 aiohttp/3.7.4"
+2021-04-10 12:25:54 INFO web_log.py:206 ::1 [10/Apr/2021:12:25:54 +0000] "PUT /v2/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4 HTTP/1.1" 200 765 "-" "GNS3 QT Client v2.2.20"
+2021-04-10 12:28:03 WARNING web_server.py:170 Server has got signal SIGTERM, exiting...
+2021-04-10 12:28:03 INFO web_server.py:167 Server has got signal SIGHUP, reloading...
+2021-04-10 12:28:03 INFO web_server.py:113 Closing 3 websocket connections...
+2021-04-10 12:28:03 INFO __init__.py:154 Controller is reloading
+2021-04-10 12:28:03 INFO iou_vm.py:698 Stopping IOU process for IOU VM "S1" PID=12623
+2021-04-10 12:28:03 INFO iou_vm.py:698 Stopping IOU process for IOU VM "R1" PID=12621
+2021-04-10 12:28:03 INFO compute.py:460 Connection closed to compute 'local' WebSocket 'http://localhost:3080/v2/compute/notifications/ws'
+2021-04-10 12:28:03 INFO notification_handler.py:59 Client has disconnected from compute WebSocket
+2021-04-10 12:28:03 INFO web_log.py:206 127.0.0.1 [10/Apr/2021:11:03:38 +0000] "GET /v2/compute/notifications/ws HTTP/1.1" 200 445 "-" "Python/3.9 aiohttp/3.7.4"
+2021-04-10 12:28:03 INFO notification_handler.py:82 Client has disconnected from controller WebSocket
+2021-04-10 12:28:03 INFO project_handler.py:280 Client has disconnected from notification stream for project ID '2a56fee1-bb43-4cda-a5f5-1ab3c90677e4' (WebSocket method)
+2021-04-10 12:28:03 INFO __init__.py:138 Controller is stopping
+2021-04-10 12:28:03 INFO base_node.py:331 Builtin: 'NAT1' [ca859fb8-59bf-4a2a-abd1-6b3d3157defb]: is closing
+2021-04-10 12:28:03 INFO cloud.py:248 Cloud "NAT1" [ca859fb8-59bf-4a2a-abd1-6b3d3157defb] has been closed
+2021-04-10 12:28:03 INFO base_node.py:331 Docker: 'debian-1' [12019ce8-f8ff-4a54-b226-3fc9f4b4b4c2]: is closing
+2021-04-10 12:28:04 INFO docker_vm.py:533 Docker container 'debian-1' fix ownership, state = exited
+2021-04-10 12:28:04 INFO docker_vm.py:872 Docker container 'debian-1' [debian:latest] removed
+2021-04-10 12:28:04 ERROR base_events.py:1738 Task exception was never retrieved
+future: <Task finished name='Task-651' coro=<DockerVM._read_console_output() done, defined at /usr/lib/python3.9/site-packages/gns3server/compute/docker/docker_vm.py:710> exception=Docker has returned an error: [Errno 32] Broken pipe>
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/gns3server/compute/docker/__init__.py", line 147, in http_query
+    response = await self._session.request(method,
+  File "/usr/lib/python3.9/site-packages/aiohttp/client.py", line 544, in _request
+    await resp.start(conn)
+  File "/usr/lib/python3.9/site-packages/aiohttp/client_reqrep.py", line 890, in start
+    message, payload = await self._protocol.read()  # type: ignore
+  File "/usr/lib/python3.9/site-packages/aiohttp/streams.py", line 604, in read
+    await self._waiter
+aiohttp.client_exceptions.ClientOSError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/gns3server/compute/docker/docker_vm.py", line 730, in _read_console_output
+    await self.stop()
+  File "/usr/lib/python3.9/site-packages/gns3server/compute/docker/docker_vm.py", line 786, in stop
+    await self._fix_permissions()
+  File "/usr/lib/python3.9/site-packages/gns3server/compute/docker/docker_vm.py", line 536, in _fix_permissions
+    await self.manager.query("POST", "containers/{}/start".format(self._cid))
+  File "/usr/lib/python3.9/site-packages/gns3server/compute/docker/__init__.py", line 110, in query
+    response = await self.http_query(method, path, data=data, params=params)
+  File "/usr/lib/python3.9/site-packages/gns3server/compute/docker/__init__.py", line 154, in http_query
+    raise DockerError("Docker has returned an error: {}".format(str(e)))
+gns3server.compute.docker.docker_error.DockerError: Docker has returned an error: [Errno 32] Broken pipe
+2021-04-10 12:28:04 INFO base_node.py:331 IOU: 'R1' [526b3262-a87e-4f9b-ad6e-30c40ecdf14c]: is closing
+2021-04-10 12:28:04 INFO iou_vm.py:1268 saving startup-config to /home/saad/GNS3/projects/lab_for_programming/project-files/iou/526b3262-a87e-4f9b-ad6e-30c40ecdf14c/startup-config.cfg
+2021-04-10 12:28:04 INFO iou_vm.py:1278 saving private-config to /home/saad/GNS3/projects/lab_for_programming/project-files/iou/526b3262-a87e-4f9b-ad6e-30c40ecdf14c/private-config.cfg
+2021-04-10 12:28:04 INFO base_node.py:331 IOU: 'S1' [c627637e-2cf0-4ca2-828d-53d39361b357]: is closing
+2021-04-10 12:28:04 INFO iou_vm.py:1268 saving startup-config to /home/saad/GNS3/projects/lab_for_programming/project-files/iou/c627637e-2cf0-4ca2-828d-53d39361b357/startup-config.cfg
+2021-04-10 12:28:04 INFO iou_vm.py:1278 saving private-config to /home/saad/GNS3/projects/lab_for_programming/project-files/iou/c627637e-2cf0-4ca2-828d-53d39361b357/private-config.cfg
+2021-04-10 12:28:04 INFO run.py:272 Remove PID file /home/saad/.config/GNS3/2.2/gns3_server.pid
