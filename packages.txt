@@ -43,3 +43,4 @@ polkit-gnome
 lxappearance
 i3-gaps
 lftp
+keepass

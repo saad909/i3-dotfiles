@@ -50,6 +50,9 @@ install_securecrt(){
 install_gns3(){
 	paru -S gns3-gui gns3-server  ubridge --noconfirm --needed
 }
+setup_keepass(){
+	sudo mv $HOME/.dotfiles/keepass_plugins/*.plgx /usr/share/keepass/plugins
+}
 setup_for_networking(){
 	# setup for networking
 	printf "Want to setup for networking(y/n)"
@@ -59,6 +62,7 @@ setup_for_networking(){
 		install_vmware
 		install_securecrt
 		install_gns3
+		setup_keepass
 		echo "Done ........"
 		return
 	else
