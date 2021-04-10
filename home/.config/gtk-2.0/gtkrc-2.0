@@ -1,11 +1,20 @@
-gtk-can-change-accels = 1
+# DO NOT EDIT! This file will be overwritten by LXAppearance.
+# Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
-gtk-icon-theme-name = "Yaru"
-gtk-theme-name = "Arc-Gruvbox"
-
-style "user-font"
-{
-        font_name="FantasqueSansMono Nerd Font Mono"
-}
-widget_class "*" style "user-font"
-gtk-font-name = "FantasqueSansMono Nerd Font Mono 9"
+include "/home/saad/.gtkrc-2.0.mine"
+gtk-theme-name="Arc-Gruvbox"
+gtk-icon-theme-name="Yaru"
+gtk-font-name="Fantasque Sans Mono 10"
+gtk-cursor-theme-name="Adwaita"
+gtk-cursor-theme-size=0
+gtk-toolbar-style=GTK_TOOLBAR_BOTH
+gtk-toolbar-icon-size=GTK_ICON_SIZE_LARGE_TOOLBAR
+gtk-button-images=1
+gtk-menu-images=1
+gtk-enable-event-sounds=1
+gtk-enable-input-feedback-sounds=1
+gtk-xft-antialias=1
+gtk-xft-hinting=1
+gtk-xft-hintstyle="hintfull"
+gtk-xft-rgba="vrgb"
+gtk-modules="gail:atk-bridge"

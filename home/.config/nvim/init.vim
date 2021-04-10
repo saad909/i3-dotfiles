@@ -74,7 +74,7 @@ inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
 
 " compiler
-map <leader>c  :w! \| !compiler "%"; texclear "%"<CR>
+map <leader>c  :w! \| !compiler "%"<CR>
 " Runs a script that cleans out tex build files whenever I close out of a .tex file.
 autocmd VimLeave *.tex !texclear "<c-r>%"<CR>
 autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
@@ -95,5 +95,5 @@ let g:vim_pbcopy_escape_backslashes = 0
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 let g:tex_flavour='latex'
 " set guifont=FiraCode\ Nerd\ Font\ Mono:h12
-set guifont=FantasqueSansMono\ Nerd\ Font\ Mono:h14
+set guifont=Fantasque\ Sans\ Mono:h15
 let g:kite_supported_languages = ['python']

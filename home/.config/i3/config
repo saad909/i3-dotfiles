@@ -5,8 +5,8 @@ set $down j
 set $left h
 set $right l
 
-set $ws1 "1 "
-set $ws2 "2 "
+set $ws1 "1 "
+set $ws2 "2 "
 set $ws3 "3 GNS3"
 set $ws4 "4 "
 set $ws5 "5 "
@@ -155,19 +155,22 @@ client.urgent           $c4     $c4     $c0  $c2       $c2
 client.placeholder      $c2     $c2     $c7  $c2       $c2
 client.background       $c0
 #---------------- startup ---------------------------------
-# exec --no-startup-id remaps
-# exec --no-startup-id compton
-# exec --no-startup-id nm-applet
-# exec --no-startup-id blueman-applet
-# exec --no-startup-id flameshot
-# exec --no-startup-id xfce4-power-manager
-# exec --no-startup-id xinput --set-prop 15 'libinput Accel Speed' 1
-# exec --no-startup-id setbg
-# exec --no-startup-id touchpad
-exec --no-startup-id alacritty  --class terminal_dropdown &
-exec --no-startup-id alacritty  --class terminal_pomodoro &
+exec --no-startup-id remaps
+exec --no-startup-id picom
+exec --no-startup-id nm-applet
+exec --no-startup-id blueman-applet
+exec --no-startup-id flameshot
+exec --no-startup-id xfce4-power-manager
+exec --no-startup-id xinput --set-prop 15 'libinput Accel Speed' 1
+exec --no-startup-id setbg
+exec --no-startup-id touchpad
+exec --no-startup-id sxhkd
+exec --no-startup-id autotiling
+exec --no-startup-id dunst
+exec --no-startup-id alacritty  --class terminal_dropdown 
+exec --no-startup-id alacritty  --class terminal_pomodoro
+exec --no-startup-id $HOME/.config/polybar/launch.sh
 #---------------- run at every config reload ---------------------------------
-# exec_always --no-startup-id $HOME/.config/polybar/launch.sh &
 # exec_always autotiling
 exec_always key_changed
 # exec_always --no-startup-id xrdb -load ~/.Xresources
@@ -218,13 +221,3 @@ assign [class="smplayer"] $ws5
  workspace 9 output VGA-1
  workspace 10 output VGA-1
 
- # workspace "1:" output LVDS-1
- # workspace "2:" output LVDS-1
- # workspace "3:" output LVDS-1
- # workspace "4:" output LVDS-1
- # workspace "5:" output LVDS-1
- # workspace "6:" output LVDS-1
- # workspace "7:" output LVDS-1
- # workspace "8:" output LVDS-1
- # workspace "9:" output LVDS-1
- # workspace "10:" output LVDS-1

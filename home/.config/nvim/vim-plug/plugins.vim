@@ -75,9 +75,13 @@ let g:vim_pbcopy_escape_backslashes = 0
     Plug 'glepnir/galaxyline.nvim'
     Plug 'kevinhwang91/rnvimr'
     " FZF
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
-    Plug 'junegunn/fzf.vim'
+    Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}
+    Plug 'junegunn/fzf.vim' " needed for previews
+    Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+    Plug 'antoinemadec/coc-fzf'
+    " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    " Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
+    " Plug 'junegunn/fzf.vim'
     " Git
     Plug 'airblade/vim-gitgutter'
     Plug 'tpope/vim-fugitive'

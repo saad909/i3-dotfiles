@@ -7,9 +7,10 @@
 
 # Adds `~/.local/bin` to $PATH
 # polkit authentication enabled for multibootusb software
+export DESKTOP_SESSION=gnome
 export PATH="$PATH:$(du "$HOME/.config/scripts" | cut -f2 | paste -sd ':')"
 export PATH="$PATH:$(du "$HOME/.local/bin" | cut -f2 | paste -sd ':')"
-source /etc/locale.conf
+# source /etc/locale.conf
 
 # Default programs:
 export EDITOR="nvim"

@@ -9,8 +9,8 @@ syntax on
 " colorscheme TSnazzy
 " colorscheme aurora
 
-colorscheme gruvbox-material
-" colorscheme gruvbox
+" colorscheme gruvbox-material
+colorscheme gruvbox
 " colorscheme wal
 
 " checks if your terminal has 24-bit color support
