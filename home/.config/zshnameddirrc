@@ -37,3 +37,4 @@ hash -d pro=/home/saad/Documents/Codes/Python/pyqt/FYP
 hash -d qt=/home/saad/Documents/Codes/Python/pyqt 
 hash -d ci=/home/saad/cisco-configs 
 hash -d po=$HOME/.config/polybar/ 
+hash -d dO=$HOME/.dotfiles 

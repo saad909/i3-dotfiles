@@ -5,5 +5,5 @@ setbg &
 remaps&
 touchpad &
 sxhkd &
-$HOME/.config/polybar/launch.sh --forest &
+$HOME/.config/polybar/launch.sh &
 exec i3

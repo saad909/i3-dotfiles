@@ -7,7 +7,7 @@
 		<DpiFactorY>1</DpiFactorY>
 	</Meta>
 	<Application>
-		<LastUpdateCheck>2021-04-04T06:16:53Z</LastUpdateCheck>
+		<LastUpdateCheck>2021-04-10T07:01:35Z</LastUpdateCheck>
 		<LastUsedFile>
 			<Path>../../../home/saad/keepass/keepass_database.kdbx</Path>
 			<CredProtMode>Obf</CredProtMode>
@@ -155,13 +155,14 @@
 		</EntryListColumnCollection>
 		<EntryListColumnDisplayOrder>0 1 2 3 4</EntryListColumnDisplayOrder>
 		<ListSorting>
-			<Column>0</Column>
 			<Order>Ascending</Order>
 		</ListSorting>
 	</MainWindow>
 	<UI>
 		<TrayIcon />
-		<Hiding />
+		<Hiding>
+			<HideInEntryWindow>false</HideInEntryWindow>
+		</Hiding>
 		<StandardFont>
 			<Family>FiraCode Nerd Font Mono</Family>
 			<Size>11</Size>
@@ -209,8 +210,8 @@
 		<LastUsedProfile>
 			<Name>(Derive from previous password)</Name>
 			<GeneratorType>CharSet</GeneratorType>
-			<Length>4</Length>
-			<CharSetRanges>__D_______</CharSetRanges>
+			<Length>64</Length>
+			<CharSetRanges>_LD_______</CharSetRanges>
 		</LastUsedProfile>
 		<UserProfiles />
 	</PasswordGenerator>
@@ -307,7 +308,7 @@
 		</Item>
 		<Item>
 			<Key>KeeOneDrive</Key>
-			<Value>{"/home/saad/Dropbox/.keys_database (latitude's conflicted copy 2021-03-29).kdbx":{"RefreshToken":null,"RefreshTokenStorage":null,"OneDriveName":null,"RemoteDatabasePath":null,"RemoteFolderId":null,"RemoteDriveId":null,"RemoteItemId":null,"RemoteFileName":null,"DoNotSync":false,"LocalFileHash":null,"ETag":null,"LastSyncedAt":null,"LastCheckedAt":null,"CloudStorageType":4},"/home/saad/keepass/keepass_database.kdbx":{"RefreshToken":"M.R3_BAY.CdAhnpHWebmEqyphDzCjPUiaKsUcILHo2MGg*GJdSOwIfB6IoeUnETd56eWik*eSpOW5bdy0fI*P*RpfFCi1x2s4KYS3M1aQMEIxfu1gh5UZHuFCZbgePCHtBpdIYw4TZU4O2iCTPUhdkamXuN7k71fpamtqDcTyHZaJhr2BB0EI2kECyzUn9853Mf9zDBBGnRvBBQahfxh39hkH73Fqv43Mg3WxjL*NNO1yoz1lrVJkwT8IUd5PDg1x!XR8KGUjDqFVRJCfwivjLydvd8j6fshLKBiqLWWoHEYaM3wmVBlLJ!ODoS8KrInVPZSxBrSkurptuFZnJVJA7MHHGKsPvRwxFfFplFJmNvLBvzFkRrl4ADRIUjOHdtgHl2HA9ScOdHNS1iaT1h1aIFcpbP3Uxz73OdGS9Tt2atygpOCEUrcc","RefreshTokenStorage":null,"OneDriveName":"Abuhurraira Saad","RemoteDatabasePath":"/root/keepass_database.kdbx","RemoteFolderId":"45C5ABEDE57012E8!199","RemoteDriveId":"45c5abede57012e8","RemoteItemId":"45C5ABEDE57012E8!208","RemoteFileName":"keepass_database.kdbx","DoNotSync":false,"LocalFileHash":"93185C0E6D1FDF5A2D08434FE5A7314B4E27B44F","ETag":"aYzo0NUM1QUJFREU1NzAxMkU4ITIwOC4yOTA","LastSyncedAt":"2021-04-04T11:17:02.580186+05:00","LastCheckedAt":"2021-04-04T11:17:02.580193+05:00","CloudStorageType":4}}</Value>
+			<Value>{"/home/saad/Dropbox/.keys_database (latitude's conflicted copy 2021-03-29).kdbx":{"RefreshToken":null,"RefreshTokenStorage":null,"OneDriveName":null,"RemoteDatabasePath":null,"RemoteFolderId":null,"RemoteDriveId":null,"RemoteItemId":null,"RemoteFileName":null,"DoNotSync":false,"LocalFileHash":null,"ETag":null,"LastSyncedAt":null,"LastCheckedAt":null,"CloudStorageType":4},"/home/saad/keepass/keepass_database.kdbx":{"RefreshToken":"M.R3_BAY.CYCw4I*iPzYYPRJNn4NJ7YYdkkw8WlSEYHZqlNXRx1uNdZr5vWNPbvlRk5r3YgDsdP25zo2szCVZ85txdK4N9a*XndDg2Fw85UXN41BkFJJZN17x1cpdsUeELscobpV7WpAvVe6HeYXfq9r*W6NOOIe4*2yxqHfdJd!NpmU3Zeb2uZxW2M*YfHIBwwTexS1ah!DzXxkk9YyAmw3YgaY2PeowBrK!bqkJtnHNFbN*dlhz2fTVYPvtqNBjAKaUCCIU!K!XG14sC08oPUgbqVaX7MxmRxrU5L7zuGkEwhT8lkrNC5pzPoCjBfjYeksGWJHTsV28QlOCqp*MHVC0D6F*quPUAnts3U5uIThvCdfYP1PL5LGRvIhhYV9jCWD7P68m674052Fct1bdX5hwgCg!ONVKwArgIpfhvSMbFBJ27xTK","RefreshTokenStorage":null,"OneDriveName":"Abuhurraira Saad","RemoteDatabasePath":"/root/keepass_database.kdbx","RemoteFolderId":"45C5ABEDE57012E8!199","RemoteDriveId":"45c5abede57012e8","RemoteItemId":"45C5ABEDE57012E8!208","RemoteFileName":"keepass_database.kdbx","DoNotSync":false,"LocalFileHash":"84ACADA24B4C7785C816966E6519D3050DDC3AE4","ETag":"aYzo0NUM1QUJFREU1NzAxMkU4ITIwOC4yOTI","LastSyncedAt":"2021-04-07T16:17:20.852652+05:00","LastCheckedAt":"2021-04-10T12:02:14.513384+05:00","CloudStorageType":4}}</Value>
 		</Item>
 	</Custom>
 </Configuration>

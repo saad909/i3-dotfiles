@@ -1,9 +1,19 @@
+colorscheme gruvbox
+colorscheme gray-88
+colorscheme cyan
+colorscheme dracula
+colorscheme xterm-white
+colorscheme zenburn
+colorscheme jellybeans
+colorscheme default
+set display_artist_sort_name=true
+set aaa_mode=artist
+bind common ctrl colorscheme
+bind -f common I echo {}
 win-sel-cur 
 win-sel-cur ?
 set 
-colorscheme gruvbox
 colorscheme gruvbox-alt
-colorscheme default
 set altformat_current
 set status_display_program=cmus_song
 :set status_display_program=cmus_song
@@ -12,7 +22,6 @@ pl-create nazams
 live-filter 
 q!
 pl-create James Author
-colorscheme dracula
 setkk
 pl-create Umer Songs
 q
@@ -29,17 +38,12 @@ colorscheme
 set color_error
 hidd
 col
-colorscheme gray-88
 pl-export
 live-filter LLKKKKK
 colorscheme green
 colorscheme solarized-light
-colorscheme zenburn
-colorscheme xterm-white
 colorscheme solarized-dark
 colorscheme night
-colorscheme jellybeans
-colorscheme cyan
 colorscheme random
 live-filter L
 toggle play_library

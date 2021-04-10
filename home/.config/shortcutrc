@@ -38,6 +38,7 @@ pro="cd /home/saad/Documents/Codes/Python/pyqt/FYP && ls -a" \
 qt="cd /home/saad/Documents/Codes/Python/pyqt && ls -a" \
 ci="cd /home/saad/cisco-configs && ls -a" \
 po="cd $HOME/.config/polybar/ && ls -a" \
+dO="cd $HOME/.dotfiles && ls -a" \
 cfz="$EDITOR $ZDOTDIR/.zshrc" \
 cfv="$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.vim" \
 cfi="$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/i3/config" \

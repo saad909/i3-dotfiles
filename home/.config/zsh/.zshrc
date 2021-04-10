@@ -6,6 +6,8 @@ ZSH_THEME="robbyrussell"
 plugins=(git extract zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
+# Load syntax highlighting; should be last.
+source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
 
 # # Enable colors and change prompt:
 # autoload -U colors && colors	# Load colors
@@ -23,12 +25,12 @@ source $ZSH/oh-my-zsh.sh
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/aliasrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/aliasrc"
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/zshnameddirrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/zshnameddirrc"
 
-# Basic auto/tab complete:
-autoload -U compinit
-zstyle ':completion:*' menu select
-zmodload zsh/complist
-compinit
-_comp_options+=(globdots)		# Include hidden files.
+# # Basic auto/tab complete:
+# autoload -U compinit
+# zstyle ':completion:*' menu select
+# zmodload zsh/complist
+# compinit
+# _comp_options+=(globdots)		# Include hidden files.
 
 # vi mode
 bindkey -v
@@ -57,20 +59,20 @@ zle-line-init() {
     zle -K viins # initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)
     echo -ne "\e[5 q"
 }
-zle -N zle-line-init
-echo -ne '\e[5 q' # Use beam shape cursor on startup.
-preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
+# zle -N zle-line-init
+# echo -ne '\e[5 q' # Use beam shape cursor on startup.
+# preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
-# Use lf to switch directories and bind it to ctrl-o
-lfcd () {
-    tmp="$(mktemp)"
-    lf -last-dir-path="$tmp" "$@"
-    if [ -f "$tmp" ]; then
-        dir="$(cat "$tmp")"
-        rm -f "$tmp" >/dev/null
-        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
-    fi
-}
+# # Use lf to switch directories and bind it to ctrl-o
+# lfcd () {
+#     tmp="$(mktemp)"
+#     lf -last-dir-path="$tmp" "$@"
+#     if [ -f "$tmp" ]; then
+#         dir="$(cat "$tmp")"
+#         rm -f "$tmp" >/dev/null
+#         [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
+#     fi
+# }
 # bindkey -s '^o' 'lfcd\n'
 
 # bindkey -s '^a' 'bc -l\n'
@@ -83,8 +85,6 @@ bindkey -s '^f' 'cd "$(dirname "$(fzf)")"\n'
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^v' edit-command-line
 
-# Load syntax highlighting; should be last.
-source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
 
 #oh my zsh
 alias rd="vim ~/.config/directories"
@@ -95,6 +95,8 @@ bindkey -s '^p' 'cmus\n'
 bindkey -s '^r' 'ranger\n'
 bindkey -s '^z' 'zsh\n'
 bindkey -s '^t' 'tto\n'
+bindkey -s '^y' 'yokadi\n'
+bindkey -s '^t' 'pomodoro\n'
 # cat /home/$USER/.cache/wal/sequences
 ##########test rmd file for configs#########
 alias test="nvim /home/$USER/Documents/Experiments/test.cfg"
@@ -102,7 +104,6 @@ alias test="nvim /home/$USER/Documents/Experiments/test.cfg"
 
 
 
-# bindkey -s '^m' 'mux\n'
 alias mux='pgrep -vx tmux > /dev/null && \
 		tmux new -d -s delete-me && \
 		tmux run-shell ~/.config/tmux/ressurect/scripts/restore.sh && \
@@ -110,16 +111,8 @@ alias mux='pgrep -vx tmux > /dev/null && \
 		tmux attach || tmux attach'
 
 
-# . /home/saad/.local/share/lscolors.sh
-#source $(dirname $(gem which colorls))/tab_complete.sh
 alias cls="clear"
-alias bbat="bluetooth_battery 41:42:F3:39:6C:5E"
 alias tp="nvim-qt /tmp/python_test.py"
-alias open="xdg-open"
-alias pom=pomodoro
-# alias script="mkdir ~/cisco-configs;cd cisco-config/"
 
 
-# neofetch
-unix
 

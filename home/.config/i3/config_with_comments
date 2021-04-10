@@ -1,10 +1,15 @@
-#--------------------- setting up variables ------------------------------
+# --------------------- setting up variables ------------------------------
+# Mod1 = Alt
+# Mod4 = Super
+# Function {{{3
 set $Mod Mod4
+# direction keys 
 set $up k
 set $down j
 set $left h
 set $right l
-#--------------------- gaps and windows general properties  ------------------------------
+# --------------------- gaps and windows general properties  ------------------------------
+# fonts
 font pango:FantasqueSansMono Nerd Font Mono 9
 new_window normal
 new_float  normal
@@ -16,11 +21,16 @@ gaps inner 10
 gaps outer 10
 smart_borders on
 smart_borders no_gaps
-# border_radius 3
+border_radius 3
 title_align center
 focus_follows_mouse yes
-#--------------------- resize container ------------------------------
+# --------------------- resize container ------------------------------
 mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
         bindsym h resize shrink width 5 px or 5 ppt
         bindsym j resize grow height 5 px or 5 ppt
         bindsym k resize shrink height 5 px or 5 ppt
@@ -34,7 +44,8 @@ mode "resize" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
-#---------------- colorscheme ---------------------------------
+
+# ---------------- colorscheme ---------------------------------
  set_from_resource $c0 i3wm.color0 #f0f0f0
  set_from_resource $c1 i3wm.color1 #f0f0f0
  set_from_resource $c2 i3wm.color2 #f0f0f0
@@ -52,12 +63,14 @@ mode "resize" {
  set_from_resource $c14 i3wm.color14 #f0f0f0
  set_from_resource $c15 i3wm.color15 #f0f0f0
 
+# class                 border  backgr. text indicator child_border
 client.focused_inactive $c7     $c7     $c0  $c7       $c7
 client.focused $c2     $c2     $c7  $c2       $c2
+# client.unfocused        $c2     $c2     $c7  $c2       $c2
 client.urgent           $c4     $c4     $c0  $c2       $c2
 client.placeholder      $c2     $c2     $c7  $c2       $c2
 client.background       $c0
-#---------------- keybindings ---------------------------------
+# ---------------- keybindings ---------------------------------
 bindsym XF86AudioRaiseVolume exec --no-startup-id "amixer -D pulse sset Master 5%+"
 bindsym XF86AudioLowerVolume exec --no-startup-id "amixer -D pulse sset Master 5%-"
 bindsym $Mod+q kill
@@ -123,6 +136,7 @@ bindsym --release Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~
 bindsym --release Ctrl+Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' && echo -n $(ls -l -t ~/Pictures/screenshots | head -n 2 | grep sc | awk '{ printf "/home/$USER/Pictures/screenshots/" $9}') | xclip -selection c  &&  kolourpaint $(xclip -selection c -o)
 bindsym --release Shift+Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots`ls -1 -t ~/Pictures/screenshots | head -1`'  && echo -n $(ls -l -t ~/Documents/Notes/pictures | head -n 2 | grep sc | awk '{ printf "/home/$USER/Documents/Notes/pictures/" $9}') | xclip -selection c
 bindsym --release Ctrl+Shift+Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`'  && echo -n $(ls -l -t ~/Pictures/screenshots | head -n 2 | grep sc | awk '{ printf "/home/$USER/Pictures/screenshots/" $9}') | xclip -selection c && kolourpaint $(xclip -selection c -o)
+# scratchpad 
 bindsym ctrl+u [instance="terminal_dropdown"] scratchpad show, move position center
 bindsym ctrl+p [instance="terminal_pomodoro"] scratchpad show, move position center
 bindsym $Mod+n border normal
@@ -142,37 +156,68 @@ bindsym XF86AudioNext        exec --no-startup-id playerctl next
 bindsym XF86AudioPrev        exec --no-startup-id playerctl previous
 bindsym XF86AudioStop        exec --no-startup-id playerctl stop
 bindsym XF86AudioMute        exec --no-startup-id "amixer -D pulse set Master 1+ toggle"
-#---------------- startup ---------------------------------
-exec --no-startup-id remaps
-exec --no-startup-id compton
-exec --no-startup-id nm-applet
-exec --no-startup-id blueman-applet
-exec --no-startup-id flameshot
-exec --no-startup-id xfce4-power-manager
-exec --no-startup-id xinput --set-prop 15 'libinput Accel Speed' 1
-exec --no-startup-id setbg
-exec --no-startup-id touchpad
+# bindsym $Mod+Shift+c reload
+# bindsym $mod+m bar mode toggle
+# bindsym $mod+return exec kitty
+# bindsym $mod+F1 exec i3-resurrect restore -w $ws3
+# bindsym $mod+p move workspace to LVDS-1 right
+# bindsym $MOD1+1 exec $HOME/.config/i3/i3_focus_or_run.sh 1
+# bindsym $MOD1+2 exec $HOME/.config/i3/i3_focus_or_run.sh 2
+# bindsym $MOD1+3 exec $HOME/.config/i3/i3_focus_or_run.sh 3
+# bindsym $MOD1+4 exec $HOME/.config/i3/i3_focus_or_run.sh 4
+# bindsym $MOD1+5 exec $HOME/.config/i3/i3_focus_or_run.sh 5
+# bindsym $MOD1+6 exec $HOME/.config/i3/i3_focus_or_run.sh 6
+# bindsym XF86MonBrightnessUp   exec --no-startup-id light -A 10
+# bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10
+# layout toggle, keycode 23 is Tab 
+# bindcode Mod1+23 layout toggle tabbed split
+# bindcode $Mod+23 layout toggle splitv splith
+# ---------------- startup ---------------------------------
+exec remaps
+exec compton
+exec  nm-applet
+exec blueman-applet
+exec flameshot
+exec xfce4-power-manager
+exec xinput --set-prop 15 'libinput Accel Speed' 1
+exec setbg
+exec touchpad
+# scratchpads
 exec --no-startup-id alacritty  --class terminal_dropdown &
 exec --no-startup-id alacritty  --class terminal_pomodoro &
-#---------------- run at every config reload ---------------------------------
+
+
+# exec echo 123 | sudo -S virsh net-autostart default
+# exec '/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)'
+# exec flameshot
+# exec commands {{{1
+# exec setbg 
+#exec echo " " > /tmp/recordingicon
+# ---------------- run at every config reload ---------------------------------
 exec_always --no-startup-id $HOME/.config/polybar/forest/launch.sh &
 exec_always autotiling
 exec_always key_changed
 exec_always --no-startup-id xrdb -load ~/.Xresources
-#---------------- programs properties ---------------------------------
+#exec_always --no-startup-id /home/$USER/.config/i3blocks/scripts/i3-battery-popup
+#exec_always setbg "/home/ExternalHDD/Pictures/pop"
+# ---------------- programs properties ---------------------------------
+# system 
 for_window [class=".*"] border pixel 3 #*
 for_window [urgent="latest"] focus
 for_window [title="(?i)(?:copying|deleting|moving)"] floating enable
 for_window [window_role="(?i)(?:pop-up|setup)"]      floating enable
+
+# user programs
 for_window [class="main.py"] floating enable
 for_window [title="Microsoft Teams - Preview"] floating enable
 for_window [class="Galculator"] floating enable border pixel 1
 for_window [class="Pavucontrol"] floating enable
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="mpv"] focus
+# scratchpad windows properties
 for_window [instance="terminal_dropdown"] floating enable, resize set 800 600, move scratchpad
 for_window [instance="terminal_pomodoro"] floating enable, resize set 500 500, move scratchpad
-#---------------- assign programs to specific workspaces  ---------------------------------
+# ---------------- assign programs to specific workspaces  ---------------------------------
 assign [class="okular"] $ws9
 assign [class="GNS3"] $ws4
 assign [class="mpv"] $ws3
@@ -191,15 +236,18 @@ assign [class="Filezilla"] $ws9
 assign [class="firefox"] $ws2
 assign [class="vlc"] $ws5
 assign [class="smplayer"] $ws5
-#---------------- multi monitor ---------------------------------
-# workspace 1 output LVDS-1
-# workspace 2 output LVDS-1
-# workspace 3 output LVDS-1
-# workspace 8 output LVDS-1
-
-# workspace 4 output VGA-1
-# workspace 5 output VGA-1
-# workspace 6 output VGA-1
-# workspace 7 output VGA-1
-#r workspace 9 output VGA-1
-# workspace 10 output VGA-1
+# assign [class="java-lang-Thread"] $ws7
+# assign [class="Zathura"] $ws9
+# ---------------- multi monitor ---------------------------------
+# screen 1
+workspace 1 output LVDS-1
+workspace 2 output LVDS-1
+workspace 3 output LVDS-1
+workspace 8 output LVDS-1
+# screen 2
+workspace 4 output VGA-1
+workspace 5 output VGA-1
+workspace 6 output VGA-1
+workspace 7 output VGA-1
+workspace 9 output VGA-1
+workspace 10 output VGA-1

@@ -38,3 +38,4 @@ pro /home/saad/Documents/Codes/Python/pyqt/FYP
 qt /home/saad/Documents/Codes/Python/pyqt
 ci /home/saad/cisco-configs
 po $HOME/.config/polybar/
+dO $HOME/.dotfiles
