@@ -16,7 +16,7 @@ set $ws8 "8 "
 set $ws9 "9 "
 set $ws10 "10 "
 #--------------------- gaps and windows general properties  ------------------------------
-font pango:FantasqueSansMono NF 9
+font pango:FantasqueSansMono Nerd Font Mono 9
 new_window normal
 new_float  normal
 focus_on_window_activation   urgent
@@ -69,6 +69,8 @@ client.urgent           $c4     $c4     $c0  $c2       $c2
 client.placeholder      $c2     $c2     $c7  $c2       $c2
 client.background       $c0
 #---------------- keybindings ---------------------------------
+bindsym $Mod+Shift+r restart
+bindsym $Mod+c reload
 bindsym XF86AudioRaiseVolume exec --no-startup-id "amixer -D pulse sset Master 5%+"
 bindsym XF86AudioLowerVolume exec --no-startup-id "amixer -D pulse sset Master 5%-"
 bindsym $Mod+q kill
@@ -112,8 +114,6 @@ bindsym $Mod+Shift+Left  move left  10px
 bindsym $Mod+Shift+Right move right 10px
 bindsym $mod+space floating toggle
 bindsym ctrl+space focus mode_toggle
-bindsym $Mod+Shift+r restart
-bindsym $Mod+c reload
 bindsym $Mod+Shift+z move scratchpad
 bindsym $Mod+z scratchpad show
 bindsym $Mod+$left  focus left

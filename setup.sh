@@ -95,6 +95,7 @@ install_fonts(){
 	mkdir $HOME/.local/share/fonts; cd $HOME/.local/share/fonts;
 	curl -LO https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/FiraCode/Regular/complete/Fira%20Code%20Regular%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.ttf
 	curl -LO https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/FantasqueSansMono/Regular/complete/Fantasque%20Sans%20Mono%20Regular%20Nerd%20Font%20Complete%20Windows%20Compatible.ttf
+	echo "source /etc/locale.conf" | sudo tee -a /etc/profile.d/locale.sh
 }
 # functions
 printf "\n\n\t\t------------------------ Step(1/9) install packages ------------------------\n\n"

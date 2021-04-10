@@ -1,9 +1,9 @@
-# # oh-my-zsh
+# oh-my-zsh
 # export ZSH="/home/saad/.oh-my-zsh"
-# # ZSH_THEME="crunch"
-# # ZSH_THEME="arrow"
+# ZSH_THEME="crunch"
+# ZSH_THEME="arrow"
 # ZSH_THEME="robbyrussell"
-# # plugins=( zsh-autosuggestions )
+# plugins=( zsh-autosuggestions )
 
 # source $ZSH/oh-my-zsh.sh
 # Load syntax highlighting; should be last.
@@ -15,9 +15,9 @@ setopt autocd		# Automatically cd into typed directory.
 stty stop undef		# Disable ctrl-s to freeze terminal.
 
 # History in cache directory:
-# HISTSIZE=10000
-# SAVEHIST=10000
-# HISTFILE=~/.cache/zsh/history
+HISTSIZE=10000
+SAVEHIST=10000
+HISTFILE=~/.cache/zsh/history
 
 # Load aliases and shortcuts if existent.
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc"
@@ -65,5 +65,4 @@ alias mux='pgrep -vx tmux > /dev/null && \
 alias cls="clear"
 alias tp="nvim-qt /tmp/python_test.py"
 
-
-
+# source /etc/locale.conf
