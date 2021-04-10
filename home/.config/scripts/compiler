@@ -42,7 +42,7 @@ case "$ext" in
 		fi ; ;;
 	mom) preconv "$file" | refer -PS -e | groff -mom -kept -T pdf > "$base".pdf ;;
 	ms) preconv "$file" | refer -PS -e | groff -me -ms -kept -T pdf > "$base".pdf ;;
-	py) python "$file" ;;
+	py) alacritty -e $SHELL -c "python '$file';echo Press enter to continue;read test ";;
 	[rR]md) Rscript -e "rmarkdown::render('$file', 'pdf_document', quiet=TRUE)" ;;
 	rs) cargo build ;;
    sass) sassc -a "$file" "$base.css" ;;
