@@ -11,4 +11,5 @@ nm-applet &
 xfce4-power-manager &
 blueman-applet &
 autotiling &
+dunst &
 exec i3

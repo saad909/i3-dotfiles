@@ -61,4 +61,6 @@ libvirt
 iptables
 unzip
 p7zip
-
+network-manager-applet
+redshift
+dunst

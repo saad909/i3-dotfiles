@@ -45,32 +45,9 @@ mode "resize" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
-#---------------- colorscheme ---------------------------------
- set_from_resource $c0 i3wm.color0 #f0f0f0
- set_from_resource $c1 i3wm.color1 #f0f0f0
- set_from_resource $c2 i3wm.color2 #f0f0f0
- set_from_resource $c3 i3wm.color3 #f0f0f0
- set_from_resource $c4 i3wm.color4 #f0f0f0
- set_from_resource $c5 i3wm.color5 #f0f0f0
- set_from_resource $c6 i3wm.color6 #f0f0f0
- set_from_resource $c7 i3wm.color7 #f0f0f0
- set_from_resource $c8 i3wm.color8 #f0f0f0
- set_from_resource $c9 i3wm.color9 #f0f0f0
- set_from_resource $c10 i3wm.color10 #f0f0f0
- set_from_resource $c11 i3wm.color11 #f0f0f0
- set_from_resource $c12 i3wm.color12 #f0f0f0
- set_from_resource $c13 i3wm.color13 #f0f0f0
- set_from_resource $c14 i3wm.color14 #f0f0f0
- set_from_resource $c15 i3wm.color15 #f0f0f0
-
-client.focused_inactive $c7     $c7     $c0  $c7       $c7
-client.focused $c2     $c2     $c7  $c2       $c2
-client.urgent           $c4     $c4     $c0  $c2       $c2
-client.placeholder      $c2     $c2     $c7  $c2       $c2
-client.background       $c0
 #---------------- keybindings ---------------------------------
-bindsym $Mod+Shift+r restart
-bindsym $Mod+c reload
+# bindsym $Mod+Shift+r restart
+# bindsym $Mod+c reload
 bindsym XF86AudioRaiseVolume exec --no-startup-id "amixer -D pulse sset Master 5%+"
 bindsym XF86AudioLowerVolume exec --no-startup-id "amixer -D pulse sset Master 5%-"
 bindsym $Mod+q kill
@@ -154,6 +131,29 @@ bindsym XF86AudioNext        exec --no-startup-id playerctl next
 bindsym XF86AudioPrev        exec --no-startup-id playerctl previous
 bindsym XF86AudioStop        exec --no-startup-id playerctl stop
 bindsym XF86AudioMute        exec --no-startup-id "amixer -D pulse set Master 1+ toggle"
+#---------------- colorscheme ---------------------------------
+ set_from_resource $c0 i3wm.color0 #f0f0f0
+ set_from_resource $c1 i3wm.color1 #f0f0f0
+ set_from_resource $c2 i3wm.color2 #f0f0f0
+ set_from_resource $c3 i3wm.color3 #f0f0f0
+ set_from_resource $c4 i3wm.color4 #f0f0f0
+ set_from_resource $c5 i3wm.color5 #f0f0f0
+ set_from_resource $c6 i3wm.color6 #f0f0f0
+ set_from_resource $c7 i3wm.color7 #f0f0f0
+ set_from_resource $c8 i3wm.color8 #f0f0f0
+ set_from_resource $c9 i3wm.color9 #f0f0f0
+ set_from_resource $c10 i3wm.color10 #f0f0f0
+ set_from_resource $c11 i3wm.color11 #f0f0f0
+ set_from_resource $c12 i3wm.color12 #f0f0f0
+ set_from_resource $c13 i3wm.color13 #f0f0f0
+ set_from_resource $c14 i3wm.color14 #f0f0f0
+ set_from_resource $c15 i3wm.color15 #f0f0f0
+
+client.focused_inactive $c7     $c7     $c0  $c7       $c7
+client.focused $c2     $c2     $c7  $c2       $c2
+client.urgent           $c4     $c4     $c0  $c2       $c2
+client.placeholder      $c2     $c2     $c7  $c2       $c2
+client.background       $c0
 #---------------- startup ---------------------------------
 # exec --no-startup-id remaps
 # exec --no-startup-id compton
@@ -167,7 +167,7 @@ bindsym XF86AudioMute        exec --no-startup-id "amixer -D pulse set Master 1+
 exec --no-startup-id alacritty  --class terminal_dropdown &
 exec --no-startup-id alacritty  --class terminal_pomodoro &
 #---------------- run at every config reload ---------------------------------
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh &
+# exec_always --no-startup-id $HOME/.config/polybar/launch.sh &
 # exec_always autotiling
 exec_always key_changed
 # exec_always --no-startup-id xrdb -load ~/.Xresources
