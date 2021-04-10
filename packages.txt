@@ -51,7 +51,6 @@ ntfs-3g
 nm-connection-editor
 flameshot
 xfce4-power-manager
-neovim-qt
 dash
 alsa-utils
 docker
