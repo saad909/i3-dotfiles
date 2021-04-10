@@ -6,10 +6,10 @@ setbg &
 remaps &
 touchpad &
 sxhkd &
-sh $HOME/.config/polybar/launch.sh &
-nm-applet &
-xfce4-power-manager &
-blueman-applet &
 autotiling &
 dunst &
+sh $HOME/.config/polybar/launch.sh &
+nm-applet &
+blueman-applet &
+xfce4-power-manager &
 exec i3

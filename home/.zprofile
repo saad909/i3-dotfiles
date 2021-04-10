@@ -9,6 +9,7 @@
 # polkit authentication enabled for multibootusb software
 export PATH="$PATH:$(du "$HOME/.config/scripts" | cut -f2 | paste -sd ':')"
 export PATH="$PATH:$(du "$HOME/.local/bin" | cut -f2 | paste -sd ':')"
+source /etc/locale.conf
 
 # Default programs:
 export EDITOR="nvim"

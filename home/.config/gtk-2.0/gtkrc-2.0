@@ -1,0 +1,11 @@
+gtk-can-change-accels = 1
+
+gtk-icon-theme-name = "Yaru"
+gtk-theme-name = "Arc-Gruvbox"
+
+style "user-font"
+{
+        font_name="FantasqueSansMono Nerd Font Mono"
+}
+widget_class "*" style "user-font"
+gtk-font-name = "FantasqueSansMono Nerd Font Mono 9"
