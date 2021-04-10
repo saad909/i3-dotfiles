@@ -35,7 +35,6 @@ zsh-autosuggestions
 fzf
 zsh-syntax-highlighting
 stow
-libvirt
 lib32-gcc-libs
 lib32-openssl
 lsd
@@ -44,3 +43,19 @@ lxappearance
 i3-gaps
 lftp
 keepass
+python-pynvim
+python2
+linux-headers
+light
+ntfs-3g
+nm-connection-editor
+flameshot
+xfce4-power-manager
+neovim-qt
+dash
+alsa-utils
+docker
+ebtables
+dnsmasq
+libvirt
+iptables

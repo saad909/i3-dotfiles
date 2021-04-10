@@ -44,6 +44,6 @@ cfv="$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.vim" \
 cfi="$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/i3/config" \
 cfo="$EDITOR ${XDG_CONFIG_HOME:-$HOME/.config}/fontconfig/fonts.conf" \
 cfr="$EDITOR ~/.config/ranger/rc.conf" \
-cfp="$EDITOR ~/.config/polybar/forest/config.ini" \
+cfp="$EDITOR ~/.config/polybar/config.ini" \
 cfa="$EDITOR ~/.config/alacritty/alacritty.yml" \
 cfsx="$EDITOR ~/.config/sxhkd/sxhkdrc" \

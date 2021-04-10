@@ -109,6 +109,7 @@
 			</Triggers>
 		</TriggerSystem>
 		<PluginCompatibility>
+			<Item>@IwRsTj5z6MHDdeeXC6LNDK5Ojsybv8egOXcH5f23aiw=@2.47.0.18911@1</Item>
 			<Item>@FNa2WjAClOxFSo+gZCHvXP+E87FlBQ5mOqyjj9rW1ow=@2.47.0.18911@1</Item>
 			<Item>@oSyCHRUPaGKtsf91E7UBaqyA3ihdz0b+PLVHtPAtZ40=@2.47.0.18911@1</Item>
 			<Item>@JC+a0wKI7jmjaLnGKHeznUwCTK6xtKHS5+IDD3gWCYY=@2.47.0.18911@1</Item>
@@ -308,7 +309,7 @@
 		</Item>
 		<Item>
 			<Key>KeeOneDrive</Key>
-			<Value>{"/home/saad/Dropbox/.keys_database (latitude's conflicted copy 2021-03-29).kdbx":{"RefreshToken":null,"RefreshTokenStorage":null,"OneDriveName":null,"RemoteDatabasePath":null,"RemoteFolderId":null,"RemoteDriveId":null,"RemoteItemId":null,"RemoteFileName":null,"DoNotSync":false,"LocalFileHash":null,"ETag":null,"LastSyncedAt":null,"LastCheckedAt":null,"CloudStorageType":4},"/home/saad/keepass/keepass_database.kdbx":{"RefreshToken":"M.R3_BAY.CYCw4I*iPzYYPRJNn4NJ7YYdkkw8WlSEYHZqlNXRx1uNdZr5vWNPbvlRk5r3YgDsdP25zo2szCVZ85txdK4N9a*XndDg2Fw85UXN41BkFJJZN17x1cpdsUeELscobpV7WpAvVe6HeYXfq9r*W6NOOIe4*2yxqHfdJd!NpmU3Zeb2uZxW2M*YfHIBwwTexS1ah!DzXxkk9YyAmw3YgaY2PeowBrK!bqkJtnHNFbN*dlhz2fTVYPvtqNBjAKaUCCIU!K!XG14sC08oPUgbqVaX7MxmRxrU5L7zuGkEwhT8lkrNC5pzPoCjBfjYeksGWJHTsV28QlOCqp*MHVC0D6F*quPUAnts3U5uIThvCdfYP1PL5LGRvIhhYV9jCWD7P68m674052Fct1bdX5hwgCg!ONVKwArgIpfhvSMbFBJ27xTK","RefreshTokenStorage":null,"OneDriveName":"Abuhurraira Saad","RemoteDatabasePath":"/root/keepass_database.kdbx","RemoteFolderId":"45C5ABEDE57012E8!199","RemoteDriveId":"45c5abede57012e8","RemoteItemId":"45C5ABEDE57012E8!208","RemoteFileName":"keepass_database.kdbx","DoNotSync":false,"LocalFileHash":"84ACADA24B4C7785C816966E6519D3050DDC3AE4","ETag":"aYzo0NUM1QUJFREU1NzAxMkU4ITIwOC4yOTI","LastSyncedAt":"2021-04-07T16:17:20.852652+05:00","LastCheckedAt":"2021-04-10T12:02:14.513384+05:00","CloudStorageType":4}}</Value>
+			<Value>{"/home/saad/Dropbox/.keys_database (latitude's conflicted copy 2021-03-29).kdbx":{"RefreshToken":null,"RefreshTokenStorage":null,"OneDriveName":null,"RemoteDatabasePath":null,"RemoteFolderId":null,"RemoteDriveId":null,"RemoteItemId":null,"RemoteFileName":null,"DoNotSync":false,"LocalFileHash":null,"ETag":null,"LastSyncedAt":null,"LastCheckedAt":null,"CloudStorageType":4},"/home/saad/keepass/keepass_database.kdbx":{"RefreshToken":"M.R3_BAY.CVQP7vc4tz635!t1eLaumlOmZFxn858TKYn1kEgoaxobJ8TGr*t0PBAzkyI4MiKfIat84XeZveqW3NnZu9YCVXEXPhPNetC8f8MTWUOt6B9VU7WbT*Olikfz*Bdrw2AGztTPa*KLDFduxlP*zSvD7EbcQj8rgEIko5qCLYRfcaKwHCwkZrS*QYh91cRpiCehD7N7d9gzaCqkOARYJD*aDHDc0rfpFZ262Ra7KCNfKWp3*v3CBhfrOOxhFkbrUyArkrDXrUeEXGGHd4Yp7ruz*UW7pFlUYmUJZgWo2JMaY!XKkE1!LM2AX!ZxBGMw5Qt0gBw6B3eU50HgqN8JiG9pc2sQQ6M8tU8EplGe2mBeh5uou92D6U7hNjtWpqoDC6V9Ob!tEPW0aDXzJ49rQ2y4BwrjVZeQXebKbrRCyD7LEXRe","RefreshTokenStorage":null,"OneDriveName":"Abuhurraira Saad","RemoteDatabasePath":"/root/keepass_database.kdbx","RemoteFolderId":"45C5ABEDE57012E8!199","RemoteDriveId":"45c5abede57012e8","RemoteItemId":"45C5ABEDE57012E8!208","RemoteFileName":"keepass_database.kdbx","DoNotSync":false,"LocalFileHash":"84ACADA24B4C7785C816966E6519D3050DDC3AE4","ETag":"aYzo0NUM1QUJFREU1NzAxMkU4ITIwOC4yOTI","LastSyncedAt":"2021-04-07T11:17:20.852652+00:00","LastCheckedAt":"2021-04-10T11:38:07.989307+00:00","CloudStorageType":4}}</Value>
 		</Item>
 	</Custom>
 </Configuration>

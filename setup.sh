@@ -49,9 +49,15 @@ install_securecrt(){
 }
 install_gns3(){
 	paru -S gns3-gui gns3-server  ubridge --noconfirm --needed
+	sudo systemctl enable libvirtd;sudo systemctl start libvirtd
+  sudo systemctl enable docker.service
+  sudo systemctl start docker.service
+  sudo gpasswd -a "$USER" docker
+  sudo gpasswd -a "$USER" libvirt
+
 }
 setup_keepass(){
-	sudo mv $HOME/.dotfiles/keepass_plugins/*.plgx /usr/share/keepass/plugins
+	sudo mkdir -p /usr/share/keepass/plugins;sudo mv $HOME/.dotfiles/keepass_plugins/*.plgx /usr/share/keepass/plugins
 }
 setup_for_networking(){
 	# setup for networking
@@ -63,11 +69,11 @@ setup_for_networking(){
 		install_securecrt
 		install_gns3
 		setup_keepass
-		echo "Done ........"
-		return
+		echo "Done..... Logout and login again ........"
+		exit
 	else
-		echo "Done ........"
-		return
+		echo "Done..... Logout and login again ........"
+		exit
 	fi
 }
 change_shell(){
@@ -77,7 +83,13 @@ android_automount_setup(){
 	paru -S mtpfs jmtpfs gvfs-mtp gvfs-gphoto2  --noconfirm
 }
 stop(){
+	echo "Press enter to continue"
 	read test
+}
+externalHDD(){
+echo" 
+UUID=43EE29300D321D27   /home/ExternalHDD       ntfs-3g         defaults,rw     0 0 
+" | sudo tee -a /etc/fstab
 }
 # functions
 printf "\n\n\t\t------------------------ Step(1/8) install packages ------------------------\n\n"

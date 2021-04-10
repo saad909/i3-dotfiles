@@ -3,6 +3,6 @@ cfv	${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.vim
 cfi	${XDG_CONFIG_HOME:-$HOME/.config}/i3/config
 cfo	${XDG_CONFIG_HOME:-$HOME/.config}/fontconfig/fonts.conf
 cfr	~/.config/ranger/rc.conf
-cfp	~/.config/polybar/forest/config.ini
+cfp	~/.config/polybar/config.ini
 cfa ~/.config/alacritty/alacritty.yml
 cfsx ~/.config/sxhkd/sxhkdrc
