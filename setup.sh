@@ -28,13 +28,12 @@ set_wallpaper(){
 }
 setting_up_bluetooth(){
 	# bluetooth setup
-	sudo pacman -S bluez bluez-utils-compat blueman --noconfirm --needed
+	sudo pacman -S bluez  blueman --noconfirm --needed
+	sudo paru -S bluez-utils-compat --noconfirm --needed 
 	sudo cp /etc/bluetooth/main.conf{,.bak}
-	echo "
-	AutoEnable=yes
-	" | sudo tee -a /etc/bluetooth/main.conf
-	sudo systemctl start bluetooth.service
+	echo "AutoEnable=true" | sudo tee -a /etc/bluetooth/main.conf
 	sudo systemctl enable bluetooth.service
+	sudo systemctl start bluetooth.service
 }
 install_vmware(){
 	# install vmware

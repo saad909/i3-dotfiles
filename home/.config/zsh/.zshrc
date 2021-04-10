@@ -1,18 +1,28 @@
 # oh-my-zsh
-# export ZSH="/home/saad/.oh-my-zsh"
+export ZSH="/home/saad/.oh-my-zsh"
 # ZSH_THEME="crunch"
 # ZSH_THEME="arrow"
-# ZSH_THEME="robbyrussell"
+ZSH_THEME="robbyrussell"
 # plugins=( zsh-autosuggestions )
+# plugins=( git extract zsh-autosuggestions)
+plugins=(
+  git
+  bundler
+  dotenv
+  osx
+  rake
+  rbenv
+  ruby
+)
 
-# source $ZSH/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
 # Load syntax highlighting; should be last.
 
 # Enable colors and change prompt:
-autoload -U colors && colors	# Load colors
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
-setopt autocd		# Automatically cd into typed directory.
-stty stop undef		# Disable ctrl-s to freeze terminal.
+# autoload -U colors && colors	# Load colors
+# PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+# setopt autocd		# Automatically cd into typed directory.
+# stty stop undef		# Disable ctrl-s to freeze terminal.
 
 # History in cache directory:
 HISTSIZE=10000

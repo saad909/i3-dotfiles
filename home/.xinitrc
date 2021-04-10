@@ -7,8 +7,8 @@ remaps &
 touchpad &
 sxhkd &
 sh $HOME/.config/polybar/launch.sh &
-blueman-applet &
 nm-applet &
 xfce4-power-manager &
+blueman-applet &
 autotiling &
 exec i3
