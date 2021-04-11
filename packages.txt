@@ -65,3 +65,4 @@ redshift
 dunst
 msgpack-c
 noevim-qt
+pulseaudio-alsa

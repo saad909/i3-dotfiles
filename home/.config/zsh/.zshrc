@@ -4,10 +4,8 @@ export ZSH="/home/saad/.oh-my-zsh"
 # ZSH_THEME="arrow"
 ZSH_THEME="robbyrussell"
 # plugins=( zsh-autosuggestions )
-# plugins=( git extract zsh-autosuggestions)
-plugins=(
-  git
-)
+plugins=( git extract )
+
 
 source $ZSH/oh-my-zsh.sh
 # Load syntax highlighting; should be last.

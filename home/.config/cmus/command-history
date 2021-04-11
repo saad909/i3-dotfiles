@@ -1,11 +1,12 @@
+colr
 colorscheme gruvbox
+colorscheme default
 colorscheme gray-88
 colorscheme cyan
 colorscheme dracula
 colorscheme xterm-white
 colorscheme zenburn
 colorscheme jellybeans
-colorscheme default
 set display_artist_sort_name=true
 set aaa_mode=artist
 bind common ctrl colorscheme

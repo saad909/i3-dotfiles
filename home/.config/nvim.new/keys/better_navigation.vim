@@ -51,6 +51,7 @@ else
   imap <silent> <C-s> <esc>:w<CR>
   " Alternate way to quit
   nnoremap <silent> <C-Q> :wq!<CR>
+  im <silent> <C-s> <esc>:w<CR>
   " Use control-c instead of escape
   nnoremap <silent> <C-c> <Esc>
   " <TAB>: completion.
@@ -98,3 +99,4 @@ endif
 " Better nav for omnicomplete
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
+

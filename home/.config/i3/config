@@ -15,6 +15,8 @@ set $ws7 "7 "
 set $ws8 "8 "
 set $ws9 "9 "
 set $ws10 "10 "
+workspace 4 gaps inner 0
+workspace 4 gaps outer 0
 #--------------------- gaps and windows general properties  ------------------------------
 font pango:Fantasque Sans Mono 9
 new_window normal
