@@ -1,0 +1,1 @@
+figlet  -w 80 "$1" | xclip -selection clipboard
