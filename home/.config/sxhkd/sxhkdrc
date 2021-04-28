@@ -151,6 +151,9 @@ ctrl+F12
 
 
 
+shift F12
+  internal_touchpad.sh
+
 F12
   internal_keyboard.sh
 
