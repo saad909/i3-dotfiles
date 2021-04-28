@@ -83,8 +83,8 @@ autocmd FileType python imap <buffer> <F10> <esc>:w<CR>:exec '!python3 main.py'<
 
 set colorcolumn=80
 
-execute "set t_8f=\e[38;2;%lu;%lu;%lum"
-execute "set t_8b=\e[48;2;%lu;%lu;%lum"
+" execute "set t_8f=\e[38;2;%lu;%lu;%lum"
+" execute "set t_8b=\e[48;2;%lu;%lu;%lum"
 
 map <leader>p :!opout "%"<CR>
 
@@ -94,6 +94,16 @@ let g:vim_pbcopy_local_cmd = "pbcopy"
 let g:vim_pbcopy_escape_backslashes = 0
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 let g:tex_flavour='latex'
-" set guifont=FiraCode\ Nerd\ Font\ Mono:h12
-set guifont=Fantasque\ Sans\ Mono:h15
+" set guifont=Ubuntu\ Mono:h16
+" set guifont=FiraCode\ Nerd\ Font\ Mono:h13
+set guifont=JetBrains\ Mono:h13
+" set guifont=FantasqueSansMono\ Nerd\ Font\ Mono:h15
+" set guifont=Inconsolata:h12
 let g:kite_supported_languages = ['python']
+" cnoremap w!! execute <silent> write !sudo tee % >/dev/null' <bar> edit!
+" When shortcut files are updated, renew bash and ranger configs with new material:
+	autocmd BufWritePost directories,files !shortcuts
+
+cmap w!! w !sudo tee > /dev/null %
+
+command! -nargs=0 Pretty :CocCommand prettier.formatFile

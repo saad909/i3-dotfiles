@@ -66,3 +66,7 @@ dunst
 msgpack-c
 noevim-qt
 pulseaudio-alsa
+terminus-font
+mpv
+zathura
+zathura-pdf-mupdf

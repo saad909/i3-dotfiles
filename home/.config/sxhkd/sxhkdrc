@@ -113,7 +113,7 @@ super + Return
 
 # file manager
 super + F3
-  thunar
+  pcmanfm
 
 # reload keys
 super + c
@@ -148,17 +148,11 @@ super+shift+F12
   qutebrowser  "/home/ExternalHDD/SoftwaresAndTricks/Linux/Tricks/i3/index.html"
 ctrl+F12
   resolution
-super+shift+r
-  $HOME/.config/bspwm/bspwmrc
 
-# super+d
-#   dmenu_run -nb "$fg" -nf "$bg"j-sb "$bg" -sf "$fg"
-  # rofi -show run
-ctrl+alt+delete
-  bspc quit
 
-super F5
- nvim-qt "/home/saad/Documents/Codes/Python/pyqt/FYP/main.py"
+
+F12
+  internal_keyboard.sh
 
 # layout
 

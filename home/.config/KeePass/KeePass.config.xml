@@ -7,7 +7,7 @@
 		<DpiFactorY>1</DpiFactorY>
 	</Meta>
 	<Application>
-		<LastUpdateCheck>2021-04-11T13:39:29Z</LastUpdateCheck>
+		<LastUpdateCheck>2021-04-13T06:50:46Z</LastUpdateCheck>
 		<LastUsedFile>
 			<Path>../../../home/saad/keepass/keepass_database.kdbx</Path>
 			<CredProtMode>Obf</CredProtMode>
@@ -125,6 +125,7 @@
 		<SplitterHorizontalFrac>0.83420593368237339</SplitterHorizontalFrac>
 		<SplitterVerticalFrac>0.25151515151515152</SplitterVerticalFrac>
 		<CloseButtonMinimizesWindow>true</CloseButtonMinimizesWindow>
+		<EscAction>MinimizeToTray</EscAction>
 		<MinimizeToTray>true</MinimizeToTray>
 		<MinimizeAfterClipboardCopy>true</MinimizeAfterClipboardCopy>
 		<MinimizeAfterAutoType>true</MinimizeAfterAutoType>
@@ -161,11 +162,9 @@
 	</MainWindow>
 	<UI>
 		<TrayIcon />
-		<Hiding>
-			<HideInEntryWindow>false</HideInEntryWindow>
-		</Hiding>
+		<Hiding />
 		<StandardFont>
-			<Family>FiraCode Nerd Font Mono</Family>
+			<Family>Fantasque Sans Mono</Family>
 			<Size>11</Size>
 			<GraphicsUnit>Point</GraphicsUnit>
 			<Style>Regular</Style>
@@ -178,7 +177,8 @@
 			<Style>Regular</Style>
 			<OverrideUIDefault>true</OverrideUIDefault>
 		</PasswordFont>
-		<BannerStyle>WinVistaBlack</BannerStyle>
+		<BannerStyle>BlueCarbon</BannerStyle>
+		<ToolStripRenderer>OeUFBLZWFOdPE2hRhbOHxg==</ToolStripRenderer>
 		<DataEditorFont>
 			<Family>Microsoft Sans Serif</Family>
 			<Size>8.25</Size>
@@ -224,7 +224,7 @@
 		<UserProfiles />
 	</Search>
 	<Defaults>
-		<OptionsTabIndex>4</OptionsTabIndex>
+		<OptionsTabIndex>2</OptionsTabIndex>
 		<KeySources>
 			<Association>
 				<DatabasePath>../../../home/saad/.keys_database.kdbx</DatabasePath>
@@ -297,7 +297,7 @@
 		</Item>
 		<Item>
 			<Key>KeePassRPC.webSocket.port</Key>
-			<Value>12000</Value>
+			<Value>12546</Value>
 		</Item>
 		<Item>
 			<Key>KeePassRPC.Key.066fb77a-a97e-489e-a8a3-9b055895ce84</Key>
@@ -309,7 +309,11 @@
 		</Item>
 		<Item>
 			<Key>KeeOneDrive</Key>
-			<Value>{"/home/saad/Dropbox/.keys_database (latitude's conflicted copy 2021-03-29).kdbx":{"RefreshToken":null,"RefreshTokenStorage":null,"OneDriveName":null,"RemoteDatabasePath":null,"RemoteFolderId":null,"RemoteDriveId":null,"RemoteItemId":null,"RemoteFileName":null,"DoNotSync":false,"LocalFileHash":null,"ETag":null,"LastSyncedAt":null,"LastCheckedAt":null,"CloudStorageType":4},"/home/saad/keepass/keepass_database.kdbx":{"RefreshToken":"M.R3_BAY.CW2iFy1zBc0dJsuSGpV*VIi2a0!!LLCQH6GjPIiKuYwjyLgIlqnwjZQRQ0AwayvbadfYqU37Q4gLBE9lfTPJZ8MY0nrzXKNp5qoZ843qrtkB02dhY2X6USu5IdSIV3MZWAibhBMpcYYQiSTByDrhjK2j6bNNejplKZi7NzP17q4Igi9P*LHUnZcoKHg28XFXMI5JbBba9rpVGXMa3SUcWM5SccP3wXf11FaXJ86iugWP0vXlKzuG8pezUZcdYvcvWs1CZHIZGFpXQyfyBqhuwTeZQKIiCVq9urIHnjWzPwKyS*5l63a1dgXGN0sfIP4Ax1SeUgHoNWtNOd9efU6BZcbPBLPUPA25ivDbT*5*RkAUfdV20C4fXTC56h0*MF48!hEStnZH8xy0xmLMNyHQgW9TqG3aiQKHJ0U1W2wsWeB!","RefreshTokenStorage":null,"OneDriveName":"Abuhurraira Saad","RemoteDatabasePath":"/root/keepass_database.kdbx","RemoteFolderId":"45C5ABEDE57012E8!199","RemoteDriveId":"45c5abede57012e8","RemoteItemId":"45C5ABEDE57012E8!208","RemoteFileName":"keepass_database.kdbx","DoNotSync":false,"LocalFileHash":"84ACADA24B4C7785C816966E6519D3050DDC3AE4","ETag":"aYzo0NUM1QUJFREU1NzAxMkU4ITIwOC4yOTI","LastSyncedAt":"2021-04-07T16:17:20.852652+05:00","LastCheckedAt":"2021-04-11T18:39:51.577579+05:00","CloudStorageType":4}}</Value>
+			<Value>{"/home/saad/Dropbox/.keys_database (latitude's conflicted copy 2021-03-29).kdbx":{"RefreshToken":null,"RefreshTokenStorage":null,"OneDriveName":null,"RemoteDatabasePath":null,"RemoteFolderId":null,"RemoteDriveId":null,"RemoteItemId":null,"RemoteFileName":null,"DoNotSync":false,"LocalFileHash":null,"ETag":null,"LastSyncedAt":null,"LastCheckedAt":null,"CloudStorageType":4},"/home/saad/keepass/keepass_database.kdbx":{"RefreshToken":"M.R3_BAY.CXEw*KTVMHFMC33pr0EHeAubA9QCwPU03jEtxBwCU0fuX0wfmi6r9x5NW0AYxlooD*noaxoW*hdBLvF46wWP8lDj96Gr5jtTAM05O32xvW11DtQxPe5a2xKVARYK4ltn!*MV0l2cScXKJE!0d!BIuUMbB!55Qc1!XGLk!vfG8AOj!ioFN!qOSIy47IgtezDqnNAl1dBXjeWIHT4XckpayWps9bfi9ufbXfWi3!n*fvOT7It*phGDPS29GBwfH0haSYPUcQmLF19Snbf!S1A6x9Y8y8LvDIhAiguiXrAg0CfCXX*xMMb7GW4!KBtpjf*MnTzl!JRM13DtpjUreTodRzmn9haf9ZU0C8mgI*1hdR4HCH*5h!dQQnHU913fIz!XEBkgVYGsRs4M89tdkF0rSm5WDv1ZjWhuTFubOGGEwIxv","RefreshTokenStorage":null,"OneDriveName":"Abuhurraira Saad","RemoteDatabasePath":"/root/keepass_database.kdbx","RemoteFolderId":"45C5ABEDE57012E8!199","RemoteDriveId":"45c5abede57012e8","RemoteItemId":"45C5ABEDE57012E8!208","RemoteFileName":"keepass_database.kdbx","DoNotSync":false,"LocalFileHash":"84ACADA24B4C7785C816966E6519D3050DDC3AE4","ETag":"aYzo0NUM1QUJFREU1NzAxMkU4ITIwOC4yOTI","LastSyncedAt":"2021-04-07T16:17:20.852652+05:00","LastCheckedAt":"2021-04-13T15:49:21.058055+05:00","CloudStorageType":4}}</Value>
+		</Item>
+		<Item>
+			<Key>KeePassRPC.Key.2d37640c-aa71-45e4-8ad8-8d7b8b9a46f6</Key>
+			<Value>AEIRYgfGE5ZrOYV3XH7BYpb8dJl6c4x+0qVSkVWxoh0OI4lmY/UMMowsGEetb78eYaulZyOU+PGi7tRBrftlI/FrAbaljGe5RJUXAKKbQTcGalgBlLsMbGG+SN+gsar0tU6T32AJElTQh9QWsqy5KiL7R+cyk62aSSs9uyBUQfzC/WA4D+h9zTUfciApOAvuRJ1jH7goLw0j45loNHrh/85KRpLWfJiYLtzkvksXwE7m7+7n8uiE3tQkNF55GYIsbkX0HkjKekw8wZPzqQTJss50DdzhfmXZ/uLM+JX3jHI0h8HnUpUo0sAUNYmAMcdytF9QU1E8lExcdRvmyruwmp1MACzw1vEdVgcHMsid7QrUv2a5DQqP4LivjmnqAurQfYKqQFNfA6hbn8XT+ESakdu0GU2f0t/kxyMEG//Ap77GsuK3EDsYHYMOahIray5AcZxo1gDdey9GC+8+SFeKr7TfxiGTDUjISlv49iLJorHd8acNO5Tzxu1fIxQNUiEUPX5xxsaM2d9JKxNXe76C9lgW+ucJO05ycS+goXeFELcDxYHeUYtYb8hfG67v3RFBKoozrgvmp5iKe5uvaxx1jJEpLjVMr1oe/Ig/03vt9061+EI0WAv5ObcOnPMSVVZlOSssiGoRqTasWAfprvSqy8AL0vm15hB/JeB5ZNdL4HogeJm8bf7gJMjw0DBQYgEIxx4/JNmW1dHAJEp1srBttMs20rFRJVcNbz+GzyEUkjNNMbCj3tQTDXOpKTzSgqPvQ+0MT0wfQIEmeI2EhO9IQg==</Value>
 		</Item>
 	</Custom>
 </Configuration>

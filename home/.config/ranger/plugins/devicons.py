@@ -10,8 +10,8 @@ import os
 # My advice is to use NerdFonts which can be found here:
 # https://github.com/ryanoasis/nerd-fonts
 file_node_extensions = {
-    "iso": "﫭",
     "7z": "",
+    "iso": "",
     "ai": "",
     "apk": "",
     "avi": "",

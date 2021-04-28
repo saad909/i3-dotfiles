@@ -2,9 +2,9 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/saad/.gtkrc-2.0.mine"
-gtk-theme-name="Arc-Gruvbox"
-gtk-icon-theme-name="Yaru"
-gtk-font-name="Fantasque Sans Mono 10"
+gtk-theme-name="Ant-Dracula"
+gtk-icon-theme-name="Adwaita"
+gtk-font-name="Fantasque Sans Mono 9"
 gtk-cursor-theme-name="Adwaita"
 gtk-cursor-theme-size=0
 gtk-toolbar-style=GTK_TOOLBAR_BOTH
@@ -15,6 +15,6 @@ gtk-enable-event-sounds=1
 gtk-enable-input-feedback-sounds=1
 gtk-xft-antialias=1
 gtk-xft-hinting=1
-gtk-xft-hintstyle="hintfull"
-gtk-xft-rgba="vrgb"
+gtk-xft-hintstyle="hintslight"
+gtk-xft-rgba="rgb"
 gtk-modules="gail:atk-bridge"

@@ -6,4 +6,5 @@ echo 123 | sudo -S rm /tmp/create_ap.all.lock
 #[ -z $passowrd ] && exit
 password="password@123"
 ssid="sharedInternet"
-notify-send "Hotspot $ssid created successfully" && echo 123 | sudo -S create_ap  $(wiface) $(wiface) "$ssid" $password
+notify-send "Hotspot $ssid created successfully" \
+	&& echo 123 | sudo -S create_ap  $(wiface) $(wiface) "$ssid" $password

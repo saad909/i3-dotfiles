@@ -47,12 +47,15 @@ else
   xnoremap J :move '>+1<CR>gv-gv
 
   " Alternate way to save
-  nnoremap <silent> <C-s> :w<CR>
-  imap <silent> <C-s> <esc>:w<CR>
+  nnoremap <silent> <C-s> :w!<CR>
+  imap <silent> <C-s> <esc>:w!<CR>
   " Alternate way to quit
-  nnoremap <silent> <C-Q> :wq!<CR>
+  nnoremap <silent> <C-Q> :q!<CR>
   " Use control-c instead of escape
-  nnoremap <silent> <C-c> <Esc>
+  " nnoremap <silent> <C-c> <Esc>
+  " select all text with control-a
+  map <silent><C-c> <esc>:%y+<CR>
+  map <silent><C-a> <esc>ggVG<CR>
   " <TAB>: completion.
   inoremap <silent> <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 

@@ -15,20 +15,20 @@ set $ws7 "7 "
 set $ws8 "8 "
 set $ws9 "9 "
 set $ws10 "10 "
-workspace 4 gaps inner 0
-workspace 4 gaps outer 0
+# workspace 4 gaps inner 0
+# workspace 4 gaps outer 0
 #--------------------- gaps and windows general properties  ------------------------------
 font pango:Fantasque Sans Mono 9
 new_window normal
 new_float  normal
 focus_on_window_activation   urgent
-popup_during_fullscreen smart
+popup_during_fullscreen leave_fullscreen
 #Drag floating windows
 floating_modifier $Mod
-gaps inner 10
-gaps outer 10
-smart_borders on
-smart_borders no_gaps
+# gaps inner 10
+# gaps outer 10
+# smart_borders on
+# smart_borders no_gaps
 # border_radius 3
 title_align center
 focus_follows_mouse yes
@@ -103,21 +103,20 @@ bindsym $Mod+Left  focus left
 bindsym $Mod+Down  focus down
 bindsym $Mod+Up    focus up
 bindsym $Mod+Right focus right
-bindsym $mod+shift+V split horizontal
-bindsym $mod+v split  vertical
 bindsym $Mod+f fullscreen toggle
 bindsym $Mod+s layout stacking
 bindsym $Mod+w layout tabbed
+bindsym $mod1+v split  vertical
 bindsym $Mod+e layout toggle split
 bindsym $Mod+Shift+space floating toggle
-bindsym --release Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' && echo -n $(ls -l -t ~/Pictures/screenshots | head -n 2 | grep sc | awk '{ printf "/home/$USER/Pictures/screenshots/" $9}') | xclip -selection c # All screens
-bindsym --release Ctrl+Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' && echo -n $(ls -l -t ~/Pictures/screenshots | head -n 2 | grep sc | awk '{ printf "/home/$USER/Pictures/screenshots/" $9}') | xclip -selection c  &&  kolourpaint $(xclip -selection c -o)
-bindsym --release Shift+Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots`ls -1 -t ~/Pictures/screenshots | head -1`'  && echo -n $(ls -l -t ~/Documents/Notes/pictures | head -n 2 | grep sc | awk '{ printf "/home/$USER/Documents/Notes/pictures/" $9}') | xclip -selection c
-bindsym --release Ctrl+Shift+Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`'  && echo -n $(ls -l -t ~/Pictures/screenshots | head -n 2 | grep sc | awk '{ printf "/home/$USER/Pictures/screenshots/" $9}') | xclip -selection c && kolourpaint $(xclip -selection c -o)
-bindsym ctrl+u [instance="terminal_dropdown"] scratchpad show, move position center
+# bindsym --release Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' && echo -n $(ls -l -t ~/Pictures/screenshots | head -n 2 | grep sc | awk '{ printf "/home/$USER/Pictures/screenshots/" $9}') | xclip -selection c # All screens
+# bindsym --release Ctrl+Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' && echo -n $(ls -l -t ~/Pictures/screenshots | head -n 2 | grep sc | awk '{ printf "/home/$USER/Pictures/screenshots/" $9}') | xclip -selection c  &&  kolourpaint $(xclip -selection c -o)
+# bindsym --release Shift+Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots`ls -1 -t ~/Pictures/screenshots | head -1`'  && echo -n $(ls -l -t ~/Documents/Notes/pictures | head -n 2 | grep sc | awk '{ printf "/home/$USER/Documents/Notes/pictures/" $9}') | xclip -selection c
+# bindsym --release Ctrl+Shift+Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`'  && echo -n $(ls -l -t ~/Pictures/screenshots | head -n 2 | grep sc | awk '{ printf "/home/$USER/Pictures/screenshots/" $9}') | xclip -selection c && kolourpaint $(xclip -selection c -o)
+bindsym ctrl+semicolon [instance="terminal_dropdown"] scratchpad show, move position center
 bindsym ctrl+p [instance="terminal_pomodoro"] scratchpad show, move position center
-bindsym $Mod+n border normal
-bindsym $Mod+y border 1 pixel
+# bindsym $Mod+n border normal
+# bindsym $Mod+y border 1 pixel
 bindsym $Mod+plus                gaps inner current plus  5
 bindsym $Mod+minus               gaps inner current minus 5
 bindsym $Mod+Shift+plus          gaps outer current plus  5
@@ -157,15 +156,12 @@ client.urgent           $c4     $c4     $c0  $c2       $c2
 client.placeholder      $c2     $c2     $c7  $c2       $c2
 client.background       $c0
 #---------------- startup ---------------------------------
-exec --no-startup-id remaps
 exec --no-startup-id picom
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 exec --no-startup-id flameshot
 exec --no-startup-id xfce4-power-manager
-exec --no-startup-id xinput --set-prop 15 'libinput Accel Speed' 1
 exec --no-startup-id setbg
-exec --no-startup-id touchpad
 exec --no-startup-id sxhkd
 exec --no-startup-id autotiling
 exec --no-startup-id dunst
@@ -189,9 +185,13 @@ for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="mpv"] focus
 for_window [instance="terminal_dropdown"] floating enable, resize set 800 600, move scratchpad
 for_window [instance="terminal_pomodoro"] floating enable, resize set 500 500, move scratchpad
+for_window [instance="compiler_terminal"] floating enable
+for_window [instance="floating_terminal"] floating enable
 #---------------- assign programs to specific workspaces  ---------------------------------
+assign [class="SecureCRT"] $ws4
 assign [class="okular"] $ws9
 assign [class="GNS3"] $ws4
+assign [class="obs"] $ws10
 assign [class="mpv"] $ws3
 assign [class="VirtualBox Manager"] $ws10
 assign [class="Vmware"] $ws5

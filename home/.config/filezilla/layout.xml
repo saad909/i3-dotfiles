@@ -6,7 +6,7 @@
 			<xrc file="dialogs.xrc" date="1616892021" />
 		</Resources>
 		<Language id="en_US" date="">
-			<Font font="Sans 10" width="725" height="15" />
+			<Font font="Fantasque Sans Mono 10" width="875" height="14" />
 		</Language>
 	</Layout>
 </FileZilla3>

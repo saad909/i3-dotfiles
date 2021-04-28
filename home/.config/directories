@@ -1,4 +1,5 @@
-# You can add comments to these files with #
+#You can add comments to these files with #
+ho /home/saad
 cf  ${XDG_CONFIG_HOME:-$HOME/.config}
 pp  ${XDG_PICTURES_DIR:-$HOME/Pictures}
 wa /home/ExternalHDD/Pictures/Wallpapers
@@ -13,29 +14,25 @@ lm /home/ExternalHDD/Courses/Networking/Cisco/lab_material
 sc /home/saad/.config/scripts
 D ~/Downloads
 do ~/Documents
-os /home/ExternalHDD/OSs
+os /home/ExternalHDD/ISOs
 mm /home/ExternalHDD/Music
 vv ~/Videos
 vV /home/ExternalHDD/Videos
 cf ~/.config
 ra ~/.config/ranger
-bo ~/Documents/Books
-xl ~/Documents/Office/Excel
-wo ~/Documents/Office/Word
-pre ~/Documents/Office/Presentations
-h /home/saad
 vm ~/.config/nvim
 fo ~/.local/share/fonts
 fO /usr/share/fonts
 us /run/media/saad
 tm /tmp
 ca ~/.cache
-ki /run/media/saad/Kindle
 mo /home/ExternalHDD/Movies
 pp /home/ExternalHDD/Pictures
 cu /home/ExternalHDD/Courses-UnderStudy
 pro /home/saad/Documents/Codes/Python/pyqt/FYP
-qt /home/saad/Documents/Codes/Python/pyqt
 ci /home/saad/cisco-configs
 po $HOME/.config/polybar/
 dO $HOME/.dotfiles
+pl /home/saad/cisco-configs/lab_for_programming
+re /home/ExternalHDD/Courses/Networking/Cisco/CCNP/CCNP-retake
+lb /home/ExternalHDD/Courses-UnderStudy/ccnp_labs

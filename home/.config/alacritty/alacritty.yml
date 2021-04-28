@@ -69,13 +69,14 @@ scrolling:
 # Font configuration
 font:
   normal:
-    # family: JetBrainsMono Nerd Font
+    # family: JetBrains Mono
     # family: Comic Mono
     # family: FiraCode Nerd Font Mono
     # family: UbuntuMono Nerd Font Mono
     family: FantasqueSansMono Nerd Font Mono
+    # family: SFMono Nerd Font
     # family: SF Pro Display
-    style: Regular
+    style: Medium
   # bold:
   #   family: FiraCode Nerd Font Mono
   #   style: Bold
@@ -103,7 +104,7 @@ font:
   #style: Bold Italic
 
   # Point size
-  size: 12
+  size: 15
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -120,102 +121,64 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: false
 
-# Colors (Tomorrow Night Bright)
-#colors:
-#  # Default colors
-#  primary:
-#    background: "#191919"
-#    foreground: "#d8dee9"
-
-#    # Bright and dim foreground colors
-#    #
-#    # The dimmed foreground color is calculated automatically if it is not present.
-#    # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
-#    # is `false`, the normal foreground color will be used.
-#    #dim_foreground: '#9a9a9a'
-#    #bright_foreground: '#ffffff'
-
-#  # Cursor colors
-#  #
-#  # Colors which should be used to draw the terminal cursor. If these are unset,
-#  # the cursor color will be the inverse of the cell color.
-#  cursor:
-#    text: "#191919"
-#    cursor: "#d8dee9"
-
-#  vi_mode_cursor:
-#    text: CellBackground
-#    cursor: CellForeground
-#  # Selection colors
-
-#  # Colors which should be used to draw the selection area. If selection
-#  # background is unset, selection color will be the inverse of the cell colors.
-#  # If only text is unset the cell text color will remain the same.
-#  selection:
-#    text: "#191919"
-#    background: "#d8dee9"
-
-#  # Normal colors
-#  normal:
-#    black: "#191919"
-#    red: "#b02626"
-#    green: "#40a62f"
-#    yellow: "#f2e635"
-#    blue: "#314ad0"
-#    magenta: "#b30ad0"
-#    cyan: "#32d0fc"
-#    white: "#acadb1"
-
-#  # Bright colors
-#  bright:
-#    black: "#36393d"
-#    red: "#ce2727"
-#    green: "#47c930"
-#    yellow: "#fff138"
-#    blue: "#2e4bea"
-#    magenta: "#cc15ed"
-#    cyan: "#54d9ff"
-#    white: "#dbdbdb"
-
-#  # Dim colors
-#  dim:
-#    black: "#676f78"
-#    red: "#b55454"
-#    green: "#78a670"
-#    yellow: "#faf380"
-#    blue: "#707fd0"
-#    magenta: "#c583d0"
-#    cyan: "#8adaf1"
-#    white: "#e0e3e7"
-# Colors (Gruvbox Dark)
+# Color# Colors (Dracula+)
 colors:
   bright:
-    black: "#7f7061"
-    blue: "#719586"
-    cyan: "#7db669"
-    green: "#aab01e"
-    magenta: "#c77089"
-    red: "#f73028"
-    white: "#e6d4a3"
-    yellow: "#f7b125"
+    black: "#545454"
+    blue: "#d6acff"
+    cyan: "#a4ffff"
+    green: "#69ff94"
+    magenta: "#ff92df"
+    red: "#ff6e6e"
+    white: "#f8f8f2"
+    yellow: "#ffcb6b"
   cursor:
-    cursor: "#e6d4a3"
-    text: "#1e1e1e"
+    cursor: "#eceff4"
+    text: "#282828"
   normal:
-    black: "#1e1e1e"
-    blue: "#377375"
-    cyan: "#578e57"
-    green: "#868715"
-    magenta: "#a04b73"
-    red: "#be0f17"
-    white: "#978771"
-    yellow: "#cc881a"
+    black: "#21222c"
+    blue: "#82aaff"
+    cyan: "#8be9fd"
+    green: "#50fa7b"
+    magenta: "#c792ea"
+    red: "#ff5555"
+    white: "#f8f8f2"
+    yellow: "#ffcb6b"
   primary:
-    background: "#1e1e1e"
-    foreground: "#e6d4a3"
+    background: "#212121"
+    foreground: "#f8f8f2"
   selection:
-    background: "#e6d4a3"
-    text: "#534a42"
+    background: "#f8f8f2"
+    text: "#545454"
+# (Gruvbox Dark)
+# colors:
+#   bright:
+#     black: "#7f7061"
+#     blue: "#719586"
+#     cyan: "#7db669"
+#     green: "#aab01e"
+#     magenta: "#c77089"
+#     red: "#f73028"
+#     white: "#e6d4a3"
+#     yellow: "#f7b125"
+#   cursor:
+#     cursor: "#e6d4a3"
+#     text: "#1e1e1e"
+#   normal:
+#     black: "#1e1e1e"
+#     blue: "#377375"
+#     cyan: "#578e57"
+#     green: "#868715"
+#     magenta: "#a04b73"
+#     red: "#be0f17"
+#     white: "#978771"
+#     yellow: "#cc881a"
+#   primary:
+#     background: "#1e1e1e"
+#     foreground: "#e6d4a3"
+#   selection:
+#     background: "#e6d4a3"
+#     text: "#534a42"
 # Colors (Batman)
 # Indexed Colors
 #
