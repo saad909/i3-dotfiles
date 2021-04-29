@@ -106,7 +106,6 @@ bindsym $Mod+Right focus right
 bindsym $Mod+f fullscreen toggle
 bindsym $Mod+s layout stacking
 bindsym $Mod+w layout tabbed
-bindsym $mod1+v split  vertical
 bindsym $Mod+e layout toggle split
 bindsym $Mod+Shift+space floating toggle
 # bindsym --release Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' && echo -n $(ls -l -t ~/Pictures/screenshots | head -n 2 | grep sc | awk '{ printf "/home/$USER/Pictures/screenshots/" $9}') | xclip -selection c # All screens
@@ -223,3 +222,4 @@ assign [class="smplayer"] $ws5
  workspace 9 output VGA-1
  workspace 10 output VGA-1
 
+bindsym $mod1+v split  vertical
