@@ -29,7 +29,7 @@ ln -f  "${THEMES_DIR}/kitty/${chosen}.conf" $HOME/.config/kitty/colors.conf
 # polybar
 ln -f $HOME/.config/themes/configs/polybar.conf  $HOME/.config/polybar/colors.ini
 # rofi
-ln -f $HOME/.config/themes/configs/rofi.conf  $HOME/.config/rofi/colors.rasi
+ln -f $HOME/.config/themes/configs/rofi.conf  $HOME/.config/rofi/launchers/colorful/colors.rasi
 
 
 
