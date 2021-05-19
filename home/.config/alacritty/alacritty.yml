@@ -73,35 +73,39 @@ font:
     # family: Comic Mono
     # family: FiraCode Nerd Font Mono
     # family: UbuntuMono Nerd Font Mono
-    family: FantasqueSansMono Nerd Font Mono
+    # family: FantasqueSansMono Nerd Font Mono
+    family: Iosevka
     # family: SFMono Nerd Font
     # family: SF Pro Display
-    style: Medium
+    style: Regular
   # bold:
   #   family: FiraCode Nerd Font Mono
   #   style: Bold
 
   # Italic font face
-  #italic:
+  italic:
   # Font family
   #
+    family: FiraCode Nerd Font Mono
   # If the italic family is not specified, it will fall back to the
   # value specified for the normal font.
   #family: monospace
 
   # The `style` can be specified to pick a specific face.
-  #style: Italic
+    style: Italic
 
   # Bold italic font face
-  #bold_italic:
+  bold_italic:
   # Font family
   #
+    family: FantasqueSansMono Nerd Font Mono
+    # family: Iosevka
   # If the bold italic family is not specified, it will fall back to the
   # value specified for the normal font.
   #family: monospace
 
   # The `style` can be specified to pick a specific face.
-  #style: Bold Italic
+    style: Bold Italic
 
   # Point size
   size: 15

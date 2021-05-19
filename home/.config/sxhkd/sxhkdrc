@@ -1,3 +1,6 @@
+ctrl+alt+s
+  /home/saad/.config/bspwm/rofi/bin/screenshot
+
 ctrl+F4
   alacritty -e pomodoro
 
@@ -49,7 +52,7 @@ ctrl+F1
 
 #shutdown menu
 super+shift+e
-  sysact
+  $HOME/.config/polybar/scripts/powermenu.sh
 
 # hostspot
 ctrl+F8
@@ -108,7 +111,7 @@ alt+shift+h
 
 # alacritty - Terminal
 super + Return
-  alacritty
+  kitty
 
 
 # file manager

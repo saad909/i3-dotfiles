@@ -7,7 +7,7 @@
 		<DpiFactorY>1</DpiFactorY>
 	</Meta>
 	<Application>
-		<LastUpdateCheck>2021-04-13T06:50:46Z</LastUpdateCheck>
+		<LastUpdateCheck>2021-05-18T16:02:07Z</LastUpdateCheck>
 		<LastUsedFile>
 			<Path>../../../home/saad/keepass/keepass_database.kdbx</Path>
 			<CredProtMode>Obf</CredProtMode>
@@ -118,8 +118,8 @@
 	</Application>
 	<Logging />
 	<MainWindow>
-		<X>23</X>
-		<Y>23</Y>
+		<X>20</X>
+		<Y>47</Y>
 		<Width>1328</Width>
 		<Height>722</Height>
 		<SplitterHorizontalFrac>0.83420593368237339</SplitterHorizontalFrac>

@@ -77,8 +77,8 @@ inoremap <expr> <c-k> ("\<C-p>")
 map <leader>c  :w! \| !compiler "%"<CR>
 " Runs a script that cleans out tex build files whenever I close out of a .tex file.
 autocmd VimLeave *.tex !texclear "<c-r>%"<CR>
-autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
-autocmd FileType python imap <buffer> <F10> <esc>:w<CR>:exec '!python3 main.py'<CR>
+" autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
+autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3 main.py'<CR>
 
 
 set colorcolumn=80
@@ -94,11 +94,12 @@ let g:vim_pbcopy_local_cmd = "pbcopy"
 let g:vim_pbcopy_escape_backslashes = 0
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 let g:tex_flavour='latex'
-" set guifont=Ubuntu\ Mono:h16
+set guifont=Ubuntu\ Mono:h15
 " set guifont=FiraCode\ Nerd\ Font\ Mono:h13
-set guifont=JetBrains\ Mono:h13
+" set guifont=JetBrains\ Mono:h13
+" set guifont=FreeMono:h13
 " set guifont=FantasqueSansMono\ Nerd\ Font\ Mono:h15
-" set guifont=Inconsolata:h12
+" set guifont=Fira\ Code:h12
 let g:kite_supported_languages = ['python']
 " cnoremap w!! execute <silent> write !sudo tee % >/dev/null' <bar> edit!
 " When shortcut files are updated, renew bash and ranger configs with new material:

@@ -57,14 +57,13 @@ docker
 ebtables
 dnsmasq
 libvirt
-iptables
 unzip
 p7zip
 network-manager-applet
 redshift
 dunst
 msgpack-c
-noevim-qt
+neovim-qt
 pulseaudio-alsa
 terminus-font
 mpv

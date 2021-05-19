@@ -1,0 +1,64 @@
+#!/bin/bash
+
+KITTY_DIR="$HOME/.config/kitty"
+THEMES_DIR="$HOME/.config/themes"
+DIR="$HOME/.config/bspwm"
+# XDIR="$HOME/.Xresources.d"
+
+files=$(ls "${THEMES_DIR}/Xresources")
+
+options=""
+# options="$theme_1\n$theme_2\n$theme_3\n$theme_4\n$theme_5\n$theme_6"
+for file in $files
+do
+	options+="$files\n"
+done
+rofi_command="rofi -theme $DIR/rofi/themes/launcher.rasi"
+
+chosen="$(echo -e "$options" | $rofi_command -p "Available themes" -dmenu -selected-row 0)"
+echo $chosen
+
+# set theme from Xresources file
+ln -f  "${THEMES_DIR}/Xresources/${chosen}" $HOME/.Xresources.d/colors.conf || exit
+# generate colorschemes
+gen_colorscheme
+
+											### linking themes ###
+# kitty
+ln -f  "${THEMES_DIR}/kitty/${chosen}.conf" $HOME/.config/kitty/colors.conf
+# polybar
+ln -f $HOME/.config/themes/configs/polybar.conf  $HOME/.config/polybar/colors.ini
+# rofi
+ln -f $HOME/.config/themes/configs/rofi.conf  $HOME/.config/rofi/colors.rasi
+
+
+
+
+
+i3-msg reload
+sh $HOME/.config/polybar/launch.sh
+
+WAL_DIR="$HOME/.config/themes/wallpapers"
+case $chosen in
+		dark)
+				setbg "${WAL_DIR}/dark.jpg"
+				;;
+		gruvbox)
+				setbg "${WAL_DIR}/gruvbox.jpg"
+				;;
+		cyberpunk)
+				setbg "${WAL_DIR}/cyberpunk.jpg"
+				;;
+		groot)
+				setbg "${WAL_DIR}/groot.jpg"
+				;;
+		rick)
+				setbg "${WAL_DIR}/rick.jpg"
+				;;
+		nord)
+				setbg "${WAL_DIR}/nord.jpg"
+				;;
+esac
+
+
+

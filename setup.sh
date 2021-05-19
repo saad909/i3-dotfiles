@@ -41,7 +41,7 @@ install_vmware(){
 }
 install_securecrt(){
 	# install securecrt
-	paru -S icu63
+	paru -S icu63 --noconfirm --needed
 	cd /tmp
 	git clone https://github.com/saad909/securecrt-1 scrt
 	cd scrt; chmod +x ./installation.txt;./installation.txt && cd rm ../scrt -rf && cd $HOME/.dotfiles
@@ -64,7 +64,7 @@ setup_for_networking(){
 	read selection
 	if [[ $selection == 'y' || $selection == 'Y' ]]
 	then
-		install_vmware
+		# install_vmware
 		install_securecrt
 		install_gns3
 		setup_keepass
@@ -83,7 +83,7 @@ android_automount_setup(){
 }
 stop(){
 	echo "Press enter to continue"
-	read test
+#	read test
 }
 externalHDD(){
 echo" 
