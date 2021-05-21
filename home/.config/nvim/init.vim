@@ -74,7 +74,7 @@ inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
 
 " compiler
-map <leader>c  :w! \| !compiler "%"<CR>
+map <leader>c  :w! \|  !compiler "%"<CR>
 " Runs a script that cleans out tex build files whenever I close out of a .tex file.
 autocmd VimLeave *.tex !texclear "<c-r>%"<CR>
 " autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>

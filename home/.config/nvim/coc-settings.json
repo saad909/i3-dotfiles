@@ -60,6 +60,7 @@
   "python.venvPath": "",
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "black",
+  "python.jediEnabled":"true",
   "python.formatting.blackArgs": [],
   "python.formatting.autopep8Path": "autopep8",
   "python.formatting.autopep8Args": [],

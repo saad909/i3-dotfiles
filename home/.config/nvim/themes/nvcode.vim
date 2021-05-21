@@ -7,9 +7,9 @@ syntax on
 " colorscheme dracula
 " colorscheme onedark
 " colorscheme TSnazzy
-colorscheme aurora
+" colorscheme aurora
 
-" colorscheme gruvbox-material
+colorscheme gruvbox-material
 " colorscheme gruvbox
 " colorscheme wal
 
