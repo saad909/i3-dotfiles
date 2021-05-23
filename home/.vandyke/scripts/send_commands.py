@@ -19,11 +19,16 @@ def GetTabByName(strName):
     return None
 
 def send_to_all(sessionsArray):
-    command_file_path = os.path.join(dir_path, "all.ini")
+    command_file_path = os.path.join(dir_path, "All.ini")
     for session in sessionsArray:
+        if session == "All":
+            continue
         objTab = GetTabByName(session)
-        if objTab == None:
+        if objTab == None and session == "All":
+            break
+        elif objTab == None:
             crt.Dialog.MessageBox("Tab '{0}' was not found.".format(session))
+
         else:
             objTab.Activate()
             # main code
@@ -34,9 +39,26 @@ def send_to_all(sessionsArray):
                 objTab.Screen.Send(line + '\r')
             # crt.Session.Disconnect()
 
-def Main():
-    errorMessages = ""
 
+def send_to_single_session(session):
+    objTab = GetTabByName(session)
+    if objTab == None:
+        crt.Dialog.MessageBox("Tab '{0}' was not found.".format(
+            session))
+    elif objTab == None and session == "All":
+        return
+    else:
+        objTab.Activate()
+        # main code
+        global dir_path
+        crt.Screen.Synchronous = False
+        command_file_path = os.path.join(dir_path, session + ".ini")
+        # regex = r"\n\s*\n"
+        for line in open(command_file_path, "r"):
+            objTab.Screen.Send(line + '\r')
+        # crt.Session.Disconnect()
+def check_session_file():
+    global file_path
     sessionsFileName = os.path.expanduser(file_path)
     if not os.path.exists(sessionsFileName):
         crt.Dialog.MessageBox(
@@ -44,7 +66,7 @@ def Main():
             sessionsFileName + "\n\n" +
             "Create a session list file as described in the description of " +
             "this script code and then run the script again.")
-        return
+        return False
 
     sessionFile = open(sessionsFileName, "r")
     sessionsArray = []
@@ -54,44 +76,33 @@ def Main():
         if session:  # Don't add empty lines/sessions
             sessionsArray.append(session)
     sessionFile.close()
+    return sessionsArray
+def Main():
+    # errorMessages = ""
 
-    for session in sessionsArray:
-        if session == "all":
-            send_to_all(sessionsArray)
-            return
-        # try:
-        #     crt.Session.Connect("/S \"" + session + "\"")
-        # except Exception as error:
-        #     # error = crt.GetLastErrorMessage()
-        #     crt.Dialog.MessageBox(str( error ))
-        #     continue
+    sessionsArray = check_session_file()
+    if sessionsArray:
 
-
-
-        # crt.Dialog.MessageBox("Device is {}".format(session))
-        objTab = GetTabByName(session)
-        if objTab == None:
-            crt.Dialog.MessageBox("Tab '{0}' was not found.".format(
-                session))
-        else:
-            objTab.Activate()
-            # main code
-            global dir_path
-            crt.Screen.Synchronous = False
-            command_file_path = os.path.join(dir_path, session + ".ini")
-            # regex = r"\n\s*\n"
-            blank = ''
-            for line in open(command_file_path, "r"):
-                if line is blank:
-                    continue
-                else:
-                    objTab.Screen.Send(line + '\r')
-            # crt.Session.Disconnect()
+        for session in sessionsArray:
+            if session == "All":
+                send_to_all(sessionsArray)
+            # try:
+            #     crt.Session.Connect("/S \"" + session + "\"")
+            # except Exception as error:
+            #     # error = crt.GetLastErrorMessage()
+            #     crt.Dialog.MessageBox(str( error ))
+            #     continue
 
 
 
-    if errorMessages == "":
-        crt.Dialog.MessageBox("Tasks completed.  No Errors were detected.")
+# crt.Dialog.MessageBox("Device is {}".format(session))
+            else:
+                send_to_single_session(session)
+
+
+
+    # if errorMessages == "":
+    #     crt.Dialog.MessageBox("Tasks completed.  No Errors were detected.")
 
 
 Main()

@@ -16,9 +16,8 @@ file_path = os.path.join(dir_path,"test.cfg")
 def write_configs(device):
     try:
         global dir_path
-        regex = rf"""
-        ^![\!\s]*{device}\s*[\n]*((?:\n[^\!]*)+)
-        """
+        # old_regex = "^![\!\s]*{device}\s*[\n]*((?:\n[^\!]*)+)" 
+        regex = rf"^#[#\s]*{device}\s*[\n]*((?:\n[^#]*)+)"
         result_list = re.findall(regex.strip(), file_content, re.MULTILINE)
         result = ' '.join([str(elem) for elem in result_list])
         result = os.linesep.join([s for s in result.splitlines() if s])
@@ -44,23 +43,9 @@ def main():
     try:
         infile = open(file_path, 'r')
         first_line = infile.readline()
-        first_line = first_line.replace("!", "").strip()
+        first_line = first_line.replace("#", "").strip()
         all_devices = first_line.split(",")
-        """
-         create the session file containg the names of all the devices. For sending the commands
 
-         By default, the file containing the sessions is expected to be named
-         "SessionList.txt", and should be located in the current user's home
-         directory.  Each line of the file is expected to contain the
-         path to the session as it appears within the Connect dialog (excluding
-         the leading "Sessions/" component.  Here is an example file contents:
-             
-             redhat
-             redhat8
-             192.168.0.123
-             192.168.0.131
-             Redhat Sessions\RedHat - XTerm
-        """
         session_file_contents = '\n'.join([i for i in all_devices[0:]])
         with open(os.path.join(dir_path,"SessionList.txt"),"w") as handler:
             handler.write(session_file_contents)

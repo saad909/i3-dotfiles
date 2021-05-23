@@ -337,3 +337,311 @@
 2021-05-23 22:33:45 INFO web_log.py:206 ::1 [23/May/2021:17:33:45 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
 2021-05-23 22:39:33 INFO web_log.py:206 ::1 [23/May/2021:17:39:33 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
 2021-05-23 22:44:56 INFO web_log.py:206 ::1 [23/May/2021:17:44:56 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 22:50:26 INFO web_log.py:206 ::1 [23/May/2021:17:50:26 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 22:51:01 INFO base_node.py:669 Stopping uBridge hypervisor localhost:37121
+2021-05-23 22:51:01 INFO hypervisor.py:208 Stopping uBridge process PID=23920
+2021-05-23 22:51:01 INFO base_node.py:669 Stopping uBridge hypervisor localhost:33629
+2021-05-23 22:51:01 INFO hypervisor.py:208 Stopping uBridge process PID=23924
+2021-05-23 22:51:01 INFO web_log.py:206 ::1 [23/May/2021:17:51:01 +0000] "POST /v2/compute/projects/c50939dc-1d85-46c3-83fc-ef89bd474005/nat/nodes/1fe76208-2927-41f3-89ec-59cf207a61e5/stop HTTP/1.1" 204 224 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:01 INFO base_node.py:669 Stopping uBridge hypervisor localhost:45633
+2021-05-23 22:51:01 INFO hypervisor.py:208 Stopping uBridge process PID=23928
+2021-05-23 22:51:01 INFO iou_vm.py:698 Stopping IOU process for IOU VM "R3" PID=23943
+2021-05-23 22:51:01 INFO iou_vm.py:698 Stopping IOU process for IOU VM "R2" PID=23937
+2021-05-23 22:51:01 INFO iou_vm.py:698 Stopping IOU process for IOU VM "R3" PID=23943
+2021-05-23 22:51:01 INFO iou_vm.py:1268 saving startup-config to /home/saad/GNS3/projects/wan/project-files/iou/605da9e6-39bc-4391-b7b1-9577e05cdc44/startup-config.cfg
+2021-05-23 22:51:01 INFO web_log.py:206 127.0.0.1 [23/May/2021:17:51:01 +0000] "POST /v2/compute/projects/c50939dc-1d85-46c3-83fc-ef89bd474005/iou/nodes/605da9e6-39bc-4391-b7b1-9577e05cdc44/stop HTTP/1.1" 204 224 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:01 INFO iou_vm.py:698 Stopping IOU process for IOU VM "R2" PID=23937
+2021-05-23 22:51:01 INFO iou_vm.py:1268 saving startup-config to /home/saad/GNS3/projects/wan/project-files/iou/9e27d90c-9dcc-4bfd-8809-37e89bb64d48/startup-config.cfg
+2021-05-23 22:51:01 INFO web_log.py:206 ::1 [23/May/2021:17:51:01 +0000] "POST /v2/compute/projects/c50939dc-1d85-46c3-83fc-ef89bd474005/iou/nodes/9e27d90c-9dcc-4bfd-8809-37e89bb64d48/stop HTTP/1.1" 204 224 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:01 INFO base_node.py:669 Stopping uBridge hypervisor localhost:45773
+2021-05-23 22:51:01 INFO hypervisor.py:208 Stopping uBridge process PID=23970
+2021-05-23 22:51:01 INFO base_node.py:669 Stopping uBridge hypervisor localhost:41661
+2021-05-23 22:51:01 INFO hypervisor.py:208 Stopping uBridge process PID=24038
+2021-05-23 22:51:01 INFO iou_vm.py:698 Stopping IOU process for IOU VM "R1" PID=23941
+2021-05-23 22:51:01 INFO iou_vm.py:698 Stopping IOU process for IOU VM "R1" PID=23941
+2021-05-23 22:51:01 INFO iou_vm.py:1268 saving startup-config to /home/saad/GNS3/projects/wan/project-files/iou/f9bfd25d-5b1d-41f4-b052-2c2438e6e5e1/startup-config.cfg
+2021-05-23 22:51:01 INFO web_log.py:206 127.0.0.1 [23/May/2021:17:51:01 +0000] "POST /v2/compute/projects/c50939dc-1d85-46c3-83fc-ef89bd474005/iou/nodes/f9bfd25d-5b1d-41f4-b052-2c2438e6e5e1/stop HTTP/1.1" 204 224 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:01 INFO docker_vm.py:533 Docker container 'debian-1' fix ownership, state = running
+2021-05-23 22:51:01 INFO docker_vm.py:793 Docker container 'debian-1' [debian:latest] stopped
+2021-05-23 22:51:01 INFO web_log.py:206 127.0.0.1 [23/May/2021:17:51:01 +0000] "POST /v2/compute/projects/c50939dc-1d85-46c3-83fc-ef89bd474005/docker/nodes/0eafd6b9-d7a9-4b58-ba94-6593467dca9f/stop HTTP/1.1" 204 227 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:01 INFO iou_vm.py:698 Stopping IOU process for IOU VM "S1" PID=24042
+2021-05-23 22:51:01 INFO iou_vm.py:698 Stopping IOU process for IOU VM "S1" PID=24042
+2021-05-23 22:51:01 INFO iou_vm.py:1268 saving startup-config to /home/saad/GNS3/projects/wan/project-files/iou/c35e8ac0-7ca2-4d2e-8527-0b61ad8ba81a/startup-config.cfg
+2021-05-23 22:51:01 INFO web_log.py:206 ::1 [23/May/2021:17:51:01 +0000] "POST /v2/compute/projects/c50939dc-1d85-46c3-83fc-ef89bd474005/iou/nodes/c35e8ac0-7ca2-4d2e-8527-0b61ad8ba81a/stop HTTP/1.1" 204 224 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:01 INFO web_log.py:206 ::1 [23/May/2021:17:51:01 +0000] "POST /v2/projects/c50939dc-1d85-46c3-83fc-ef89bd474005/nodes/stop HTTP/1.1" 204 202 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 22:51:02 INFO web_log.py:206 ::1 [23/May/2021:17:51:02 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 22:51:03 INFO web_log.py:206 ::1 [23/May/2021:17:51:03 +0000] "GET /v2/projects HTTP/1.1" 200 29955 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 22:51:07 INFO project_handler.py:280 Client has disconnected from notification stream for project ID 'c50939dc-1d85-46c3-83fc-ef89bd474005' (WebSocket method)
+2021-05-23 22:51:07 INFO project.py:78 Project 5df9e162-2730-432e-95fa-67089a22eb5a with path '/home/saad/GNS3/projects/untitled' created
+2021-05-23 22:51:07 INFO web_log.py:206 ::1 [23/May/2021:17:51:07 +0000] "POST /v2/compute/projects HTTP/1.1" 201 303 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:07 INFO iou_vm.py:73 IOU "R1" [a1d0a53d-a680-4cd7-a117-974be5b09b7b]: assigned with application ID 5
+2021-05-23 22:51:07 INFO iou_vm.py:848 IOU "R1" [a1d0a53d-a680-4cd7-a117-974be5b09b7b]: number of Ethernet adapters changed to 2
+2021-05-23 22:51:07 INFO iou_vm.py:876 IOU "R1" [a1d0a53d-a680-4cd7-a117-974be5b09b7b]: number of Serial adapters changed to 2
+2021-05-23 22:51:07 INFO iou_vm.py:316 IOU "R1" [a1d0a53d-a680-4cd7-a117-974be5b09b7b]: NVRAM updated from 128KB to 64KB
+2021-05-23 22:51:07 INFO iou_vm.py:848 IOU "R1" [a1d0a53d-a680-4cd7-a117-974be5b09b7b]: number of Ethernet adapters changed to 3
+2021-05-23 22:51:07 INFO iou_vm.py:145 IOU "R1" [a1d0a53d-a680-4cd7-a117-974be5b09b7b]: IOU image updated to "/home/saad/GNS3/images/IOU/i86bi-linux-l3-adventerprisek9-ms.155-2.T.bin"
+2021-05-23 22:51:07 INFO iou_vm.py:876 IOU "R1" [a1d0a53d-a680-4cd7-a117-974be5b09b7b]: number of Serial adapters changed to 1
+2021-05-23 22:51:07 INFO base_node.py:542 IOU: 'R1' [a1d0a53d-a680-4cd7-a117-974be5b09b7b]: console port set to 5000
+2021-05-23 22:51:07 INFO web_log.py:206 127.0.0.1 [23/May/2021:17:51:07 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/iou/nodes HTTP/1.1" 201 870 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:07 INFO iou_vm.py:73 IOU "R2" [2fe8ce0f-1363-4af8-b9d2-3f4aa05f517b]: assigned with application ID 6
+2021-05-23 22:51:07 INFO iou_vm.py:848 IOU "R2" [2fe8ce0f-1363-4af8-b9d2-3f4aa05f517b]: number of Ethernet adapters changed to 2
+2021-05-23 22:51:07 INFO iou_vm.py:876 IOU "R2" [2fe8ce0f-1363-4af8-b9d2-3f4aa05f517b]: number of Serial adapters changed to 2
+2021-05-23 22:51:07 INFO iou_vm.py:316 IOU "R2" [2fe8ce0f-1363-4af8-b9d2-3f4aa05f517b]: NVRAM updated from 128KB to 64KB
+2021-05-23 22:51:07 INFO iou_vm.py:848 IOU "R2" [2fe8ce0f-1363-4af8-b9d2-3f4aa05f517b]: number of Ethernet adapters changed to 3
+2021-05-23 22:51:07 INFO iou_vm.py:145 IOU "R2" [2fe8ce0f-1363-4af8-b9d2-3f4aa05f517b]: IOU image updated to "/home/saad/GNS3/images/IOU/i86bi-linux-l3-adventerprisek9-ms.155-2.T.bin"
+2021-05-23 22:51:07 INFO iou_vm.py:876 IOU "R2" [2fe8ce0f-1363-4af8-b9d2-3f4aa05f517b]: number of Serial adapters changed to 1
+2021-05-23 22:51:07 INFO base_node.py:542 IOU: 'R2' [2fe8ce0f-1363-4af8-b9d2-3f4aa05f517b]: console port set to 5001
+2021-05-23 22:51:07 INFO web_log.py:206 ::1 [23/May/2021:17:51:07 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/iou/nodes HTTP/1.1" 201 870 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:07 INFO docker_vm.py:1058 Docker container "PC-1" [2372aa78-e445-4bd0-8829-5a42def420cf]: number of Ethernet adapters changed to 1
+2021-05-23 22:51:07 INFO docker_vm.py:406 Docker container 'PC-1' [2372aa78-e445-4bd0-8829-5a42def420cf] created
+2021-05-23 22:51:07 INFO base_node.py:498 Docker: 'PC-1' [2372aa78-e445-4bd0-8829-5a42def420cf]: aux port set to 5003
+2021-05-23 22:51:07 INFO base_node.py:542 Docker: 'PC-1' [2372aa78-e445-4bd0-8829-5a42def420cf]: console port set to 5002
+2021-05-23 22:51:07 INFO web_log.py:206 127.0.0.1 [23/May/2021:17:51:07 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/docker/nodes HTTP/1.1" 201 920 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:07 INFO docker_vm.py:1058 Docker container "PC-2" [18796b92-95bd-430b-aa45-11f79488dbe9]: number of Ethernet adapters changed to 1
+2021-05-23 22:51:07 INFO docker_vm.py:406 Docker container 'PC-2' [18796b92-95bd-430b-aa45-11f79488dbe9] created
+2021-05-23 22:51:07 INFO base_node.py:498 Docker: 'PC-2' [18796b92-95bd-430b-aa45-11f79488dbe9]: aux port set to 5005
+2021-05-23 22:51:07 INFO base_node.py:542 Docker: 'PC-2' [18796b92-95bd-430b-aa45-11f79488dbe9]: console port set to 5004
+2021-05-23 22:51:07 INFO web_log.py:206 ::1 [23/May/2021:17:51:07 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/docker/nodes HTTP/1.1" 201 920 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:07 INFO docker_vm.py:1058 Docker container "PC-4" [1c6d24c1-c363-426a-a4fd-eba378d8e012]: number of Ethernet adapters changed to 1
+2021-05-23 22:51:07 INFO docker_vm.py:406 Docker container 'PC-4' [1c6d24c1-c363-426a-a4fd-eba378d8e012] created
+2021-05-23 22:51:07 INFO base_node.py:498 Docker: 'PC-4' [1c6d24c1-c363-426a-a4fd-eba378d8e012]: aux port set to 5009
+2021-05-23 22:51:07 INFO base_node.py:542 Docker: 'PC-4' [1c6d24c1-c363-426a-a4fd-eba378d8e012]: console port set to 5008
+2021-05-23 22:51:07 INFO web_log.py:206 127.0.0.1 [23/May/2021:17:51:07 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/docker/nodes HTTP/1.1" 201 920 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:07 INFO docker_vm.py:1058 Docker container "PC-3" [2486b61a-4d45-43a0-bb4a-0f7c182416cc]: number of Ethernet adapters changed to 1
+2021-05-23 22:51:08 INFO docker_vm.py:406 Docker container 'PC-3' [2486b61a-4d45-43a0-bb4a-0f7c182416cc] created
+2021-05-23 22:51:08 INFO base_node.py:498 Docker: 'PC-3' [2486b61a-4d45-43a0-bb4a-0f7c182416cc]: aux port set to 5007
+2021-05-23 22:51:08 INFO base_node.py:542 Docker: 'PC-3' [2486b61a-4d45-43a0-bb4a-0f7c182416cc]: console port set to 5006
+2021-05-23 22:51:08 INFO web_log.py:206 ::1 [23/May/2021:17:51:07 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/docker/nodes HTTP/1.1" 201 920 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:08 INFO web_log.py:206 127.0.0.1 [23/May/2021:17:51:08 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:08 INFO web_log.py:206 ::1 [23/May/2021:17:51:08 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:08 INFO iou_vm.py:902 IOU "R2" [2fe8ce0f-1363-4af8-b9d2-3f4aa05f517b]: NIO UDP added to 3/0
+2021-05-23 22:51:08 INFO web_log.py:206 127.0.0.1 [23/May/2021:17:51:08 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/iou/nodes/2fe8ce0f-1363-4af8-b9d2-3f4aa05f517b/adapters/3/ports/0/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:08 INFO iou_vm.py:902 IOU "R1" [a1d0a53d-a680-4cd7-a117-974be5b09b7b]: NIO UDP added to 3/0
+2021-05-23 22:51:08 INFO web_log.py:206 ::1 [23/May/2021:17:51:08 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/iou/nodes/a1d0a53d-a680-4cd7-a117-974be5b09b7b/adapters/3/ports/0/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:08 INFO web_log.py:206 127.0.0.1 [23/May/2021:17:51:08 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:08 INFO web_log.py:206 ::1 [23/May/2021:17:51:08 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:08 INFO docker_vm.py:960 Docker container 'PC-1' [2372aa78-e445-4bd0-8829-5a42def420cf]: NIO UDP added to adapter 0
+2021-05-23 22:51:08 INFO web_log.py:206 127.0.0.1 [23/May/2021:17:51:08 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/docker/nodes/2372aa78-e445-4bd0-8829-5a42def420cf/adapters/0/ports/0/nio HTTP/1.1" 201 380 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:08 INFO iou_vm.py:902 IOU "R2" [2fe8ce0f-1363-4af8-b9d2-3f4aa05f517b]: NIO UDP added to 0/0
+2021-05-23 22:51:08 INFO web_log.py:206 ::1 [23/May/2021:17:51:08 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/iou/nodes/2fe8ce0f-1363-4af8-b9d2-3f4aa05f517b/adapters/0/ports/0/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:08 INFO web_log.py:206 127.0.0.1 [23/May/2021:17:51:08 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:08 INFO web_log.py:206 ::1 [23/May/2021:17:51:08 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:08 INFO docker_vm.py:960 Docker container 'PC-2' [18796b92-95bd-430b-aa45-11f79488dbe9]: NIO UDP added to adapter 0
+2021-05-23 22:51:08 INFO web_log.py:206 127.0.0.1 [23/May/2021:17:51:08 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/docker/nodes/18796b92-95bd-430b-aa45-11f79488dbe9/adapters/0/ports/0/nio HTTP/1.1" 201 380 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:08 INFO iou_vm.py:902 IOU "R2" [2fe8ce0f-1363-4af8-b9d2-3f4aa05f517b]: NIO UDP added to 0/1
+2021-05-23 22:51:08 INFO web_log.py:206 ::1 [23/May/2021:17:51:08 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/iou/nodes/2fe8ce0f-1363-4af8-b9d2-3f4aa05f517b/adapters/0/ports/1/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:08 INFO web_log.py:206 127.0.0.1 [23/May/2021:17:51:08 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:08 INFO web_log.py:206 ::1 [23/May/2021:17:51:08 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:08 INFO iou_vm.py:902 IOU "R1" [a1d0a53d-a680-4cd7-a117-974be5b09b7b]: NIO UDP added to 0/0
+2021-05-23 22:51:08 INFO web_log.py:206 127.0.0.1 [23/May/2021:17:51:08 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/iou/nodes/a1d0a53d-a680-4cd7-a117-974be5b09b7b/adapters/0/ports/0/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:08 INFO docker_vm.py:960 Docker container 'PC-3' [2486b61a-4d45-43a0-bb4a-0f7c182416cc]: NIO UDP added to adapter 0
+2021-05-23 22:51:08 INFO web_log.py:206 ::1 [23/May/2021:17:51:08 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/docker/nodes/2486b61a-4d45-43a0-bb4a-0f7c182416cc/adapters/0/ports/0/nio HTTP/1.1" 201 380 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:08 INFO web_log.py:206 127.0.0.1 [23/May/2021:17:51:08 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:08 INFO web_log.py:206 ::1 [23/May/2021:17:51:08 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:08 INFO iou_vm.py:902 IOU "R1" [a1d0a53d-a680-4cd7-a117-974be5b09b7b]: NIO UDP added to 0/1
+2021-05-23 22:51:08 INFO web_log.py:206 127.0.0.1 [23/May/2021:17:51:08 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/iou/nodes/a1d0a53d-a680-4cd7-a117-974be5b09b7b/adapters/0/ports/1/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:08 INFO docker_vm.py:960 Docker container 'PC-4' [1c6d24c1-c363-426a-a4fd-eba378d8e012]: NIO UDP added to adapter 0
+2021-05-23 22:51:08 INFO web_log.py:206 ::1 [23/May/2021:17:51:08 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/docker/nodes/1c6d24c1-c363-426a-a4fd-eba378d8e012/adapters/0/ports/0/nio HTTP/1.1" 201 380 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:08 INFO web_log.py:206 ::1 [23/May/2021:17:51:07 +0000] "POST /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a/open HTTP/1.1" 201 743 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 22:51:08 INFO web_log.py:206 ::1 [23/May/2021:17:51:08 +0000] "GET /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a/nodes HTTP/1.1" 200 22220 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 22:51:08 INFO project_handler.py:271 New client has connected to the notification stream for project ID '5df9e162-2730-432e-95fa-67089a22eb5a' (WebSocket method)
+2021-05-23 22:51:08 INFO web_log.py:206 ::1 [23/May/2021:17:51:08 +0000] "GET /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a/links HTTP/1.1" 200 6725 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 22:51:08 INFO web_log.py:206 ::1 [23/May/2021:17:51:08 +0000] "GET /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a/drawings HTTP/1.1" 200 205 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 22:51:12 INFO iou_vm.py:414 Checking IOU license in '/tmp/tmpqmt22dlx/iourc'
+2021-05-23 22:51:12 INFO iou_vm.py:414 Checking IOU license in '/tmp/tmpaj_usi7l/iourc'
+2021-05-23 22:51:12 INFO base_node.py:655 Starting new uBridge hypervisor localhost:39573
+2021-05-23 22:51:12 INFO base_node.py:655 Starting new uBridge hypervisor localhost:41279
+2021-05-23 22:51:12 INFO hypervisor.py:169 starting ubridge: ['/sbin/ubridge', '-H', 'localhost:39573']
+2021-05-23 22:51:12 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/untitled/project-files/iou/2fe8ce0f-1363-4af8-b9d2-3f4aa05f517b/ubridge.log
+2021-05-23 22:51:12 INFO hypervisor.py:179 ubridge started PID=40979
+2021-05-23 22:51:12 INFO base_node.py:658 Hypervisor localhost:39573 has successfully started
+2021-05-23 22:51:12 INFO hypervisor.py:169 starting ubridge: ['/sbin/ubridge', '-H', 'localhost:41279']
+2021-05-23 22:51:12 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/untitled/project-files/iou/a1d0a53d-a680-4cd7-a117-974be5b09b7b/ubridge.log
+2021-05-23 22:51:12 INFO hypervisor.py:179 ubridge started PID=40982
+2021-05-23 22:51:12 INFO base_node.py:658 Hypervisor localhost:41279 has successfully started
+2021-05-23 22:51:12 INFO project_handler.py:289 Project 'c50939dc-1d85-46c3-83fc-ef89bd474005' is automatically closing due to no client listening
+2021-05-23 22:51:12 INFO web_log.py:206 127.0.0.1 [23/May/2021:17:51:12 +0000] "POST /v2/compute/projects/c50939dc-1d85-46c3-83fc-ef89bd474005/nat/nodes/1fe76208-2927-41f3-89ec-59cf207a61e5/stop HTTP/1.1" 204 224 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:12 INFO iou_vm.py:1268 saving startup-config to /home/saad/GNS3/projects/wan/project-files/iou/f9bfd25d-5b1d-41f4-b052-2c2438e6e5e1/startup-config.cfg
+2021-05-23 22:51:12 INFO web_log.py:206 ::1 [23/May/2021:17:51:12 +0000] "POST /v2/compute/projects/c50939dc-1d85-46c3-83fc-ef89bd474005/iou/nodes/f9bfd25d-5b1d-41f4-b052-2c2438e6e5e1/stop HTTP/1.1" 204 224 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:12 INFO iou_vm.py:1268 saving startup-config to /home/saad/GNS3/projects/wan/project-files/iou/9e27d90c-9dcc-4bfd-8809-37e89bb64d48/startup-config.cfg
+2021-05-23 22:51:12 INFO web_log.py:206 127.0.0.1 [23/May/2021:17:51:12 +0000] "POST /v2/compute/projects/c50939dc-1d85-46c3-83fc-ef89bd474005/iou/nodes/9e27d90c-9dcc-4bfd-8809-37e89bb64d48/stop HTTP/1.1" 204 224 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:12 INFO iou_vm.py:1268 saving startup-config to /home/saad/GNS3/projects/wan/project-files/iou/c35e8ac0-7ca2-4d2e-8527-0b61ad8ba81a/startup-config.cfg
+2021-05-23 22:51:12 INFO web_log.py:206 ::1 [23/May/2021:17:51:12 +0000] "POST /v2/compute/projects/c50939dc-1d85-46c3-83fc-ef89bd474005/iou/nodes/c35e8ac0-7ca2-4d2e-8527-0b61ad8ba81a/stop HTTP/1.1" 204 224 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:12 INFO iou_vm.py:1268 saving startup-config to /home/saad/GNS3/projects/wan/project-files/iou/605da9e6-39bc-4391-b7b1-9577e05cdc44/startup-config.cfg
+2021-05-23 22:51:12 INFO web_log.py:206 ::1 [23/May/2021:17:51:12 +0000] "POST /v2/compute/projects/c50939dc-1d85-46c3-83fc-ef89bd474005/iou/nodes/605da9e6-39bc-4391-b7b1-9577e05cdc44/stop HTTP/1.1" 204 224 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:12 INFO web_log.py:206 127.0.0.1 [23/May/2021:17:51:12 +0000] "POST /v2/compute/projects/c50939dc-1d85-46c3-83fc-ef89bd474005/docker/nodes/0eafd6b9-d7a9-4b58-ba94-6593467dca9f/stop HTTP/1.1" 204 227 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:12 INFO base_node.py:331 IOU: 'R1' [f9bfd25d-5b1d-41f4-b052-2c2438e6e5e1]: is closing
+2021-05-23 22:51:12 INFO iou_vm.py:1268 saving startup-config to /home/saad/GNS3/projects/wan/project-files/iou/f9bfd25d-5b1d-41f4-b052-2c2438e6e5e1/startup-config.cfg
+2021-05-23 22:51:12 INFO base_node.py:331 IOU: 'R2' [9e27d90c-9dcc-4bfd-8809-37e89bb64d48]: is closing
+2021-05-23 22:51:12 INFO iou_vm.py:1268 saving startup-config to /home/saad/GNS3/projects/wan/project-files/iou/9e27d90c-9dcc-4bfd-8809-37e89bb64d48/startup-config.cfg
+2021-05-23 22:51:12 INFO base_node.py:331 IOU: 'S1' [c35e8ac0-7ca2-4d2e-8527-0b61ad8ba81a]: is closing
+2021-05-23 22:51:12 INFO iou_vm.py:1268 saving startup-config to /home/saad/GNS3/projects/wan/project-files/iou/c35e8ac0-7ca2-4d2e-8527-0b61ad8ba81a/startup-config.cfg
+2021-05-23 22:51:12 INFO base_node.py:331 Builtin: 'NAT1' [1fe76208-2927-41f3-89ec-59cf207a61e5]: is closing
+2021-05-23 22:51:12 INFO base_node.py:669 Stopping uBridge hypervisor localhost:35879
+2021-05-23 22:51:12 INFO hypervisor.py:208 Stopping uBridge process PID=11093
+2021-05-23 22:51:12 INFO base_node.py:331 IOU: 'R3' [605da9e6-39bc-4391-b7b1-9577e05cdc44]: is closing
+2021-05-23 22:51:12 INFO iou_vm.py:1268 saving startup-config to /home/saad/GNS3/projects/wan/project-files/iou/605da9e6-39bc-4391-b7b1-9577e05cdc44/startup-config.cfg
+2021-05-23 22:51:12 INFO base_node.py:331 Docker: 'debian-1' [0eafd6b9-d7a9-4b58-ba94-6593467dca9f]: is closing
+2021-05-23 22:51:12 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:39573 after 0.1010 seconds
+2021-05-23 22:51:12 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:41279 after 0.1012 seconds
+2021-05-23 22:51:12 INFO docker_vm.py:872 Docker container 'debian-1' [debian:latest] removed
+2021-05-23 22:51:12 INFO base_node.py:655 Starting new uBridge hypervisor localhost:37131
+2021-05-23 22:51:12 INFO hypervisor.py:169 starting ubridge: ['/sbin/ubridge', '-H', 'localhost:37131']
+2021-05-23 22:51:12 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/untitled/project-files/docker/2372aa78-e445-4bd0-8829-5a42def420cf/ubridge.log
+2021-05-23 22:51:12 INFO hypervisor.py:179 ubridge started PID=41060
+2021-05-23 22:51:12 INFO base_node.py:658 Hypervisor localhost:37131 has successfully started
+2021-05-23 22:51:12 INFO cloud.py:248 Cloud "NAT1" [1fe76208-2927-41f3-89ec-59cf207a61e5] has been closed
+2021-05-23 22:51:12 INFO project.py:361 Project c50939dc-1d85-46c3-83fc-ef89bd474005 with path '/home/saad/GNS3/projects/wan' closed
+2021-05-23 22:51:12 INFO web_log.py:206 127.0.0.1 [23/May/2021:17:51:12 +0000] "POST /v2/compute/projects/c50939dc-1d85-46c3-83fc-ef89bd474005/close HTTP/1.1" 204 205 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:12 INFO iou_vm.py:753 IOU R2 [id=2fe8ce0f-1363-4af8-b9d2-3f4aa05f517b]: NETMAP file created
+2021-05-23 22:51:12 INFO iou_vm.py:753 IOU R1 [id=a1d0a53d-a680-4cd7-a117-974be5b09b7b]: NETMAP file created
+2021-05-23 22:51:12 INFO iou_vm.py:551 Starting IOU: ['/home/saad/GNS3/images/IOU/i86bi-linux-l3-adventerprisek9-ms.155-2.T.bin', '-e', '3', '-s', '1', '6']
+2021-05-23 22:51:12 INFO iou_vm.py:551 Starting IOU: ['/home/saad/GNS3/images/IOU/i86bi-linux-l3-adventerprisek9-ms.155-2.T.bin', '-e', '3', '-s', '1', '5']
+2021-05-23 22:51:12 INFO iou_vm.py:560 IOU instance 2fe8ce0f-1363-4af8-b9d2-3f4aa05f517b started PID=41069
+2021-05-23 22:51:12 INFO iou_vm.py:560 IOU instance a1d0a53d-a680-4cd7-a117-974be5b09b7b started PID=41071
+2021-05-23 22:51:12 INFO web_log.py:206 127.0.0.1 [23/May/2021:17:51:12 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/iou/nodes/2fe8ce0f-1363-4af8-b9d2-3f4aa05f517b/start HTTP/1.1" 200 965 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:12 INFO web_log.py:206 ::1 [23/May/2021:17:51:12 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/iou/nodes/a1d0a53d-a680-4cd7-a117-974be5b09b7b/start HTTP/1.1" 200 965 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:12 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:37131 after 0.1057 seconds
+2021-05-23 22:51:12 INFO base_node.py:655 Starting new uBridge hypervisor localhost:37509
+2021-05-23 22:51:12 INFO base_node.py:655 Starting new uBridge hypervisor localhost:36235
+2021-05-23 22:51:12 INFO hypervisor.py:169 starting ubridge: ['/sbin/ubridge', '-H', 'localhost:37509']
+2021-05-23 22:51:12 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/untitled/project-files/docker/1c6d24c1-c363-426a-a4fd-eba378d8e012/ubridge.log
+2021-05-23 22:51:12 INFO hypervisor.py:179 ubridge started PID=41226
+2021-05-23 22:51:12 INFO base_node.py:658 Hypervisor localhost:37509 has successfully started
+2021-05-23 22:51:12 INFO hypervisor.py:169 starting ubridge: ['/sbin/ubridge', '-H', 'localhost:36235']
+2021-05-23 22:51:12 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/untitled/project-files/docker/18796b92-95bd-430b-aa45-11f79488dbe9/ubridge.log
+2021-05-23 22:51:12 INFO hypervisor.py:179 ubridge started PID=41229
+2021-05-23 22:51:12 INFO base_node.py:658 Hypervisor localhost:36235 has successfully started
+2021-05-23 22:51:13 INFO docker_vm.py:499 Docker container 'PC-1' [debian:latest] started listen for telnet on 5005
+2021-05-23 22:51:13 INFO web_log.py:206 ::1 [23/May/2021:17:51:12 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/docker/nodes/2372aa78-e445-4bd0-8829-5a42def420cf/start HTTP/1.1" 204 228 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:13 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:37509 after 0.1017 seconds
+2021-05-23 22:51:13 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:36235 after 0.1019 seconds
+2021-05-23 22:51:13 INFO base_node.py:655 Starting new uBridge hypervisor localhost:45937
+2021-05-23 22:51:13 INFO hypervisor.py:169 starting ubridge: ['/sbin/ubridge', '-H', 'localhost:45937']
+2021-05-23 22:51:13 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/untitled/project-files/docker/2486b61a-4d45-43a0-bb4a-0f7c182416cc/ubridge.log
+2021-05-23 22:51:13 INFO hypervisor.py:179 ubridge started PID=41319
+2021-05-23 22:51:13 INFO base_node.py:658 Hypervisor localhost:45937 has successfully started
+2021-05-23 22:51:13 INFO docker_vm.py:499 Docker container 'PC-4' [debian:latest] started listen for telnet on 5011
+2021-05-23 22:51:13 INFO web_log.py:206 127.0.0.1 [23/May/2021:17:51:12 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/docker/nodes/1c6d24c1-c363-426a-a4fd-eba378d8e012/start HTTP/1.1" 204 228 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:13 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:45937 after 0.1248 seconds
+2021-05-23 22:51:13 INFO docker_vm.py:499 Docker container 'PC-2' [debian:latest] started listen for telnet on 5007
+2021-05-23 22:51:13 INFO web_log.py:206 ::1 [23/May/2021:17:51:12 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/docker/nodes/18796b92-95bd-430b-aa45-11f79488dbe9/start HTTP/1.1" 204 228 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:13 INFO docker_vm.py:499 Docker container 'PC-3' [debian:latest] started listen for telnet on 5015
+2021-05-23 22:51:13 INFO web_log.py:206 ::1 [23/May/2021:17:51:13 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/docker/nodes/2486b61a-4d45-43a0-bb4a-0f7c182416cc/start HTTP/1.1" 204 228 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 22:51:13 INFO web_log.py:206 ::1 [23/May/2021:17:51:12 +0000] "POST /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a/nodes/start HTTP/1.1" 204 203 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 22:51:13 INFO web_log.py:206 ::1 [23/May/2021:17:51:13 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 22:51:49 INFO web_log.py:206 ::1 [23/May/2021:17:51:49 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 22:57:22 INFO web_log.py:206 ::1 [23/May/2021:17:57:22 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 23:02:41 INFO web_log.py:206 ::1 [23/May/2021:18:02:41 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 23:08:18 INFO web_log.py:206 ::1 [23/May/2021:18:08:18 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 23:08:20 INFO web_log.py:206 ::1 [23/May/2021:18:08:20 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 23:13:27 INFO web_log.py:206 ::1 [23/May/2021:18:13:27 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 23:19:02 INFO web_log.py:206 ::1 [23/May/2021:18:19:02 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 23:24:26 INFO web_log.py:206 ::1 [23/May/2021:18:24:26 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 23:27:54 INFO base_node.py:669 Stopping uBridge hypervisor localhost:39573
+2021-05-23 23:27:54 INFO hypervisor.py:208 Stopping uBridge process PID=40979
+2021-05-23 23:27:54 INFO base_node.py:669 Stopping uBridge hypervisor localhost:41279
+2021-05-23 23:27:54 INFO hypervisor.py:208 Stopping uBridge process PID=40982
+2021-05-23 23:27:54 INFO base_node.py:669 Stopping uBridge hypervisor localhost:37131
+2021-05-23 23:27:54 INFO hypervisor.py:208 Stopping uBridge process PID=41060
+2021-05-23 23:27:54 INFO iou_vm.py:698 Stopping IOU process for IOU VM "R1" PID=41071
+2021-05-23 23:27:54 INFO iou_vm.py:698 Stopping IOU process for IOU VM "R1" PID=41071
+2021-05-23 23:27:54 INFO iou_vm.py:1268 saving startup-config to /home/saad/GNS3/projects/untitled/project-files/iou/a1d0a53d-a680-4cd7-a117-974be5b09b7b/startup-config.cfg
+2021-05-23 23:27:54 INFO web_log.py:206 127.0.0.1 [23/May/2021:18:27:54 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/iou/nodes/a1d0a53d-a680-4cd7-a117-974be5b09b7b/stop HTTP/1.1" 204 224 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 23:27:54 INFO base_node.py:669 Stopping uBridge hypervisor localhost:36235
+2021-05-23 23:27:54 INFO hypervisor.py:208 Stopping uBridge process PID=41229
+2021-05-23 23:27:54 INFO docker_vm.py:533 Docker container 'PC-1' fix ownership, state = running
+2021-05-23 23:27:54 INFO docker_vm.py:533 Docker container 'PC-2' fix ownership, state = running
+2021-05-23 23:27:54 INFO iou_vm.py:698 Stopping IOU process for IOU VM "R2" PID=41069
+2021-05-23 23:27:54 INFO iou_vm.py:698 Stopping IOU process for IOU VM "R2" PID=41069
+2021-05-23 23:27:54 INFO iou_vm.py:1268 saving startup-config to /home/saad/GNS3/projects/untitled/project-files/iou/2fe8ce0f-1363-4af8-b9d2-3f4aa05f517b/startup-config.cfg
+2021-05-23 23:27:54 INFO web_log.py:206 ::1 [23/May/2021:18:27:54 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/iou/nodes/2fe8ce0f-1363-4af8-b9d2-3f4aa05f517b/stop HTTP/1.1" 204 224 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 23:27:54 INFO base_node.py:669 Stopping uBridge hypervisor localhost:37509
+2021-05-23 23:27:54 INFO hypervisor.py:208 Stopping uBridge process PID=41226
+2021-05-23 23:27:54 INFO docker_vm.py:793 Docker container 'PC-1' [debian:latest] stopped
+2021-05-23 23:27:54 INFO web_log.py:206 ::1 [23/May/2021:18:27:54 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/docker/nodes/2372aa78-e445-4bd0-8829-5a42def420cf/stop HTTP/1.1" 204 227 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 23:27:54 INFO base_node.py:669 Stopping uBridge hypervisor localhost:45937
+2021-05-23 23:27:54 INFO hypervisor.py:208 Stopping uBridge process PID=41319
+2021-05-23 23:27:54 INFO docker_vm.py:793 Docker container 'PC-2' [debian:latest] stopped
+2021-05-23 23:27:54 INFO web_log.py:206 127.0.0.1 [23/May/2021:18:27:54 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/docker/nodes/18796b92-95bd-430b-aa45-11f79488dbe9/stop HTTP/1.1" 204 227 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 23:27:54 INFO docker_vm.py:533 Docker container 'PC-3' fix ownership, state = running
+2021-05-23 23:27:55 INFO docker_vm.py:793 Docker container 'PC-3' [debian:latest] stopped
+2021-05-23 23:27:55 INFO web_log.py:206 127.0.0.1 [23/May/2021:18:27:54 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/docker/nodes/2486b61a-4d45-43a0-bb4a-0f7c182416cc/stop HTTP/1.1" 204 227 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 23:27:55 INFO docker_vm.py:533 Docker container 'PC-4' fix ownership, state = running
+2021-05-23 23:27:55 INFO docker_vm.py:793 Docker container 'PC-4' [debian:latest] stopped
+2021-05-23 23:27:55 INFO web_log.py:206 ::1 [23/May/2021:18:27:54 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/docker/nodes/1c6d24c1-c363-426a-a4fd-eba378d8e012/stop HTTP/1.1" 204 227 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 23:27:55 INFO web_log.py:206 ::1 [23/May/2021:18:27:54 +0000] "POST /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a/nodes/stop HTTP/1.1" 204 202 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 23:27:55 INFO web_log.py:206 ::1 [23/May/2021:18:27:55 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 23:27:57 INFO iou_vm.py:1268 saving startup-config to /home/saad/GNS3/projects/untitled/project-files/iou/2fe8ce0f-1363-4af8-b9d2-3f4aa05f517b/startup-config.cfg
+2021-05-23 23:27:57 INFO web_log.py:206 127.0.0.1 [23/May/2021:18:27:57 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/iou/nodes/2fe8ce0f-1363-4af8-b9d2-3f4aa05f517b/stop HTTP/1.1" 204 224 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 23:27:57 INFO iou_vm.py:1268 saving startup-config to /home/saad/GNS3/projects/untitled/project-files/iou/a1d0a53d-a680-4cd7-a117-974be5b09b7b/startup-config.cfg
+2021-05-23 23:27:57 INFO web_log.py:206 ::1 [23/May/2021:18:27:57 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/iou/nodes/a1d0a53d-a680-4cd7-a117-974be5b09b7b/stop HTTP/1.1" 204 224 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 23:27:57 INFO web_log.py:206 ::1 [23/May/2021:18:27:57 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/docker/nodes/2372aa78-e445-4bd0-8829-5a42def420cf/stop HTTP/1.1" 204 227 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 23:27:57 INFO web_log.py:206 127.0.0.1 [23/May/2021:18:27:57 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/docker/nodes/1c6d24c1-c363-426a-a4fd-eba378d8e012/stop HTTP/1.1" 204 227 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 23:27:57 INFO web_log.py:206 ::1 [23/May/2021:18:27:57 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/docker/nodes/18796b92-95bd-430b-aa45-11f79488dbe9/stop HTTP/1.1" 204 227 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 23:27:57 INFO web_log.py:206 127.0.0.1 [23/May/2021:18:27:57 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/docker/nodes/2486b61a-4d45-43a0-bb4a-0f7c182416cc/stop HTTP/1.1" 204 227 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 23:27:57 INFO iou_vm.py:414 Checking IOU license in '/tmp/tmpaj_usi7l/iourc'
+2021-05-23 23:27:57 INFO iou_vm.py:414 Checking IOU license in '/tmp/tmpqmt22dlx/iourc'
+2021-05-23 23:27:57 INFO base_node.py:655 Starting new uBridge hypervisor localhost:43439
+2021-05-23 23:27:57 INFO base_node.py:655 Starting new uBridge hypervisor localhost:40187
+2021-05-23 23:27:57 INFO hypervisor.py:169 starting ubridge: ['/sbin/ubridge', '-H', 'localhost:43439']
+2021-05-23 23:27:57 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/untitled/project-files/iou/a1d0a53d-a680-4cd7-a117-974be5b09b7b/ubridge.log
+2021-05-23 23:27:57 INFO hypervisor.py:179 ubridge started PID=59323
+2021-05-23 23:27:57 INFO base_node.py:658 Hypervisor localhost:43439 has successfully started
+2021-05-23 23:27:57 INFO hypervisor.py:169 starting ubridge: ['/sbin/ubridge', '-H', 'localhost:40187']
+2021-05-23 23:27:57 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/untitled/project-files/iou/2fe8ce0f-1363-4af8-b9d2-3f4aa05f517b/ubridge.log
+2021-05-23 23:27:57 INFO hypervisor.py:179 ubridge started PID=59325
+2021-05-23 23:27:57 INFO base_node.py:658 Hypervisor localhost:40187 has successfully started
+2021-05-23 23:27:57 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:43439 after 0.1017 seconds
+2021-05-23 23:27:57 INFO base_node.py:655 Starting new uBridge hypervisor localhost:36259
+2021-05-23 23:27:57 INFO hypervisor.py:169 starting ubridge: ['/sbin/ubridge', '-H', 'localhost:36259']
+2021-05-23 23:27:57 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/untitled/project-files/docker/2372aa78-e445-4bd0-8829-5a42def420cf/ubridge.log
+2021-05-23 23:27:57 INFO hypervisor.py:179 ubridge started PID=59393
+2021-05-23 23:27:57 INFO base_node.py:658 Hypervisor localhost:36259 has successfully started
+2021-05-23 23:27:57 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:40187 after 0.1031 seconds
+2021-05-23 23:27:57 INFO iou_vm.py:753 IOU R1 [id=a1d0a53d-a680-4cd7-a117-974be5b09b7b]: NETMAP file created
+2021-05-23 23:27:57 INFO iou_vm.py:551 Starting IOU: ['/home/saad/GNS3/images/IOU/i86bi-linux-l3-adventerprisek9-ms.155-2.T.bin', '-e', '3', '-s', '1', '5']
+2021-05-23 23:27:57 INFO iou_vm.py:753 IOU R2 [id=2fe8ce0f-1363-4af8-b9d2-3f4aa05f517b]: NETMAP file created
+2021-05-23 23:27:57 INFO iou_vm.py:560 IOU instance a1d0a53d-a680-4cd7-a117-974be5b09b7b started PID=59398
+2021-05-23 23:27:57 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:36259 after 0.1277 seconds
+2021-05-23 23:27:57 INFO iou_vm.py:551 Starting IOU: ['/home/saad/GNS3/images/IOU/i86bi-linux-l3-adventerprisek9-ms.155-2.T.bin', '-e', '3', '-s', '1', '6']
+2021-05-23 23:27:57 INFO iou_vm.py:560 IOU instance 2fe8ce0f-1363-4af8-b9d2-3f4aa05f517b started PID=59403
+2021-05-23 23:27:57 INFO web_log.py:206 ::1 [23/May/2021:18:27:57 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/iou/nodes/a1d0a53d-a680-4cd7-a117-974be5b09b7b/start HTTP/1.1" 200 965 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 23:27:57 INFO web_log.py:206 ::1 [23/May/2021:18:27:57 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/iou/nodes/2fe8ce0f-1363-4af8-b9d2-3f4aa05f517b/start HTTP/1.1" 200 965 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 23:27:57 INFO docker_vm.py:499 Docker container 'PC-1' [debian:latest] started listen for telnet on 5005
+2021-05-23 23:27:57 INFO web_log.py:206 127.0.0.1 [23/May/2021:18:27:57 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/docker/nodes/2372aa78-e445-4bd0-8829-5a42def420cf/start HTTP/1.1" 204 228 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 23:27:57 INFO base_node.py:655 Starting new uBridge hypervisor localhost:42979
+2021-05-23 23:27:57 INFO hypervisor.py:169 starting ubridge: ['/sbin/ubridge', '-H', 'localhost:42979']
+2021-05-23 23:27:57 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/untitled/project-files/docker/18796b92-95bd-430b-aa45-11f79488dbe9/ubridge.log
+2021-05-23 23:27:57 INFO hypervisor.py:179 ubridge started PID=59576
+2021-05-23 23:27:57 INFO base_node.py:658 Hypervisor localhost:42979 has successfully started
+2021-05-23 23:27:57 INFO base_node.py:655 Starting new uBridge hypervisor localhost:40385
+2021-05-23 23:27:57 INFO hypervisor.py:169 starting ubridge: ['/sbin/ubridge', '-H', 'localhost:40385']
+2021-05-23 23:27:57 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/untitled/project-files/docker/1c6d24c1-c363-426a-a4fd-eba378d8e012/ubridge.log
+2021-05-23 23:27:58 INFO hypervisor.py:179 ubridge started PID=59615
+2021-05-23 23:27:58 INFO base_node.py:658 Hypervisor localhost:40385 has successfully started
+2021-05-23 23:27:58 INFO base_node.py:655 Starting new uBridge hypervisor localhost:43677
+2021-05-23 23:27:58 INFO hypervisor.py:169 starting ubridge: ['/sbin/ubridge', '-H', 'localhost:43677']
+2021-05-23 23:27:58 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/untitled/project-files/docker/2486b61a-4d45-43a0-bb4a-0f7c182416cc/ubridge.log
+2021-05-23 23:27:58 INFO hypervisor.py:179 ubridge started PID=59658
+2021-05-23 23:27:58 INFO base_node.py:658 Hypervisor localhost:43677 has successfully started
+2021-05-23 23:27:58 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:42979 after 0.1018 seconds
+2021-05-23 23:27:58 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:40385 after 0.1014 seconds
+2021-05-23 23:27:58 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:43677 after 0.1020 seconds
+2021-05-23 23:27:58 INFO docker_vm.py:499 Docker container 'PC-2' [debian:latest] started listen for telnet on 5007
+2021-05-23 23:27:58 INFO web_log.py:206 127.0.0.1 [23/May/2021:18:27:57 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/docker/nodes/18796b92-95bd-430b-aa45-11f79488dbe9/start HTTP/1.1" 204 228 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 23:27:58 INFO docker_vm.py:499 Docker container 'PC-4' [debian:latest] started listen for telnet on 5011
+2021-05-23 23:27:58 INFO web_log.py:206 ::1 [23/May/2021:18:27:57 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/docker/nodes/1c6d24c1-c363-426a-a4fd-eba378d8e012/start HTTP/1.1" 204 228 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 23:27:58 INFO docker_vm.py:499 Docker container 'PC-3' [debian:latest] started listen for telnet on 5015
+2021-05-23 23:27:58 INFO web_log.py:206 127.0.0.1 [23/May/2021:18:27:57 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/docker/nodes/2486b61a-4d45-43a0-bb4a-0f7c182416cc/start HTTP/1.1" 204 228 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 23:27:58 INFO web_log.py:206 ::1 [23/May/2021:18:27:57 +0000] "POST /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a/nodes/reload HTTP/1.1" 204 204 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 23:27:58 INFO web_log.py:206 ::1 [23/May/2021:18:27:58 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 23:29:34 INFO web_log.py:206 ::1 [23/May/2021:18:29:34 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 23:31:08 INFO web_log.py:206 ::1 [23/May/2021:18:31:08 +0000] "PUT /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a HTTP/1.1" 200 311 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 23:31:08 INFO web_log.py:206 ::1 [23/May/2021:18:31:08 +0000] "PUT /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a HTTP/1.1" 200 734 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 23:31:09 INFO web_log.py:206 127.0.0.1 [23/May/2021:18:31:09 +0000] "PUT /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a HTTP/1.1" 200 311 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-23 23:31:09 INFO web_log.py:206 ::1 [23/May/2021:18:31:09 +0000] "PUT /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a HTTP/1.1" 200 733 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 23:35:15 INFO web_log.py:206 ::1 [23/May/2021:18:35:15 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 23:35:17 INFO web_log.py:206 ::1 [23/May/2021:18:35:17 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 23:40:11 INFO web_log.py:206 ::1 [23/May/2021:18:40:11 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
+2021-05-23 23:45:56 INFO web_log.py:206 ::1 [23/May/2021:18:45:56 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
