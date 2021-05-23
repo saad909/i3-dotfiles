@@ -155,10 +155,10 @@ ctrl+F12
 
 
 shift F12
-  internal_touchpad.sh
+  toggle_touchpad
 
 F12
-  internal_keyboard.sh
+  toggle_keypad
 
 # layout
 

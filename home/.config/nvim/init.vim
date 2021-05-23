@@ -103,8 +103,8 @@ set guifont=Ubuntu\ Mono:h15
 let g:kite_supported_languages = ['python']
 " cnoremap w!! execute <silent> write !sudo tee % >/dev/null' <bar> edit!
 " When shortcut files are updated, renew bash and ranger configs with new material:
-	autocmd BufWritePost directories,files !shortcuts
+autocmd  BufWritePost directories,files !shortcuts
+autocmd  BufWritePost test.cfg !make_cisco_config 
 
 cmap w!! w !sudo tee > /dev/null %
 
-command! -nargs=0 Pretty :CocCommand prettier.formatFile

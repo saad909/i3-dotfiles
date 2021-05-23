@@ -4,12 +4,12 @@ let g:nvcode_termcolors=256
 syntax on
 " colorscheme nord
 " colorscheme nvcode
-" colorscheme dracula
+colorscheme dracula
 " colorscheme onedark
 " colorscheme TSnazzy
 " colorscheme aurora
 
-colorscheme gruvbox-material
+" colorscheme gruvbox-material
 " colorscheme gruvbox
 " colorscheme wal
 

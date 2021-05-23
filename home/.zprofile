@@ -16,8 +16,8 @@ export PATH="$PATH:$(du "$HOME/.local/bin" | cut -f2 | paste -sd ':')"
 export EDITOR="nvim"
 export TERMINAL="alacritty"
 export BROWSER="firefox"
-# export READER="zathura"
-export READER="okular"
+export READER="zathura"
+# export READER="okular"
 export EXPLORER="thunar"
 
 # ~/ Clean-up:
