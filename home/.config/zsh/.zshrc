@@ -83,7 +83,7 @@ bindkey -s '^t' 'pomodoro\n'
 # aliases
 alias rd="vim ~/.config/directories"
 alias rf="vim ~/.config/files"
-alias test="nvim /home/$USER/Documents/Experiments/test.cfg"
+alias test="nvim /home/$USER/Documents/Experiments/test.ini"
 alias mux='pgrep -vx tmux > /dev/null && \
 		tmux new -d -s delete-me && \
 		tmux run-shell ~/.config/tmux/ressurect/scripts/restore.sh && \

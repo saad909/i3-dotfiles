@@ -10,16 +10,17 @@ home_address = str(Path.home())
 file_content = ""
 dir_path = os.path.join(home_address, "Documents",
                         "Experiments")
-file_path = os.path.join(dir_path,"test.cfg")
+file_path = os.path.join(dir_path,"test.ini")
 
 
 def write_configs(device):
     try:
         global dir_path
         # old_regex = "^![\!\s]*{device}\s*[\n]*((?:\n[^\!]*)+)" 
-        regex = rf"^#[#\s]*{device}\s*[\n]*((?:\n[^#]*)+)"
+        # regex = rf"^[;\s]*{device}[\n\s]+[^;]*"
+        regex = rf"^[;\s]*{device}(?P<config>[\n\s]+[^;]*)"
         result_list = re.findall(regex.strip(), file_content, re.MULTILINE)
-        result = ' '.join([str(elem) for elem in result_list])
+        result = ' '.join([elem for elem in result_list])
         result = os.linesep.join([s for s in result.splitlines() if s])
         file = os.path.join(dir_path, device+".ini")
         with open(file, 'w') as handler:
@@ -43,7 +44,7 @@ def main():
     try:
         infile = open(file_path, 'r')
         first_line = infile.readline()
-        first_line = first_line.replace("#", "").strip()
+        first_line = first_line.replace(";", "").strip()
         all_devices = first_line.split(",")
 
         session_file_contents = '\n'.join([i for i in all_devices[0:]])
