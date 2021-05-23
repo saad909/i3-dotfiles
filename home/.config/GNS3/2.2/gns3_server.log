@@ -652,3 +652,51 @@
 2021-05-24 00:12:58 INFO web_log.py:206 ::1 [23/May/2021:19:12:58 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
 2021-05-24 00:18:29 INFO web_log.py:206 ::1 [23/May/2021:19:18:29 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
 2021-05-24 00:23:40 INFO web_log.py:206 ::1 [23/May/2021:19:23:40 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 00:29:17 INFO web_log.py:206 ::1 [23/May/2021:19:29:17 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 00:34:44 INFO web_log.py:206 ::1 [23/May/2021:19:34:44 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 00:35:21 INFO web_log.py:206 ::1 [23/May/2021:19:35:21 +0000] "PUT /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a/links/91759159-cbd4-49dc-b865-eff864b772dd HTTP/1.1" 201 1373 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 00:35:21 INFO web_log.py:206 ::1 [23/May/2021:19:35:21 +0000] "PUT /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a/links/2a1fb584-de1e-4920-9581-3132918f79b3 HTTP/1.1" 201 1372 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 00:35:22 INFO web_log.py:206 ::1 [23/May/2021:19:35:22 +0000] "PUT /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a/links/6642e1dd-599d-4d60-8fb2-7a6407e5dab9 HTTP/1.1" 201 1371 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 00:35:22 INFO web_log.py:206 ::1 [23/May/2021:19:35:22 +0000] "PUT /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a/links/2a1fb584-de1e-4920-9581-3132918f79b3 HTTP/1.1" 201 1372 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 00:35:22 INFO web_log.py:206 ::1 [23/May/2021:19:35:22 +0000] "PUT /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a/links/b5cf4d70-d5c6-4c3b-b3ec-9eab817068ed HTTP/1.1" 201 1374 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 00:35:22 INFO web_log.py:206 ::1 [23/May/2021:19:35:22 +0000] "PUT /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a/links/b5cf4d70-d5c6-4c3b-b3ec-9eab817068ed HTTP/1.1" 201 1374 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 00:35:22 INFO web_log.py:206 ::1 [23/May/2021:19:35:22 +0000] "PUT /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a/links/6642e1dd-599d-4d60-8fb2-7a6407e5dab9 HTTP/1.1" 201 1371 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 00:35:22 INFO web_log.py:206 ::1 [23/May/2021:19:35:22 +0000] "PUT /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a/links/a3b6b396-f7ed-44e9-a60d-6c135bd0c34f HTTP/1.1" 201 1370 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 00:35:22 INFO web_log.py:206 ::1 [23/May/2021:19:35:22 +0000] "PUT /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a/links/91759159-cbd4-49dc-b865-eff864b772dd HTTP/1.1" 201 1373 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 00:35:22 INFO web_log.py:206 ::1 [23/May/2021:19:35:22 +0000] "PUT /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a/links/a3b6b396-f7ed-44e9-a60d-6c135bd0c34f HTTP/1.1" 201 1370 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 00:40:30 INFO web_log.py:206 ::1 [23/May/2021:19:40:30 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 00:43:55 INFO nat.py:51 NAT node 'NAT1' configured to use NAT interface 'virbr0'
+2021-05-24 00:43:55 INFO base_node.py:655 Starting new uBridge hypervisor localhost:43951
+2021-05-24 00:43:55 INFO hypervisor.py:169 starting ubridge: ['/sbin/ubridge', '-H', 'localhost:43951']
+2021-05-24 00:43:55 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/untitled/project-files/builtin/cc07e684-ec30-4b9a-ae98-a9b9f37ff95b/ubridge.log
+2021-05-24 00:43:55 INFO hypervisor.py:179 ubridge started PID=98519
+2021-05-24 00:43:55 INFO base_node.py:658 Hypervisor localhost:43951 has successfully started
+2021-05-24 00:43:56 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:43951 after 0.1030 seconds
+2021-05-24 00:43:56 INFO cloud.py:215 Cloud "NAT1" [cc07e684-ec30-4b9a-ae98-a9b9f37ff95b] has been created
+2021-05-24 00:43:56 INFO web_log.py:206 ::1 [23/May/2021:19:43:55 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/nat/nodes HTTP/1.1" 201 553 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-24 00:43:56 INFO web_log.py:206 ::1 [23/May/2021:19:43:55 +0000] "POST /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a/templates/df8f4ea9-33b7-3e96-86a2-c39bc9bb649c HTTP/1.1" 201 1573 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 00:43:56 INFO web_log.py:206 127.0.0.1 [23/May/2021:19:43:56 +0000] "PUT /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/nat/nodes/cc07e684-ec30-4b9a-ae98-a9b9f37ff95b HTTP/1.1" 200 558 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-24 00:43:56 INFO web_log.py:206 ::1 [23/May/2021:19:43:56 +0000] "PUT /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a/nodes/cc07e684-ec30-4b9a-ae98-a9b9f37ff95b HTTP/1.1" 200 1646 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 00:43:56 INFO web_log.py:206 ::1 [23/May/2021:19:43:56 +0000] "PUT /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/nat/nodes/cc07e684-ec30-4b9a-ae98-a9b9f37ff95b HTTP/1.1" 200 558 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-24 00:43:56 INFO web_log.py:206 ::1 [23/May/2021:19:43:56 +0000] "PUT /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a/nodes/cc07e684-ec30-4b9a-ae98-a9b9f37ff95b HTTP/1.1" 200 1646 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 00:43:56 INFO web_log.py:206 ::1 [23/May/2021:19:43:56 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 00:43:57 INFO web_log.py:206 127.0.0.1 [23/May/2021:19:43:57 +0000] "PUT /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/nat/nodes/cc07e684-ec30-4b9a-ae98-a9b9f37ff95b HTTP/1.1" 200 558 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-24 00:43:57 INFO web_log.py:206 ::1 [23/May/2021:19:43:57 +0000] "PUT /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a/nodes/cc07e684-ec30-4b9a-ae98-a9b9f37ff95b HTTP/1.1" 200 1645 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 00:44:01 INFO web_log.py:206 ::1 [23/May/2021:19:44:01 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-24 00:44:01 INFO web_log.py:206 127.0.0.1 [23/May/2021:19:44:01 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-24 00:44:01 INFO iou_vm.py:902 IOU "R1" [a1d0a53d-a680-4cd7-a117-974be5b09b7b]: NIO UDP added to 0/2
+2021-05-24 00:44:01 INFO web_log.py:206 ::1 [23/May/2021:19:44:01 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/iou/nodes/a1d0a53d-a680-4cd7-a117-974be5b09b7b/adapters/0/ports/2/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-24 00:44:01 INFO cloud.py:396 Cloud "NAT1" [cc07e684-ec30-4b9a-ae98-a9b9f37ff95b]: NIO NIO UDP bound to port 0
+2021-05-24 00:44:01 INFO web_log.py:206 127.0.0.1 [23/May/2021:19:44:01 +0000] "POST /v2/compute/projects/5df9e162-2730-432e-95fa-67089a22eb5a/nat/nodes/cc07e684-ec30-4b9a-ae98-a9b9f37ff95b/adapters/0/ports/0/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.7.4.post0"
+2021-05-24 00:44:01 INFO web_log.py:206 ::1 [23/May/2021:19:44:01 +0000] "POST /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a/links HTTP/1.1" 201 1197 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 00:44:01 INFO web_log.py:206 ::1 [23/May/2021:19:44:01 +0000] "PUT /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a/links/6e8e2870-5fc0-4e1a-978b-d5f46ac78db3 HTTP/1.1" 201 1291 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 00:44:01 INFO web_log.py:206 ::1 [23/May/2021:19:44:01 +0000] "PUT /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a/links/6e8e2870-5fc0-4e1a-978b-d5f46ac78db3 HTTP/1.1" 201 1373 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 00:44:04 INFO web_log.py:206 ::1 [23/May/2021:19:44:03 +0000] "PUT /v2/projects/5df9e162-2730-432e-95fa-67089a22eb5a/links/6e8e2870-5fc0-4e1a-978b-d5f46ac78db3 HTTP/1.1" 201 1373 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 00:46:00 INFO web_log.py:206 ::1 [23/May/2021:19:46:00 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 00:51:28 INFO web_log.py:206 ::1 [23/May/2021:19:51:28 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 00:57:20 INFO web_log.py:206 ::1 [23/May/2021:19:57:20 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 01:02:59 INFO web_log.py:206 ::1 [23/May/2021:20:02:59 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 01:08:13 INFO web_log.py:206 ::1 [23/May/2021:20:08:13 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 01:14:04 INFO web_log.py:206 ::1 [23/May/2021:20:14:04 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 01:19:41 INFO web_log.py:206 ::1 [23/May/2021:20:19:41 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
+2021-05-24 01:25:19 INFO web_log.py:206 ::1 [23/May/2021:20:25:19 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.21"
