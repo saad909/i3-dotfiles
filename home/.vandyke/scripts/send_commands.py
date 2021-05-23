@@ -1,4 +1,4 @@
-import os
+import os,re
 
 file_content = ""
 dir_path = os.path.join("/home/saad", "Documents",
@@ -17,6 +17,22 @@ def GetTabByName(strName):
 
     # Default to returning nothing if we never find a tab by the given name
     return None
+
+def send_to_all(sessionsArray):
+    command_file_path = os.path.join(dir_path, "all.ini")
+    for session in sessionsArray:
+        objTab = GetTabByName(session)
+        if objTab == None:
+            crt.Dialog.MessageBox("Tab '{0}' was not found.".format(session))
+        else:
+            objTab.Activate()
+            # main code
+            global dir_path
+            crt.Screen.Synchronous = False
+            # regex = r"\n\s*\n"
+            for line in open(command_file_path, "r"):
+                objTab.Screen.Send(line + '\r')
+            # crt.Session.Disconnect()
 
 def Main():
     errorMessages = ""
@@ -40,6 +56,9 @@ def Main():
     sessionFile.close()
 
     for session in sessionsArray:
+        if session == "all":
+            send_to_all(sessionsArray)
+            return
         # try:
         #     crt.Session.Connect("/S \"" + session + "\"")
         # except Exception as error:
@@ -53,23 +72,26 @@ def Main():
         objTab = GetTabByName(session)
         if objTab == None:
             crt.Dialog.MessageBox("Tab '{0}' was not found.".format(
-                strTabTitle))
+                session))
         else:
             objTab.Activate()
             # main code
             global dir_path
             crt.Screen.Synchronous = False
             command_file_path = os.path.join(dir_path, session + ".ini")
+            # regex = r"\n\s*\n"
+            blank = ''
             for line in open(command_file_path, "r"):
-                objTab.Screen.Send(line + '\r')
+                if line is blank:
+                    continue
+                else:
+                    objTab.Screen.Send(line + '\r')
             # crt.Session.Disconnect()
 
 
 
     if errorMessages == "":
         crt.Dialog.MessageBox("Tasks completed.  No Errors were detected.")
-
-    # crt.Quit()
 
 
 Main()
