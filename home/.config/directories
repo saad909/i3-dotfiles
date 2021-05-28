@@ -36,3 +36,5 @@ dO $HOME/.dotfiles
 pl /home/saad/cisco-configs/lab_for_programming
 re /home/ExternalHDD/Courses/Networking/Cisco/CCNP/CCNP-retake
 lb /home/ExternalHDD/Courses-UnderStudy/ccnp_labs
+no /home/saad/Documents/Notes
+af /home/saad/Documents/AFFAN

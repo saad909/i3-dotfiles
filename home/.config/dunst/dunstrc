@@ -29,7 +29,7 @@
     # the top and down respectively.
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "300x5-1+30"
+    geometry = "150x5-1+30"
 
     # Show how many messages are currently hidden (because of geometry).
     indicate_hidden = yes
@@ -129,7 +129,7 @@
 
     # Alignment of message text.
     # Possible values are "left", "center" and "right".
-    alignment = left
+    alignment = center
 
     # Vertical alignment of message text and icon.
     # Possible values are "top", "center" and "bottom".

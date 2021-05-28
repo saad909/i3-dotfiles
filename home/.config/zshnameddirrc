@@ -35,3 +35,5 @@ hash -d dO=$HOME/.dotfiles
 hash -d pl=/home/saad/cisco-configs/lab_for_programming 
 hash -d re=/home/ExternalHDD/Courses/Networking/Cisco/CCNP/CCNP-retake 
 hash -d lb=/home/ExternalHDD/Courses-UnderStudy/ccnp_labs 
+hash -d no=/home/saad/Documents/Notes 
+hash -d af=/home/saad/Documents/AFFAN 

@@ -159,6 +159,8 @@ shift F12
 
 F12
   toggle_keypad
+super n
+  screenshot
 
 # layout
 

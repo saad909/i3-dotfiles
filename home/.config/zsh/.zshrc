@@ -91,7 +91,7 @@ alias mux='pgrep -vx tmux > /dev/null && \
 		tmux attach || tmux attach'
 alias cls="clear"
 alias tp="nvim-qt /tmp/python_test.py"
-alias add_route="sudo ip route add 10.1.1.0/24 via 192.168.122.254 dev virbr0"
+alias add_route=gns3_routes
 pfetch
 # Zplug plugins
 # cat /home/$USER/.cache/wal/sequences

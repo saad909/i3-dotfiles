@@ -225,7 +225,16 @@ assign [class="smplayer"] $ws5
 bindsym $mod+v split  vertical
 workspace $ws4 gaps inner 0
 workspace $ws4 gaps outer 0
+workspace $ws3 gaps inner 0
+workspace $ws3 gaps outer 0
 workspace $ws7 gaps inner 0
 workspace $ws7 gaps outer 0
 workspace $ws5 gaps inner 0
 workspace $ws5 gaps outer 1
+# prefix shortcut keys
+# mode "windows" {
+#     bindsym h focus left; mode "default"
+#     bindsym l focus right; mode "default"
+#     bindsym Escape mode "default"
+# }
+# bindsym $mod mode "windows"

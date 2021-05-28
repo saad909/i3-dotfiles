@@ -27,10 +27,9 @@ textype() { \
 }
 
 case "$ext" in
-	sh) alacritty --class=compiler_terminal-e $SHELL -c "sh '$file';printf '\n\nPress enter to continue';read testing";;
+	sh) kitty --class=compiler_terminal-e $SHELL -c "sh '$file';printf '\n\nPress enter to continue';read testing";;
 	[0-9]) preconv "$file" | refer -PS -e | groff -mandoc -T pdf > "$base".pdf ;;
 	c) cc "$file" -o "$base" && "$base" ;;
-	cpp) g++ "$file" -o "$base" && "$base" ;;
 	go) go run "$file" ;;
 	h) sudo make install ;;
 	m) octave "$file" ;;
@@ -43,9 +42,10 @@ case "$ext" in
 		fi ; ;;
 	mom) preconv "$file" | refer -PS -e | groff -mom -kept -T pdf > "$base".pdf ;;
 	ms) preconv "$file" | refer -PS -e | groff -me -ms -kept -T pdf > "$base".pdf ;;
-	py) alacritty --class=compiler_terminal -e $SHELL -c "cd $dir;source venv/bin/activate ;\
+	py) kitty --class=compiler_terminal -e $SHELL -c "cd $dir;source venv/bin/activate ;\
 		python  '$file';echo Press enter to continue;read test ";;
-	# py) alacritty --class=compiler_terminal -e $SHELL -c "python  '$file';echo Press enter to continue;read test ";;
+	cpp) kitty --class=compiler_terminal -e $SHELL -c "g++  '$file' -o '$base'.out && '$base'.out;echo Press enter to continue;read test ";;
+	# py) kitty --class=compiler_terminal -e $SHELL -c "python  '$file';echo Press enter to continue;read test ";;
 
 	[rR]md) Rscript -e "rmarkdown::render('$file', 'pdf_document', quiet=TRUE)" ;;
 	rs) cargo build ;;
