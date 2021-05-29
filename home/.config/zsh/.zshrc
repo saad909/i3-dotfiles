@@ -63,8 +63,6 @@ zplug "zsh-users/zsh-syntax-highlighting",      defer:3, on:"zsh-users/zsh-autos
 if ! zplug check; then
    zplug install
 fi
-# Load settings
-zplug load
 
 
 # keyboard shortcut keys
@@ -95,3 +93,5 @@ alias add_route=gns3_routes
 pfetch
 # Zplug plugins
 # cat /home/$USER/.cache/wal/sequences
+# Load settings
+zplug load

@@ -25,6 +25,12 @@ def write_configs(device):
         file = os.path.join(dir_path, device+".ini")
         with open(file, 'w') as handler:
             handler.write(result)
+
+        # write for full topology
+        file = os.path.join(dir_path, "full_toplogy.ini")
+        with open(file, 'a') as handler:
+            handler.write(result)
+
         return
     except Exception as error:
         print(error)
@@ -53,6 +59,12 @@ def main():
     except Exception:
         print("Please enter the devices name on first line of your master config file")
         return
+
+
+    # remove full topology file if exists
+    full_toplogy_file = os.path.join(dir_path,"full_toplogy.ini")
+    if os.path.isfile(full_toplogy_file):
+        os.remove(full_toplogy_file)
 
     # get the contents of each device into a separate file
     p = Pool(len(all_devices))
