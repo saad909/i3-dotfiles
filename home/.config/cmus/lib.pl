@@ -40,6 +40,7 @@
 /home/ExternalHDD/Music/Maroon 5 - Memories (Official Video).mp3
 /home/ExternalHDD/Music/Maroon 5 - Sugar (Official Music Video).mp3
 /home/ExternalHDD/Music/Martin Jensen, James Arthur - Nobody (Official Lyric Video).mp3
+/home/ExternalHDD/Music/nazams/Awakening - Great Seljuk Theme Music.mp3
 /home/ExternalHDD/Music/OneRepublic - Counting Stars (Official Music Video).mp3
 /home/ExternalHDD/Music/Post Malone - rockstar ft. 21 Savage.mp3
 /home/ExternalHDD/Music/Post Malone, Swae Lee - Sunflower (Spider-Man - Into the Spider-Verse).mp3

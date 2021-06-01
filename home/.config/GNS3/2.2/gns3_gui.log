@@ -1,4 +1,4 @@
-2021-05-28 19:54:08 INFO logger.py:126 Log level: INFO
-2021-05-28 19:54:08 INFO main.py:259 GNS3 GUI version 2.2.21
-2021-05-28 19:54:08 INFO main.py:260 Copyright (c) 2007-2021 GNS3 Technologies Inc.
-2021-05-28 19:54:08 INFO main.py:261 Application started with /usr/bin/gns3
+2021-06-02 00:41:41 INFO logger.py:126 Log level: INFO
+2021-06-02 00:41:41 INFO main.py:259 GNS3 GUI version 2.2.21
+2021-06-02 00:41:41 INFO main.py:260 Copyright (c) 2007-2021 GNS3 Technologies Inc.
+2021-06-02 00:41:41 INFO main.py:261 Application started with /home/saad/.local/bin/gns3

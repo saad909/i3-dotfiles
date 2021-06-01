@@ -16,7 +16,7 @@ set $ws8 "8 "
 set $ws9 "9 "
 set $ws10 "10 "
 #--------------------- gaps and windows general properties  ------------------------------
-font pango:FantasqueSansMono Nerd Font 9
+font pango:Iosevka Custom 9
 new_window normal
 new_float  normal
 focus_on_window_activation   urgent
@@ -155,7 +155,8 @@ client.background       $c0
 
 #---------------- startup ---------------------------------
 # exec --no-startup-id picom
-exec --no-startup-id compton
+# exec --no-startup-id compton
+exec --no-startup-id picom
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 # exec --no-startup-id flameshot

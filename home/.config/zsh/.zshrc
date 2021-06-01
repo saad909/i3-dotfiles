@@ -78,20 +78,20 @@ bindkey -s '^t' 'tto\n'
 bindkey -s '^y' 'yokadi\n'
 bindkey -s '^t' 'pomodoro\n'
 
+# Zplug plugins
+# cat /home/$USER/.cache/wal/sequences
+# Load settings
 # aliases
-alias rd="vim ~/.config/directories"
-alias rf="vim ~/.config/files"
+alias rd="nvim ~/.config/directories"
+alias rf="nvim ~/.config/files"
 alias test="nvim /home/$USER/Documents/Experiments/test.ini"
-alias mux='pgrep -vx tmux > /dev/null && \
-		tmux new -d -s delete-me && \
-		tmux run-shell ~/.config/tmux/ressurect/scripts/restore.sh && \
-		tmux kill-session -t delete-me && \
-		tmux attach || tmux attach'
 alias cls="clear"
 alias tp="nvim-qt /tmp/python_test.py"
 alias add_route=gns3_routes
 pfetch
-# Zplug plugins
-# cat /home/$USER/.cache/wal/sequences
-# Load settings
 zplug load
+alias mux="pgrep -vx tmux > /dev/null && \
+		tmux new -d -s delete-me && \
+		tmux run-shell $HOME/.config/tmux/ressurect/scripts/restore.sh && \
+		tmux kill-session -t delete-me && \
+		tmux attach || tmux attach"

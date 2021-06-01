@@ -17,6 +17,8 @@ let g:vim_pbcopy_escape_backslashes = 0
     " Plug 'dylanaraps/wal.vim'    
 
     " Plug 'https://github.com/kiteco/vim-plugin/'
+    Plug 'marciomazza/vim-brogrammer-theme'
+    Plug 'romgrk/doom-one.vim'
     Plug 'dylanaraps/wal.vim'
     Plug 'tell-k/vim-autopep8'
     Plug 'lervag/vimtex'

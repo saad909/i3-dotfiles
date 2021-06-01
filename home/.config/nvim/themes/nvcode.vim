@@ -2,9 +2,11 @@ hi Comment cterm=italic
 let g:nvcode_termcolors=256
 
 syntax on
+" colorscheme doom-one
+colorscheme brogrammer
 " colorscheme nord
 " colorscheme nvcode
-colorscheme dracula
+" colorscheme dracula
 " colorscheme wal
 " colorscheme onedark
 " colorscheme TSnazzy

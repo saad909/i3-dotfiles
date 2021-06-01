@@ -2,5 +2,5 @@
 dropdown_running=$( ps -aux | grep dropdown | head -n 1 | wc -l )
 if [[ $dropdown -ne '1' ]]
 then
-  kitty --class=terminal_dropdown &
+  kitty --class=terminal_dropdown --config=$HOME/.config/kitty/kitty-dropdown.conf &
 fi
