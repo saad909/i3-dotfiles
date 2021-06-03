@@ -116,7 +116,7 @@ super + Return
 
 # file manager
 super + F3
-  pcmanfm
+  thunar
 
 # reload keys
 super + c

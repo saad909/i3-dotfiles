@@ -165,9 +165,9 @@ exec --no-startup-id setbg
 exec --no-startup-id sxhkd
 exec --no-startup-id autotiling
 exec --no-startup-id dunst
-exec --no-startup-id kitty  --class terminal_dropdown 
-exec --no-startup-id kitty  --class terminal_pomodoro
 exec --no-startup-id $HOME/.config/polybar/launch.sh
+exec --no-startup-id kitty  --class terminal_dropdown  --config=$HOME/.config/kitty/kitty-dropdown.conf
+exec --no-startup-id kitty  --class terminal_pomodoro
 #---------------- run at every config reload ---------------------------------
 # exec_always autotiling
 exec_always key_changed
@@ -232,6 +232,7 @@ workspace $ws7 gaps inner 0
 workspace $ws7 gaps outer 0
 workspace $ws5 gaps inner 0
 workspace $ws5 gaps outer 1
+
 # prefix shortcut keys
 # mode "windows" {
 #     bindsym h focus left; mode "default"
