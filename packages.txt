@@ -69,3 +69,4 @@ terminus-font
 mpv
 zathura
 zathura-pdf-mupdf
+xarchiver

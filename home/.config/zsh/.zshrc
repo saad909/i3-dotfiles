@@ -88,7 +88,7 @@ alias test="nvim /home/$USER/Documents/Experiments/test.ini"
 alias cls="clear"
 alias tp="nvim-qt /tmp/python_test.py"
 alias add_route=gns3_routes
-pfetch
+# paleofetch
 zplug load
 alias mux="pgrep -vx tmux > /dev/null && \
 		tmux new -d -s delete-me && \
