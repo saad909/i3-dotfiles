@@ -27,12 +27,6 @@ def write_configs(device):
         with open(file, 'w') as handler:
             handler.write(result)
 
-        # write for full topology
-        file = os.path.join(dir_path, "configs", "full_toplogy.ini")
-        with open(file, 'a') as handler:
-            handler.write(result)
-
-        return
     except Exception as error:
         print(error)
 
@@ -81,6 +75,10 @@ def main(argv):
     p.map(write_configs, all_devices)
     p.close()
     p.join()
+    try:
+        os.remove(os.path.join(dir_path,"configs","SessionList.txt"))
+    except Exception:
+        pass
 
 
 if __name__ == "__main__":
