@@ -28,6 +28,7 @@ textype() { \
 
 case "$ext" in
 	sh) kitty --class=compiler_terminal-e $SHELL -c "sh '$file';printf '\n\nPress enter to continue';read testing";;
+	ini) make_cisco_config "$file" ;;
 	[0-9]) preconv "$file" | refer -PS -e | groff -mandoc -T pdf > "$base".pdf ;;
 	c) cc "$file" -o "$base" && "$base" ;;
 	go) go run "$file" ;;

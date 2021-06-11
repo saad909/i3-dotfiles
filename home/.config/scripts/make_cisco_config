@@ -38,12 +38,14 @@ def write_configs(device):
 
 def main(argv):
 
+
     global file_content, file_path,dir_path
     if argv[1]:
         file_path=os.path.abspath(argv[1])
         dir_path = os.path.dirname(file_path)
-
-
+        print(dir_path)
+        if dir_path == "/home/saad/.dotfiles/home/.config/polybar":
+            return
     try:
         with open(file_path, 'r') as handler:
             file_content = handler.read()

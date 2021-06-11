@@ -104,7 +104,7 @@ let g:kite_supported_languages = ['python']
 " cnoremap w!! execute <silent> write !sudo tee % >/dev/null' <bar> edit!
 " When shortcut files are updated, renew bash and ranger configs with new material:
 autocmd  BufWritePost directories,files !shortcuts
-autocmd  BufWritePost test.ini !make_cisco_config  "%"
+" autocmd  BufWritePost test.ini !make_cisco_config  "%"
 " autocmd  BufWritePost test.ini :w! \|  !compiler "%"<CR>
 
 
