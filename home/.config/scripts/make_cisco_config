@@ -1,5 +1,6 @@
 #!/usr/bin/python
-import os,sys
+import os
+import sys
 import re
 from multiprocessing import Pool
 from pathlib import Path
@@ -10,24 +11,24 @@ home_address = str(Path.home())
 file_content = ""
 dir_path = os.path.join(home_address, "Documents",
                         "Experiments")
-file_path = os.path.join(dir_path,"test.ini")
+file_path = os.path.join(dir_path, "test.ini")
 
 
 def write_configs(device):
     try:
         global dir_path
-        # old_regex = "^![\!\s]*{device}\s*[\n]*((?:\n[^\!]*)+)" 
+        # old_regex = "^![\!\s]*{device}\s*[\n]*((?:\n[^\!]*)+)"
         # regex = rf"^[;\s]*{device}[\n\s]+[^;]*"
         regex = rf"^[;\s]*{device}(?P<config>[\n\s]+[^;]*)"
         result_list = re.findall(regex.strip(), file_content, re.MULTILINE)
         result = ' '.join([elem for elem in result_list])
         result = os.linesep.join([s for s in result.splitlines() if s])
-        file = os.path.join(dir_path,"configs", device+".ini")
+        file = os.path.join(dir_path, "configs", device+".ini")
         with open(file, 'w') as handler:
             handler.write(result)
 
         # write for full topology
-        file = os.path.join(dir_path, "configs","full_toplogy.ini")
+        file = os.path.join(dir_path, "configs", "full_toplogy.ini")
         with open(file, 'a') as handler:
             handler.write(result)
 
@@ -38,14 +39,14 @@ def write_configs(device):
 
 def main(argv):
 
-
-    global file_content, file_path,dir_path
+    global file_content, file_path, dir_path
     if argv[1]:
-        file_path=os.path.abspath(argv[1])
+        file_path = os.path.abspath(argv[1])
         dir_path = os.path.join(os.path.dirname(file_path))
-        print(os.path.join( dir_path,"configs" ))
-        os.mkdir(os.path.join( dir_path,"configs" ))
-        # print(os.path.join( dir_path,"configs" ))
+        try:
+            os.mkdir(os.path.join(dir_path, "configs"))
+        except Exception as error:
+            pass
         if dir_path == "/home/saad/.dotfiles/home/.config/polybar":
             return
     try:
@@ -64,15 +65,14 @@ def main(argv):
         all_devices = first_line.split(",")
 
         session_file_contents = '\n'.join([i for i in all_devices[0:]])
-        with open(os.path.join(dir_path,"configs","SessionList.txt"),"w") as handler:
+        with open(os.path.join(dir_path, "configs", "SessionList.txt"), "w") as handler:
             handler.write(session_file_contents)
     except Exception:
         print("Please enter the devices name on first line of your master config file")
         return
 
-
     # remove full topology file if exists
-    full_toplogy_file = os.path.join(dir_path,"full_toplogy.ini")
+    full_toplogy_file = os.path.join(dir_path, "full_toplogy.ini")
     if os.path.isfile(full_toplogy_file):
         os.remove(full_toplogy_file)
 

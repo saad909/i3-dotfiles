@@ -2,7 +2,7 @@ import os,re
 
 file_content = ""
 dir_path = os.path.join("/home/saad", "Documents",
-                        "Experiments")
+                        "Experiments","configs")
 file_path = os.path.join(dir_path, "SessionList.txt")
 # my imports
 global g_objNewTab
