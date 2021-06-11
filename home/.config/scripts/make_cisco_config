@@ -75,10 +75,6 @@ def main(argv):
     p.map(write_configs, all_devices)
     p.close()
     p.join()
-    try:
-        os.remove(os.path.join(dir_path,"configs","SessionList.txt"))
-    except Exception:
-        pass
 
 
 if __name__ == "__main__":
