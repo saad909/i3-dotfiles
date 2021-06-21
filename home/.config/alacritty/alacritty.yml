@@ -3,6 +3,8 @@
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
+includes:
+  ~/.config/alacritty/colors.yml
 env:
   # TERM variable
   #
@@ -74,7 +76,7 @@ font:
     # family: FiraCode Nerd Font Mono
     # family: UbuntuMono Nerd Font Mono
     # family: FantasqueSansMono Nerd Font Mono
-    family: Iosevka
+    family: FantasqueSans Mono
     # family: SFMono Nerd Font
     # family: SF Pro Display
     style: Regular
@@ -98,7 +100,7 @@ font:
   bold_italic:
   # Font family
   #
-    family: FantasqueSansMono Nerd Font Mono
+    family: Iosevka
     # family: Iosevka
   # If the bold italic family is not specified, it will fall back to the
   # value specified for the normal font.
@@ -108,7 +110,7 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 15
+  size: 16
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -119,71 +121,12 @@ font:
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right, increasing `y` moves the glyph upwards.
   glyph_offset:
-    x: 0
+    x: 1
     y: 0
 
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: false
 
-# Color# Colors (Dracula+)
-colors:
-  bright:
-    black: "#545454"
-    blue: "#d6acff"
-    cyan: "#a4ffff"
-    green: "#69ff94"
-    magenta: "#ff92df"
-    red: "#ff6e6e"
-    white: "#f8f8f2"
-    yellow: "#ffcb6b"
-  cursor:
-    cursor: "#eceff4"
-    text: "#282828"
-  normal:
-    black: "#21222c"
-    blue: "#82aaff"
-    cyan: "#8be9fd"
-    green: "#50fa7b"
-    magenta: "#c792ea"
-    red: "#ff5555"
-    white: "#f8f8f2"
-    yellow: "#ffcb6b"
-  primary:
-    background: "#212121"
-    foreground: "#f8f8f2"
-  selection:
-    background: "#f8f8f2"
-    text: "#545454"
-# (Gruvbox Dark)
-# colors:
-#   bright:
-#     black: "#7f7061"
-#     blue: "#719586"
-#     cyan: "#7db669"
-#     green: "#aab01e"
-#     magenta: "#c77089"
-#     red: "#f73028"
-#     white: "#e6d4a3"
-#     yellow: "#f7b125"
-#   cursor:
-#     cursor: "#e6d4a3"
-#     text: "#1e1e1e"
-#   normal:
-#     black: "#1e1e1e"
-#     blue: "#377375"
-#     cyan: "#578e57"
-#     green: "#868715"
-#     magenta: "#a04b73"
-#     red: "#be0f17"
-#     white: "#978771"
-#     yellow: "#cc881a"
-#   primary:
-#     background: "#1e1e1e"
-#     foreground: "#e6d4a3"
-#   selection:
-#     background: "#e6d4a3"
-#     text: "#534a42"
-# Colors (Batman)
 # Indexed Colors
 #
 # The indexed colors include all colors from 16 to 256.
@@ -224,7 +167,7 @@ bell:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.83
+background_opacity: 1.0
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
@@ -280,7 +223,7 @@ mouse:
   # If this is `true`, the cursor is temporarily hidden when typing.
   #hide_when_typing: true
 
-  url:
+  # url:
     # URL launcher
     #
     # This program is executed when clicking on a text which is recognized as a URL.
@@ -292,15 +235,15 @@ mouse:
     #   - (macOS) open
     #   - (Linux/BSD) xdg-open
     #   - (Windows) explorer
-    launcher:
-      program: xdg-open
-      args: []
+    # launcher:
+    #   program: xdg-open
+    #   args: []
 
     # URL modifiers
     #
     # These are the modifiers that need to be held down for opening URLs when clicking
     # on them. The available modifiers are documented in the key binding section.
-    modifiers: None
+    # modifiers: None
 
 # Mouse bindings
 #
@@ -511,3 +454,33 @@ debug:
 
   # Print all received window events.
   print_events: false
+files: !include $HOME/.config/alacritty/colors.yml
+# Colors (Dark+)
+colors:
+  bright:
+    black: '#666666'
+    blue: '#3b8eea'
+    cyan: '#29b8db'
+    green: '#23d18b'
+    magenta: '#d670d6'
+    red: '#f14c4c'
+    white: '#e5e5e5'
+    yellow: '#f5f543'
+  cursor:
+    cursor: '#ffffff'
+    text: '#000000'
+  normal:
+    black: '#000000'
+    blue: '#2472c8'
+    cyan: '#11a8cd'
+    green: '#0dbc79'
+    magenta: '#bc3fbc'
+    red: '#cd3131'
+    white: '#e5e5e5'
+    yellow: '#e5e510'
+  primary:
+    background: '#0e0e0e'
+    foreground: '#cccccc'
+  selection:
+    background: '#3a3d41'
+    text: '#e0e0e0'

@@ -86,12 +86,12 @@ alias rd="nvim ~/.config/directories"
 alias rf="nvim ~/.config/files"
 alias test="nvim /home/$USER/Documents/Experiments/test.ini"
 alias cls="clear"
-alias tp="nvim-qt /tmp/python_test.py"
+alias tp="neovide /tmp/python_test.py"
 alias add_route=gns3_routes
 # paleofetch
 zplug load
 alias mux="pgrep -vx tmux > /dev/null && \
 		tmux new -d -s delete-me && \
-		tmux run-shell $HOME/.config/tmux/ressurect/scripts/restore.sh && \
+		tmux run-shell $HOME/.tmux/plugins/tmux-resurrect/scripts && \
 		tmux kill-session -t delete-me && \
 		tmux attach || tmux attach"

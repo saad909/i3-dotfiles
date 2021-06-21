@@ -2,5 +2,6 @@
 dropdown_running=$( ps -aux | grep dropdown | head -n 1 | wc -l )
 if [[ $dropdown -ne '1' ]]
 then
-  kitty --class=terminal_dropdown --config=$HOME/.config/kitty/kitty-dropdown.conf &
+  #kitty --class=terminal_dropdown  &
+  alacritty  --class=terminal_dropdown --config-file=$HOME/.config/alacritty/alacritty-drodown.yml &
 fi

@@ -111,7 +111,7 @@ alt+shift+h
 
 # alacritty - Terminal
 super + Return
-  kitty
+  $TERMINAL
 
 
 # file manager

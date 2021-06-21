@@ -43,8 +43,8 @@ case "$ext" in
 		fi ; ;;
 	mom) preconv "$file" | refer -PS -e | groff -mom -kept -T pdf > "$base".pdf ;;
 	ms) preconv "$file" | refer -PS -e | groff -me -ms -kept -T pdf > "$base".pdf ;;
-	py) kitty --class=compiler_terminal -e $SHELL -c "cd $dir;source venv/bin/activate ;\
-		python  '$file';echo Press enter to continue;read test ";;
+	py) alacritty --class=compiler_terminal -e $SHELL -c \
+        "python  '$file';echo Press enter to continue;read test ";;
 	cpp) kitty --class=compiler_terminal -e $SHELL -c "g++  '$file' -o '$base'.out && '$base'.out;echo Press enter to continue;read test ";;
 	# py) kitty --class=compiler_terminal -e $SHELL -c "python  '$file';echo Press enter to continue;read test ";;
 

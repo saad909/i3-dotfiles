@@ -28,6 +28,10 @@ change_theme()
 												### linking themes ###
 	# kitty
 	ln -f  "${THEMES_DIR}/kitty/${chosen}.conf" $HOME/.config/kitty/colors.conf
+	# alacritty
+    cat $HOME/.config/alacritty/alacritty-template.yml > $HOME/.config/alacritty/alacritty.yml \
+        && cat "${THEMES_DIR}/alacritty/${chosen}.yml" >> $HOME/.config/alacritty/alacritty.yml 
+	ln -f  "${THEMES_DIR}/alacritty/${chosen}.yml" $HOME/.config/alacritty/colors.yml
 	# polybar
 	ln -f $HOME/.config/themes/configs/polybar.conf  $HOME/.config/polybar/colors.ini
 	# rofi
