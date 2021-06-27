@@ -45,6 +45,7 @@ case "$ext" in
 	ms) preconv "$file" | refer -PS -e | groff -me -ms -kept -T pdf > "$base".pdf ;;
 	py) alacritty --class=compiler_terminal -e $SHELL -c \
         "python  '$file';echo Press enter to continue;read test ";;
+    dart) flutter run;;
 	cpp) kitty --class=compiler_terminal -e $SHELL -c "g++  '$file' -o '$base'.out && '$base'.out;echo Press enter to continue;read test ";;
 	# py) kitty --class=compiler_terminal -e $SHELL -c "python  '$file';echo Press enter to continue;read test ";;
 

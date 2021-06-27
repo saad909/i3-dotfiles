@@ -47,8 +47,6 @@ local opts = {
 vim.api.nvim_set_keymap('n', '<Space>', '<NOP>', {noremap = true, silent = true})
 vim.g.mapleader = ' '
 
--- no hl
-vim.api.nvim_set_keymap('n', '<Leader>h', ':set hlsearch!<CR>', {noremap = true, silent = true})
 
 -- explorer
 vim.api.nvim_set_keymap('n', '<Leader>e', ':NvimTreeToggle<CR>', {noremap = true, silent = true})
@@ -74,6 +72,9 @@ vim.api.nvim_set_keymap('n', '<leader>q', ":Telescope buffers<CR>",
 vim.api.nvim_set_keymap("n", "<leader>h", "<C-W>s<CR>", {noremap = true, silent = true})
 -- split vertical
 vim.api.nvim_set_keymap("n", "<leader>v", "<C-W>v<CR>", {noremap = true, silent = true})
+-- no hl
+vim.api.nvim_set_keymap("n", "<leader>n", ":set hlsearch!<CR>", {noremap = true, silent = true})
+-- vim.api.nvim_set_keymap('n', '<Leader>h', ':set hlsearch!<CR>', {noremap = true, silent = true})
 -- vim.api.nvim_set_keymap('n', '<leader>p', ":lua require'telescope'.extensions.project.project{}<CR>",
 --                         {noremap = true, silent = true})
 -- TODO create entire treesitter section

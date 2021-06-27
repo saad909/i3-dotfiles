@@ -1,5 +1,5 @@
 cfz	$ZDOTDIR/.zshrc
-cfv	${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.vim
+cfv	${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.lua
 cfi	${XDG_CONFIG_HOME:-$HOME/.config}/i3/config
 cfo	${XDG_CONFIG_HOME:-$HOME/.config}/fontconfig/fonts.conf
 cfr	~/.config/ranger/rc.conf

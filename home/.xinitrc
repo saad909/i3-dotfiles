@@ -1,11 +1,14 @@
 #!/bin/sh
-remaps &
+# increase key speed
+xset r rate 300 50
+# replace capslock with escape
+setxkbmap -option caps:escape &
+# enable touchpad
 touchpad &
-# xinput --set-prop 15 'libinput Accel Speed' 0.6 &
+# Load ~/.Xresources file
 /usr/bin/xrdb -merge $HOME/.Xresources  &
 /usr/bin/xset b off &
+# enable polkit agent
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & 
-export DESKTOP_SESSION=gnome &
-export QT_STYLE_OVERIDE=GTK+ &
-export QT_PLATFORMTHEME=qt5ct &
+# for qt applications to get the themes from gtk themes
 exec i3 

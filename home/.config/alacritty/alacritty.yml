@@ -85,58 +85,58 @@ font:
   #   style: Bold
 
   # bold face
-  bold:
-  # Font family
-  #
-    family: UbuntuMono Nerd Font Mono
-  # If the italic family is not specified, it will fall back to the
-  # value specified for the normal font.
-  #family: monospace
-
-  # The `style` can be specified to pick a specific face.
-    style: Bold
-  # Italic font face
-  italic:
-  # Font family
-  #
-    family: UbuntuMono Nerd Font Mono
-  # If the italic family is not specified, it will fall back to the
-  # value specified for the normal font.
-  #family: monospace
-
-  # The `style` can be specified to pick a specific face.
-    style: Italic
-
-  # Bold italic font face
-  bold_italic:
-  # Font family
-  #
-    family: Hack
-    # family: Iosevka
-  # If the bold italic family is not specified, it will fall back to the
-  # value specified for the normal font.
-  #family: monospace
-
-  # The `style` can be specified to pick a specific face.
-    style: Bold Italic
-
+#   bold:
+#   # Font family
+#   #
+#     family: UbuntuMono Nerd Font Mono
+#   # If the italic family is not specified, it will fall back to the
+#   # value specified for the normal font.
+#   #family: monospace
+# 
+#   # The `style` can be specified to pick a specific face.
+#     style: Bold
+#   # Italic font face
+#   italic:
+#   # Font family
+#   #
+#     family: UbuntuMono Nerd Font Mono
+#   # If the italic family is not specified, it will fall back to the
+#   # value specified for the normal font.
+#   #family: monospace
+# 
+#   # The `style` can be specified to pick a specific face.
+#     style: Italic
+# 
+#   # Bold italic font face
+#   bold_italic:
+#   # Font family
+#   #
+#     family: Hack
+#     # family: Iosevka
+#   # If the bold italic family is not specified, it will fall back to the
+#   # value specified for the normal font.
+#   #family: monospace
+# 
+#   # The `style` can be specified to pick a specific face.
+#     style: Bold Italic
+# 
   # Point size
-  size: 14
+  size: 13
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
-    x: -1
-    y: -1
+    x: 0
+    y: 0
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right, increasing `y` moves the glyph upwards.
   glyph_offset:
-    x: 1
+    x: -2
     y: 0
 
 # If `true`, bold text is drawn using the bright color variants.
-draw_bold_text_with_bright_colors: false
+draw_bold_text_with_bright_colors: true
 
 # Indexed Colors
 #
@@ -193,8 +193,8 @@ cursor:
 
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
-  unfocused_hollow: true
-  vi_mode_style: Underline
+  # unfocused_hollow: true
+  # vi_mode_style: Block
 
 # Live config reload (changes require restart)
 live_config_reload: true

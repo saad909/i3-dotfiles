@@ -29,6 +29,9 @@ end
 vim.cmd "autocmd BufWritePost plugins.lua PackerCompile" -- Auto compile when there are changes in plugins.lua
 
 return require("packer").startup(function(use)
+    -- surround
+    use {"/tpope/vim-surround", opt=true}
+
     -- Packer can manage itself as an optional plugin
     use "wbthomason/packer.nvim"
 
