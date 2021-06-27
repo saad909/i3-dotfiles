@@ -29,6 +29,9 @@ end
 vim.cmd "autocmd BufWritePost plugins.lua PackerCompile" -- Auto compile when there are changes in plugins.lua
 
 return require("packer").startup(function(use)
+    -- python snippets
+    use { 'cstrap/python-snippets',opt=true }
+    use { 'ylcnfrht/vscode-python-snippet-pack',opt=true }
     -- surround
     use {"/tpope/vim-surround", opt=true}
 
