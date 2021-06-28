@@ -32,6 +32,7 @@ return require("packer").startup(function(use)
     -- python snippets
     use { 'cstrap/python-snippets',opt=true }
     use { 'ylcnfrht/vscode-python-snippet-pack',opt=true }
+    use { 'https://github.com/tell-k/vim-autopep8',opt=true }
     -- surround
     use {"/tpope/vim-surround", opt=true}
 

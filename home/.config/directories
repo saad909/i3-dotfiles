@@ -29,7 +29,7 @@ cu /home/saad/Data/Courses-UnderStudy
 pro /home/saad/Documents/Codes/Python/pyqt/FYP
 ci /home/saad/cisco-configs
 po $HOME/.config/polybar/
-dO $HOME/.dotfiles
+dO /home/saad/.dotfiles
 pl /home/saad/cisco-configs/lab_for_programming
 no /home/saad/Documents/Notes
 af /home/saad/Documents/AFFAN
