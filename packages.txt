@@ -1,3 +1,6 @@
+cmake
+gcc
+pacman-contrib
 pulseaudio
 pulseaudio-bluetooth
 pavucontrol

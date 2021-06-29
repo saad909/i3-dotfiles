@@ -7,7 +7,7 @@
 		<DpiFactorY>1</DpiFactorY>
 	</Meta>
 	<Application>
-		<LastUpdateCheck>2021-06-23T07:17:37Z</LastUpdateCheck>
+		<LastUpdateCheck>2021-06-29T12:13:09Z</LastUpdateCheck>
 		<LastUsedFile>
 			<Path>../../../home/saad/keepass/keepass_database.kdbx</Path>
 			<CredProtMode>Obf</CredProtMode>
@@ -109,6 +109,7 @@
 			</Triggers>
 		</TriggerSystem>
 		<PluginCompatibility>
+			<Item>@tdJSgo6sJ1pACk70gh29FGCo6Bhh/KumKWPj/pZVpKA=@2.48.1.27858@1</Item>
 			<Item>@IwRsTj5z6MHDdeeXC6LNDK5Ojsybv8egOXcH5f23aiw=@2.47.0.18911@1</Item>
 			<Item>@FNa2WjAClOxFSo+gZCHvXP+E87FlBQ5mOqyjj9rW1ow=@2.47.0.18911@1</Item>
 			<Item>@oSyCHRUPaGKtsf91E7UBaqyA3ihdz0b+PLVHtPAtZ40=@2.47.0.18911@1</Item>
@@ -118,10 +119,10 @@
 	</Application>
 	<Logging />
 	<MainWindow>
-		<X>20</X>
-		<Y>20</Y>
-		<Width>1328</Width>
-		<Height>722</Height>
+		<X>3</X>
+		<Y>3</Y>
+		<Width>1368</Width>
+		<Height>762</Height>
 		<SplitterHorizontalFrac>0.83420593368237339</SplitterHorizontalFrac>
 		<SplitterVerticalFrac>0.25151515151515152</SplitterVerticalFrac>
 		<CloseButtonMinimizesWindow>true</CloseButtonMinimizesWindow>
@@ -224,7 +225,7 @@
 		<UserProfiles />
 	</Search>
 	<Defaults>
-		<OptionsTabIndex>2</OptionsTabIndex>
+		<OptionsTabIndex>4</OptionsTabIndex>
 		<KeySources>
 			<Association>
 				<DatabasePath>../../../home/saad/.keys_database.kdbx</DatabasePath>
@@ -309,7 +310,7 @@
 		</Item>
 		<Item>
 			<Key>KeeOneDrive</Key>
-			<Value>{"/home/saad/Dropbox/.keys_database (latitude's conflicted copy 2021-03-29).kdbx":{"RefreshToken":null,"RefreshTokenStorage":null,"OneDriveName":null,"RemoteDatabasePath":null,"RemoteFolderId":null,"RemoteDriveId":null,"RemoteItemId":null,"RemoteFileName":null,"DoNotSync":false,"LocalFileHash":null,"ETag":null,"LastSyncedAt":null,"LastCheckedAt":null,"CloudStorageType":4},"/home/saad/keepass/keepass_database.kdbx":{"RefreshToken":"M.R3_BAY.-CU7q8Z12CwaaQ1xPgFXF2J1SwUFj9bUelbGcD9PxJ7VIREFRw!CEgfKSC5C413wfKu8*VL7vYxY!KAe7mlV90p1iAX40GvhgKJdLpQCq08GNzjYRkk9dRml5sipdkxegbfBQgMD2N769UBBx!G4duM6gb2!DAQEd6vBkUgUQIWpaLGc!RB*peZVOFaWiHGCRNiaNOkokoXKEzxLGOEGVBaFo6y85CJt8G7DLobbUz7LWiMUoUEyU5Ydcefae9XtFS9KQAbEoUx5wtersNTnu5XZcpMm29YmFYD2IbezxWGer8SXZLKVphPALEDW1dIpIAQ$$","RefreshTokenStorage":null,"OneDriveName":"Abuhurraira Saad","RemoteDatabasePath":"/root/keepass_database.kdbx","RemoteFolderId":"45C5ABEDE57012E8!199","RemoteDriveId":"45c5abede57012e8","RemoteItemId":"45C5ABEDE57012E8!208","RemoteFileName":"keepass_database.kdbx","DoNotSync":false,"LocalFileHash":"C1A8038AB35786AA99B163E8CA926CB459AC490D","ETag":"aYzo0NUM1QUJFREU1NzAxMkU4ITIwOC4zNTQ","LastSyncedAt":"2021-06-23T12:28:01.90861+05:00","LastCheckedAt":"2021-06-23T12:28:01.908618+05:00","CloudStorageType":4}}</Value>
+			<Value>{"/home/saad/Dropbox/.keys_database (latitude's conflicted copy 2021-03-29).kdbx":{"RefreshToken":null,"RefreshTokenStorage":null,"OneDriveName":null,"RemoteDatabasePath":null,"RemoteFolderId":null,"RemoteDriveId":null,"RemoteItemId":null,"RemoteFileName":null,"DoNotSync":false,"LocalFileHash":null,"ETag":null,"LastSyncedAt":null,"LastCheckedAt":null,"CloudStorageType":4},"/home/saad/keepass/keepass_database.kdbx":{"RefreshToken":"M.R3_BAY.-CQqUlnf2DRBG!qAUWcBYgj2rNTjR9qJ95kHDzw3yt4*mtulOjiOexmH*5fSd3yUcuHaSIaV*HZMDFjymZJqNtoPq1b60wZeRqkSQa*hvVgxW7J5OE9*luD*bnzBGDFqSZW20Z*a93LtCwSHn08qYfG9gXQ9*bW3wI8IDLJlNVkvHBAp2LjeiidvGD3oXqLaHgJtVmrV274ZjhgjgIqOyCqIshB0Tag7WikSwiY69EImfFfAA82A1WK6TvSe*S!0Ix5M7kojzF0UDw9UX5ELLpYGgsrfSiyUXB2R7FQ3Zgn2GOJwhB4FB71*0wulAlDl!xQ$$","RefreshTokenStorage":null,"OneDriveName":"Abuhurraira Saad","RemoteDatabasePath":"/root/keepass_database.kdbx","RemoteFolderId":"45C5ABEDE57012E8!199","RemoteDriveId":"45c5abede57012e8","RemoteItemId":"45C5ABEDE57012E8!208","RemoteFileName":"keepass_database.kdbx","DoNotSync":false,"LocalFileHash":"C1A8038AB35786AA99B163E8CA926CB459AC490D","ETag":"aYzo0NUM1QUJFREU1NzAxMkU4ITIwOC4zNTQ","LastSyncedAt":"2021-06-23T12:28:01.90861+05:00","LastCheckedAt":"2021-06-29T17:13:14.207542+05:00","CloudStorageType":4}}</Value>
 		</Item>
 		<Item>
 			<Key>KeePassRPC.Key.2d37640c-aa71-45e4-8ad8-8d7b8b9a46f6</Key>

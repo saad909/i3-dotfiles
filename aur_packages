@@ -1,4 +1,3 @@
-gromit-mpx-git
 neovim-nightly-bin
 autotiling
 arch-wiki-dmenu
@@ -9,11 +8,8 @@ networkmanager-dmenu
 btmenu
 upd72020x-fw
 wd719x-firmware
-yaru-icon-theme-git
-gtk-theme-arc-gruvbox-git
 ubridge
 ranger
-ueberzug
 fd
 ripgrep
 jq
