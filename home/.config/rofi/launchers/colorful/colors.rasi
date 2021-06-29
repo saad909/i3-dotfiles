@@ -1,9 +1,14 @@
-/* colors */
-
 * {
-  al:  #00000000;
-  bg:  #000000ff;
-  se:  #101010ff;
-  fg:  #FFFFFFff;
-  ac:  #00B19Fff;
+background:			#2b2a27
+#131415;
+foreground:			#ede0ce
+#A3BAD0;
+selected:			#2a6cc6
+#58698c;
+urgent:				#cb4b16
+#8c5760;
+on:					#26a6a6
+#7b8c58;
+off:				#cb4b16
+#8c5760;
 }

@@ -12,7 +12,6 @@ glibc
 rofi
 ranger
 alacritty
-picom
 dmenu
 vim
 xclip

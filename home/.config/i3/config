@@ -23,10 +23,10 @@ focus_on_window_activation   urgent
 popup_during_fullscreen leave_fullscreen
 #Drag floating windows
 floating_modifier $Mod
-# gaps inner 10
-# gaps outer 10
-# smart_borders on
-# smart_borders no_gaps
+gaps inner 10
+gaps outer 10
+smart_borders on
+smart_borders no_gaps
 # border_radius 3
 title_align center
 focus_follows_mouse yes
@@ -114,14 +114,14 @@ bindsym ctrl+semicolon [instance="terminal_dropdown"] scratchpad show, move posi
 bindsym ctrl+p [instance="terminal_pomodoro"] scratchpad show, move position center
 # bindsym $Mod+n border normal
 # bindsym $Mod+y border 1 pixel
-# bindsym $Mod+plus                gaps inner current plus  5
-# bindsym $Mod+minus               gaps inner current minus 5
-# bindsym $Mod+Shift+plus          gaps outer current plus  5
-# bindsym $Mod+Shift+minus         gaps outer current minus 5
-# bindsym $Mod+Control+plus        gaps inner all     plus  5
-# bindsym $Mod+Control+minus       gaps inner all     minus 5
-# bindsym $Mod+Control+Shift+plus  gaps outer all     plus  5
-# bindsym $Mod+Control+Shift+minus gaps outer all     minus 5
+bindsym $Mod+plus                gaps inner current plus  5
+bindsym $Mod+minus               gaps inner current minus 5
+bindsym $Mod+Shift+plus          gaps outer current plus  5
+bindsym $Mod+Shift+minus         gaps outer current minus 5
+bindsym $Mod+Control+plus        gaps inner all     plus  5
+bindsym $Mod+Control+minus       gaps inner all     minus 5
+bindsym $Mod+Control+Shift+plus  gaps outer all     plus  5
+bindsym $Mod+Control+Shift+minus gaps outer all     minus 5
 bindsym $Mod+d exec ~/.config/rofi/launcher.sh
 bindsym Print exec --no-startup-id "scrot '%S.png' -e 'mv $f $$(xdg-user-dir PICTURES)/ArchLabs-%S-$wx$h.png ; feh $$(xdg-user-dir PICTURES)/ArchLabs-%S-$wx$h.png'"
 bindsym XF86AudioPlay        exec --no-startup-id playerctl play-pause
@@ -228,14 +228,14 @@ assign [class="smplayer"] $ws5
  workspace $ws10 output VGA-1
 
 bindsym $mod+v split  vertical
-# workspace $ws4 gaps inner 0
-# workspace $ws4 gaps outer 0
-# workspace $ws3 gaps inner 0
-# workspace $ws3 gaps outer 0
-# workspace $ws7 gaps inner 0
-# workspace $ws7 gaps outer 0
-# workspace $ws5 gaps inner 0
-# workspace $ws5 gaps outer 1
+workspace $ws4 gaps inner 0
+workspace $ws4 gaps outer 0
+workspace $ws3 gaps inner 0
+workspace $ws3 gaps outer 0
+workspace $ws7 gaps inner 0
+workspace $ws7 gaps outer 0
+workspace $ws5 gaps inner 0
+workspace $ws5 gaps outer 1
 
 # prefix shortcut keys
 # mode "windows" {
