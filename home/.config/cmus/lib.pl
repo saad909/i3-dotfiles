@@ -53,5 +53,7 @@
 /home/ExternalHDD/Music/The Chainsmokers - Don't Let Me Down ft. Daya (Official Music Video).mp3
 /home/ExternalHDD/Music/Tu Jaane Na Lyrical Video- Ajab Prem Ki Ghazab Kahani _ Atif Aslam _ Ranbir Kapoor, Katrina Kaif-P8PWN1OmZOA.webm
 /home/ExternalHDD/Music/ZAYN - Dusk Till Dawn (Official Video) ft. Sia.mp3
+/home/saad/Data/Music/recites/Full Quran.mp3
 /home/saad/Data/Music/recites/Surah Mulk.mp3
 /home/saad/music/Atif/Aadat - Atif Aslam.mp3
+/home/saad/Data/Music/recites/55.Surah Rehman.mp3

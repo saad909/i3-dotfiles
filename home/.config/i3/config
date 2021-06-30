@@ -232,8 +232,8 @@ workspace $ws4 gaps inner 0
 workspace $ws4 gaps outer 0
 workspace $ws3 gaps inner 0
 workspace $ws3 gaps outer 0
-workspace $ws7 gaps inner 0
-workspace $ws7 gaps outer 0
+workspace $ws7 gaps inner 1
+workspace $ws7 gaps outer 1
 workspace $ws5 gaps inner 0
 workspace $ws5 gaps outer 1
 
