@@ -11,15 +11,15 @@
 # style_1     style_2     style_3     style_4     style_5     style_6
 # style_7     style_8     style_9     style_10    style_11    style_12
 
-theme="style_7"
+theme="style_2"
 dir="$HOME/.config/rofi/launchers/colorful"
 
 @import "colors.rasi"
 # dark
-ALPHA="#00000000"
-BG="#000000ff"
-FG="#FFFFFFff"
-SELECT="#101010ff"
+# ALPHA="#00000000"
+# BG="#000000ff"
+# FG="#FFFFFFff"
+# SELECT="#101010ff"
 
 # light
 #ALPHA="#00000000"
@@ -33,17 +33,17 @@ COLORS=('#EC7875' '#61C766' '#FDD835' '#42A5F5' '#BA68C8' '#4DD0E1' '#00B19F' \
 ACCENT="${COLORS[$(( $RANDOM % 14 ))]}ff"
 
 # overwrite colors file
-cat > $dir/colors.rasi <<- EOF
-	/* colors */
-
-	* {
-	  al:  $ALPHA;
-	  bg:  $BG;
-	  se:  $SELECT;
-	  fg:  $FG;
-	  ac:  $ACCENT;
-	}
-EOF
+# cat > $HOME/.config/rofi/colors.rasi <<- EOF
+# 	/* colors */
+# 
+# 	* {
+# 	  al:  $ALPHA;
+# 	  bg:  $BG;
+# 	  se:  $SELECT;
+# 	  fg:  $FG;
+# 	  ac:  $ACCENT;
+# 	}
+# EOF
 
 # comment these lines to disable random style
 themes=($(ls -p --hide="launcher.sh" --hide="colors.rasi" $dir))

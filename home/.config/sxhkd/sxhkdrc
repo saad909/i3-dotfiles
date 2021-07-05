@@ -148,7 +148,7 @@ super F12
   arch-wiki-dmenu
 
 super+shift+F12
-  qutebrowser  "/home/ExternalHDD/SoftwaresAndTricks/Linux/Tricks/i3/index.html"
+  qutebrowser  "/home//saad/Data/SoftwaresAndTricks/Linux/Tricks/i3/index.html"
 ctrl+F12
   resolution
 

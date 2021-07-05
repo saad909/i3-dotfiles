@@ -7,17 +7,18 @@ change_theme()
 	DIR="$HOME/.config/bspwm"
 	# XDIR="$HOME/.Xresources.d"
 
-	files=$(ls "${THEMES_DIR}/Xresources")
+	# themes=$(ls ${THEMES_DIR}/Xresources)
+    themes=$(ls -l ~/.config/themes/Xresources | sed s/"^.*[0-9] "//g)
 
-	options=""
+	# options=""
 	# options="$theme_1\n$theme_2\n$theme_3\n$theme_4\n$theme_5\n$theme_6"
-	for file in $files
-	do
-		options+="$files\n"
-	done
-	rofi_command="rofi -theme $DIR/rofi/themes/launcher.rasi"
+	# for theme in $themes
+	# do
+	# 	options+="$theme\n"
+	# done
+	rofi_command="rofi -i -theme $DIR/rofi/themes/launcher.rasi"
 
-	chosen="$(echo -e "$options" | $rofi_command -p "Available themes" -dmenu -selected-row 0)"
+	chosen="$(echo -e "$themes" | rofi -p "Available themes" -dmenu -selected-row 0)"
 	echo $chosen
 
 	# set theme from Xresources file
@@ -29,11 +30,12 @@ change_theme()
 	# kitty
 	ln -f  "${THEMES_DIR}/kitty/${chosen}.conf" $HOME/.config/kitty/colors.conf
 	# alacritty
-    cat $HOME/.config/alacritty/alacritty-template.yml > $HOME/.config/alacritty/alacritty.yml \
-        && cat "${THEMES_DIR}/alacritty/${chosen}.yml" >> $HOME/.config/alacritty/alacritty.yml 
-    cat $HOME/.config/alacritty/alacritty-template.yml > $HOME/.config/alacritty/alacritty-drodown.yml.yml \
-        && cat "${THEMES_DIR}/alacritty/${chosen}.yml" >> $HOME/.config/alacritty/alacritty-drodown.yml 
+    # cat $HOME/.config/alacritty/alacritty-template.yml > $HOME/.config/alacritty/alacritty.yml \
+    #     && cat "${THEMES_DIR}/alacritty/${chosen}.yml" >> $HOME/.config/alacritty/alacritty.yml 
+    # cat $HOME/.config/alacritty/alacritty-template.yml > $HOME/.config/alacritty/alacritty-drodown.yml.yml \
+    #     && cat "${THEMES_DIR}/alacritty/${chosen}.yml" >> $HOME/.config/alacritty/alacritty-drodown.yml 
 	# ln -f  "${THEMES_DIR}/alacritty/${chosen}.yml" $HOME/.config/alacritty/colors.yml
+    alacritty_xresources_apply.py ~/.config/alacritty/alacritty.yml
 	# polybar
 	ln -f $HOME/.config/themes/configs/polybar.conf  $HOME/.config/polybar/colors.ini
 	# rofi

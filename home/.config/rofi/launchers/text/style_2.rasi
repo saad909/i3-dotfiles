@@ -10,7 +10,7 @@
 configuration {
     lines:							10;
     columns:						1;
-    font: 							"Iosevka Nerd Font 12";
+    font: 							"FantasqueSansMono Nerd Font 12";
     bw: 							0;
     location: 						0;
     padding: 						0;

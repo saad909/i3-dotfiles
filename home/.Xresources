@@ -1,4 +1,5 @@
 #include "/home/saad/.Xresources.d/colors.conf"
+#include "/home/saad/.Xresources.d/i3themes"
 #include "/home/saad/.Xresources.d/fonts_settings"
 st.background:			#131415
 st.foreground:			#A3BAD0

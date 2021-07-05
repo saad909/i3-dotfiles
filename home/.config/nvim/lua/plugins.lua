@@ -35,6 +35,8 @@ return require("packer").startup(function(use)
     use { 'https://github.com/tell-k/vim-autopep8',opt=true }
     -- surround
     use {"/tpope/vim-surround", opt=true}
+    -- latex 
+    use {"lervag/vimtex", opt=true}
 
     -- Packer can manage itself as an optional plugin
     use "wbthomason/packer.nvim"

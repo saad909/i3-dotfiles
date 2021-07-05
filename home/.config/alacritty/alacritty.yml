@@ -1,193 +1,114 @@
+background_opacity: 0.7
+bell:
+  animation: EaseOutExpo
+  color: '#ffffff'
+  duration: 0
+colors:
+  bright:
+    black: '#009cc9'
+    blue: '#308cba'
+    cyan: '#ff919d'
+    green: '#f4dca5'
+    magenta: '#ae636b'
+    red: '#da6bac'
+    white: '#e4838d'
+    yellow: '#eac066'
+  normal:
+    black: '#000507'
+    blue: '#883cdc'
+    cyan: '#c1b8b7'
+    green: '#2ab250'
+    magenta: '#ececec'
+    red: '#d94085'
+    white: '#fff8de'
+    yellow: '#ffd16f'
+  primary:
+    background: '#1f1726'
+    foreground: '#dafaff'
+cursor:
+  style: Block
+  unfocused_hollow: true
+  vi_mode_style: Block
+debug:
+  log_level: Warn
+  persistent_logging: false
+  print_events: false
+  render_timer: false
+draw_bold_text_with_bright_colors: false
 env:
   TERM: alacritty
-
-window:
-  dynamic_title: true
-  padding:
-    x: 2
-    y: 2
-
-  # Spread additional padding evenly around the terminal content.
-  dynamic_padding: false
-
-  # Window title
-  title: Alacritty
-
-  # Window class (Linux/BSD only):
-  class:
-    # Application instance name
-    instance: Alacritty
-    # General application class
-    general: Alacritty
-
-  gtk_theme_variant: dark
-
-scrolling:
-  history: 100000
-
-  multiplier: 1
-
-# Font configuration
 font:
-  normal:
-    # family: JetBrains Mono
-    # family: Comic Mono
-    # family: FiraCode Nerd Font Mono
-    # family: UbuntuMono Nerd Font Mono
-    family: FantasqueSansMono Nerd Font
-    # family: FantasqueSans Mono
-    # family: SFMono Nerd Font
-    # family: SF Pro Display
-    style: Regular
-  # bold:
-  #   family: FiraCode Nerd Font Mono
-  #   style: Bold
-
-  # Italic font face
-  italic:
-  # Font family
-  #
-    family: UbuntuMono Nerd Font Mono
-    # family: FiraCode Nerd Font Mono
-  # If the italic family is not specified, it will fall back to the
-  # value specified for the normal font.
-  #family: monospace
-
-  # The `style` can be specified to pick a specific face.
-    style: Italic
-
-  # Bold italic font face
   bold_italic:
-  # Font family
-  #
     family: Iosevka
-    # family: Iosevka
-  # If the bold italic family is not specified, it will fall back to the
-  # value specified for the normal font.
-  #family: monospace
-
-  # The `style` can be specified to pick a specific face.
     style: Bold Italic
-
-  # Point size
-  size: 15
-
-  # Offset is the extra space around each character. `offset.y` can be thought of
-  # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
-  offset:
-    x: -1
-    y: -1
-
-  # Glyph offset determines the locations of the glyphs within their cells with
-  # the default being at the bottom. Increasing `x` moves the glyph to the right, increasing `y` moves the glyph upwards.
   glyph_offset:
     x: 1
     y: 0
-
-# If `true`, bold text is drawn using the bright color variants.
-draw_bold_text_with_bright_colors: false
-
-bell:
-  animation: EaseOutExpo
-  duration: 0
-  color: "#ffffff"
-
-# Background opacity
-background_opacity: 0.7
-
-selection:
-  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
-
-  # When set to `true`, selected text will be copied to the primary clipboard.
-  save_to_clipboard: true
-cursor:
-  style: Block
-
-  unfocused_hollow: true
-  vi_mode_style: Block
-
-# Live config reload (changes require restart)
-live_config_reload: true
-
-#SHELL
-# shell:
-  # program: /usr/bin/zsh
-  # args:
-  #   - --login
-
-# Startup directory
-#
-# Directory the shell is started in. If this is unset, or `None`, the working
-# directory of the parent process will be used.
-
-# Send ESC (\x1b) before characters when alt is pressed.
-#alt_send_esc: true
-
-mouse:
-  # Click settings
-  #
-  # The `double_click` and `triple_click` settings control the time
-  # alacritty should wait for accepting multiple clicks as one double
-  # or triple click.
-  double_click: { threshold: 300 }
-  triple_click: { threshold: 300 }
-
-  # If this is `true`, the cursor is temporarily hidden when typing.
-  hide_when_typing: true
-
-mouse_bindings:
-  - { mouse: Middle, action: Copy }
-
-# Key bindings
-key_bindings:
-  # (Windows, Linux, and BSD only)
-  - { key: K, mods: Control, action: ScrollPageUp }
-  - { key: J, mods: Control, action: ScrollPageDown }
-  - { key: P, mods: Control, action: Paste }
-  - { key: Insert, mods: Shift, action: Paste }
-  - { key: Slash, mods: Control, chars: "gc" }
-  - { key: Y, mods: Control, action: Copy }
-  - { key: Key0, mods: Control, action: ResetFontSize }
-  - { key: Equals, mods: Control, action: IncreaseFontSize }
-  - { key: Plus, mods: Control, action: IncreaseFontSize }
-  - { key: Minus, mods: Control, action: DecreaseFontSize }
-
-debug:
-  # Display the time it takes to redraw each frame.
-  render_timer: false
-
-  # Keep the log file after quitting Alacritty.
-  persistent_logging: false
-  log_level: Warn
-
-  # Print all received window events.
-  print_events: false
-# Colors (Doom Peacock)
-colors:
-  bright:
-    black: '#2b2a27'
-    blue: '#51afef'
-    cyan: '#46d9ff'
-    green: '#98be65'
-    magenta: '#c678dd'
-    red: '#ff5d38'
-    white: '#dfdfdf'
-    yellow: '#e6f972'
-  cursor:
-    cursor: '#9c9c9d'
-    text: '#36312b'
+  italic:
+    family: UbuntuMono Nerd Font Mono
+    style: Italic
   normal:
-    black: '#1c1f24'
-    blue: '#2a6cc6'
-    cyan: '#5699af'
-    green: '#26a6a6'
-    magenta: '#a9a1e1'
-    red: '#cb4b16'
-    white: '#ede0ce'
-    yellow: '#bcd42a'
-  primary:
-    background: '#2b2a27'
-    foreground: '#ede0ce'
-  selection:
-    background: '#a60033'
-    text: '#ffffff'
+    family: FantasqueSansMono Nerd Font
+    style: Regular
+  offset:
+    x: -1
+    y: -1
+  size: 13
+key_bindings:
+- action: ScrollPageUp
+  key: K
+  mods: Control
+- action: ScrollPageDown
+  key: J
+  mods: Control
+- action: Paste
+  key: P
+  mods: Control
+- action: Paste
+  key: Insert
+  mods: Shift
+- chars: gc
+  key: Slash
+  mods: Control
+- action: Copy
+  key: Y
+  mods: Control
+- action: ResetFontSize
+  key: Key0
+  mods: Control
+- action: IncreaseFontSize
+  key: Equals
+  mods: Control
+- action: IncreaseFontSize
+  key: Plus
+  mods: Control
+- action: DecreaseFontSize
+  key: Minus
+  mods: Control
+live_config_reload: true
+mouse:
+  double_click:
+    threshold: 300
+  hide_when_typing: true
+  triple_click:
+    threshold: 300
+mouse_bindings:
+- action: Copy
+  mouse: Middle
+scrolling:
+  history: 100000
+  multiplier: 1
+selection:
+  save_to_clipboard: true
+  semantic_escape_chars: ",\u2502`|:\"' ()[]{}<>\t"
+window:
+  class:
+    general: Alacritty
+    instance: Alacritty
+  dynamic_padding: false
+  dynamic_title: true
+  gtk_theme_variant: dark
+  padding:
+    x: 2
+    y: 2
+  title: Alacritty

@@ -64,6 +64,7 @@ vim.api.nvim_set_keymap("v", "<leader>/", ":CommentToggle<CR>", {noremap = true,
 -- close buffer
 -- vim.api.nvim_set_keymap("n", "<leader>c", ":BufferClose<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<leader>c", ":!compiler %<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>p", ":!opout %<CR>", {noremap = true, silent = true})
 
 -- open projects
 vim.api.nvim_set_keymap('n', '<leader>q', ":Telescope buffers<CR>",
@@ -85,7 +86,7 @@ local mappings = {
     ["e"] = "Explorer",
     ["f"] = "Find File",
     ["n"] = "No Highlight",
-    ["p"] = "Projects",
+    ["p"] = "Open pdf",
     ["h"] = "Horizontal split",
     ["v"] = "Vertical split",
     d = {

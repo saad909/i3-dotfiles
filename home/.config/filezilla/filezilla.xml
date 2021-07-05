@@ -133,10 +133,10 @@
 		<Setting name="Remote filelist sortorder">0 0</Setting>
 		<Setting name="Already connected choice">2</Setting>
 		<Setting name="Greeting version">3.54.1</Setting>
-		<Setting name="Window position and size">0 20 20 1320 610 </Setting>
+		<Setting name="Window position and size">0 20 45 1320 612 </Setting>
 		<Setting name="Tab data" sensitive="1">
 			<Tabs>
-				<Tab connected="1" selected="1">
+				<Tab selected="1">
 					<Host>192.168.122.101</Host>
 					<Port>22</Port>
 					<Protocol>1</Protocol>
