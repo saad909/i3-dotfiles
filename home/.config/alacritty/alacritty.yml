@@ -5,26 +5,26 @@ bell:
   duration: 0
 colors:
   bright:
-    black: '#009cc9'
-    blue: '#308cba'
-    cyan: '#ff919d'
-    green: '#f4dca5'
-    magenta: '#ae636b'
-    red: '#da6bac'
-    white: '#e4838d'
-    yellow: '#eac066'
+    black: '#a88986'
+    blue: '#FA3C82'
+    cyan: '#EA7288'
+    green: '#F06576'
+    magenta: '#E9698E'
+    red: '#F8506D'
+    white: '#f1c4c0'
+    yellow: '#CF916E'
   normal:
-    black: '#000507'
-    blue: '#883cdc'
-    cyan: '#c1b8b7'
-    green: '#2ab250'
-    magenta: '#ececec'
-    red: '#d94085'
-    white: '#fff8de'
-    yellow: '#ffd16f'
+    black: '#0c1018'
+    blue: '#FA3C82'
+    cyan: '#EA7288'
+    green: '#F06576'
+    magenta: '#E9698E'
+    red: '#F8506D'
+    white: '#f1c4c0'
+    yellow: '#CF916E'
   primary:
-    background: '#1f1726'
-    foreground: '#dafaff'
+    background: '#0c1018'
+    foreground: '#f1c4c0'
 cursor:
   style: Block
   unfocused_hollow: true

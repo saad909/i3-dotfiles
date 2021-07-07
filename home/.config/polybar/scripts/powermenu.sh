@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# dir="~/.config/rofi/powermenu/"
+dir="~/.config/rofi/powermenu/"
 # theme="~/.config/rofi/powermenu/dock_alt.rasi"
 uptime=$(uptime -p | sed -e 's/up //g')
 

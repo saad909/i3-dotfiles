@@ -1,14 +1,14 @@
 * {
-background:			#1f1726
+background:			#0c1018
 #131415;
-foreground:			#dafaff
+foreground:			#f1c4c0
 #A3BAD0;
-selected:			#883cdc
+selected:			#FA3C82
 #58698c;
-urgent:				#d94085
+urgent:				#F8506D
 #8c5760;
-on:					#2ab250
+on:					#F06576
 #7b8c58;
-off:				#d94085
+off:				#F8506D
 #8c5760;
 }

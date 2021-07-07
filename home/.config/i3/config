@@ -110,10 +110,10 @@ bindsym $Mod+Shift+space floating toggle
 # bindsym --release Ctrl+Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' && echo -n $(ls -l -t ~/Pictures/screenshots | head -n 2 | grep sc | awk '{ printf "/home/$USER/Pictures/screenshots/" $9}') | xclip -selection c  &&  kolourpaint $(xclip -selection c -o)
 # bindsym --release Shift+Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots`ls -1 -t ~/Pictures/screenshots | head -1`'  && echo -n $(ls -l -t ~/Documents/Notes/pictures | head -n 2 | grep sc | awk '{ printf "/home/$USER/Documents/Notes/pictures/" $9}') | xclip -selection c
 # bindsym --release Ctrl+Shift+Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`'  && echo -n $(ls -l -t ~/Pictures/screenshots | head -n 2 | grep sc | awk '{ printf "/home/$USER/Pictures/screenshots/" $9}') | xclip -selection c && kolourpaint $(xclip -selection c -o)
-bindsym ctrl+semicolon [instance="terminal_dropdown"] scratchpad show, move position center
-bindsym ctrl+p [instance="terminal_pomodoro"] scratchpad show, move position center
+# bindsym ctrl+p [instance="terminal_pomodoro"] scratchpad show, move position center
 # bindsym $Mod+n border normal
 # bindsym $Mod+y border 1 pixel
+bindsym ctrl+semicolon [instance="terminal_dropdown"] scratchpad show, move position center
 bindsym $Mod+plus                gaps inner current plus  5
 bindsym $Mod+minus               gaps inner current minus 5
 bindsym $Mod+Shift+plus          gaps outer current plus  5
@@ -147,9 +147,9 @@ bindsym XF86AudioMute        exec --no-startup-id "amixer -D pulse set Master 1+
  set_from_resource $c14 i3wm.color14 000000
  set_from_resource $c15 i3wm.color15 000000
 
-client.focused #dd4814 #dd4814 #ffffff #902a07
-client.focused_inactive #5e2750 #5e2750 #aea79f #5e2750
-client.urgent #77216f #77216f #ffffff #efb73e
+client.focused #d70a53 #d70a53 #ffffff #8c0333
+client.focused_inactive #333333 #333333 #888888 #333333
+client.urgent #eb709b #eb709b #ffffff #eb709b
 client.placeholder      $c2     $c2     $c7  $c2       $c2
 client.background       $c0
 
@@ -167,7 +167,7 @@ exec --no-startup-id autotiling
 exec --no-startup-id dunst
 exec --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id $TERMINAL  --class terminal_dropdown  
-exec --no-startup-id $TERMINAL  --class terminal_pomodoro
+# exec --no-startup-id $TERMINAL  --class terminal_pomodoro
 #---------------- run at every config reload ---------------------------------
 # exec_always autotiling
 exec_always key_changed
@@ -187,7 +187,7 @@ for_window [class="Pavucontrol"] floating enable
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="mpv"] focus
 for_window [instance="terminal_dropdown"] floating enable,move scratchpad
-for_window [instance="terminal_pomodoro"] floating enable, resize set 500 500, move scratchpad
+# for_window [instance="terminal_pomodoro"] floating enable, resize set 500 500, move scratchpad
 for_window [instance="compiler_terminal"] floating enable
 for_window [instance="floating_terminal"] floating enable
 #---------------- assign programs to specific workspaces  ---------------------------------
@@ -248,4 +248,4 @@ workspace $ws5 gaps outer 1
 # remove title bar
 default_border pixel 0
 default_floating_border pixel 0
-client.unfocused #5e2750 #5e2750 #aea79f #5e2750
+client.unfocused #333333 #333333 #888888 #333333
