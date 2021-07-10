@@ -3,6 +3,7 @@
 dir="~/.config/rofi/powermenu/"
 # theme="~/.config/rofi/powermenu/dock_alt.rasi"
 uptime=$(uptime -p | sed -e 's/up //g')
+DESKTOP_SESSION=$(xprop -id $(xprop -root -notype | awk '$1=="_NET_SUPPORTING_WM_CHECK:"{print $5}') -notype -f _NET_WM_NAME 8t | grep -i wm_name | grep -Eo \".\*\"  | sed s/\"//g)
 
 # rofi_command="rofi -theme $theme"
 
