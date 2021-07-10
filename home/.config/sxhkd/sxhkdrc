@@ -52,7 +52,7 @@ ctrl+F1
 
 #shutdown menu
 super+shift+e
-  $HOME/.config/polybar/scripts/powermenu.sh
+    powermenu.sh
 
 # hostspot
 ctrl+F8
