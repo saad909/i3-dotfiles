@@ -1,0 +1,22 @@
+#---------------- assign programs to specific workspaces  ---------------------------------
+assign [class="Virt-manager"] $ws5
+assign [class="Remote-viewer"] $ws5
+assign [class="SecureCRT"] $ws4
+assign [class="okular"] $ws9
+assign [class="GNS3"] $ws4
+assign [class="obs"] $ws10
+assign [class="mpv"] $ws3
+assign [class="VirtualBox Manager"] $ws10
+assign [class="Vmware"] $ws5
+assign [class="java-lang-Thread"] $ws7
+assign [class="kolourpaint"] $ws9
+assign [class="Lutris"] $ws10
+assign [class="Surf"] $ws9
+assign [class="Putty"] $ws4
+assign [class="KeePass2"] $ws8
+assign [class="nvim-qt"] $ws7
+assign [class="Free Download Manager"] $ws8 
+assign [class="Filezilla"] $ws9
+assign [class="firefox"] $ws2
+assign [class="vlc"] $ws5
+assign [class="smplayer"] $ws5

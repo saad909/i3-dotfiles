@@ -1,0 +1,19 @@
+#---------------- startup ---------------------------------
+# exec --no-startup-id picom
+# exec --no-startup-id compton
+exec --no-startup-id picom --backend glx
+exec --no-startup-id nm-applet
+exec --no-startup-id blueman-applet
+# exec --no-startup-id flameshot
+exec --no-startup-id xfce4-power-manager
+exec --no-startup-id setbg
+exec --no-startup-id sxhkd
+exec --no-startup-id autotiling
+exec --no-startup-id dunst
+exec --no-startup-id $HOME/.config/polybar/launch.sh
+exec --no-startup-id $TERMINAL  --class terminal_dropdown  
+# exec --no-startup-id $TERMINAL  --class terminal_pomodoro
+#---------------- run at every config reload ---------------------------------
+# exec_always autotiling
+exec_always key_changed
+# exec_always --no-startup-id xrdb -load ~/.Xresources

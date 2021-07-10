@@ -1,13 +1,11 @@
-#!/usr/bin/bash
-DIR="$HOME/.config/i3"
-FILE="$DIR/config"
-
-cat $DIR/main_config > $FILE \
-	&& cat $DIR/keybindings >> $FILE \
-	&& cat $DIR/startup >> $FILE \
-	&& cat $DIR/stick_to_workspace >> $FILE \
-	&& cat $DIR/programs_properties >> $FILE \
-	&& echo "Merged Successfully" && i3-msg reload > /dev/null 2>&1 ;exit 1
+#!/usr/bin/env bash
+cat $HOME/.config/i3/main_config > $HOME/.config/i3/config > /dev/null 2>&1 \
+    && cat $HOME/.config/i3/keybindings >> $HOME/.config/i3/config> /dev/null 2>&1 \
+    && cat $HOME/.config/i3/startup >> $HOME/.config/i3/config > /dev/null 2>&1 \
+    && cat $HOME/.config/i3/stick_to_workspace >> $HOME/.config/i3/config > /dev/null 2>&1 \
+    && cat $HOME/.config/i3/programs_properties >> $HOME/.config/i3/config  > /dev/null 2>&1 \
+    && cat $HOME/.config/i3/multi_monitor >> $HOME/.config/i3/config  > /dev/null 2>&1 \
+    && echo "Merged Successfully" && i3-msg reload > /dev/null 2>&1 ; exit 1 \
 
 echo "Failed to merge"
 
