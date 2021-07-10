@@ -21,3 +21,10 @@ st.color6:			#66808c
 st.color14:			#82a2b2
 st.color7:			#8c8b8b
 st.color15:			#b8b8c8
+! dmenu settings
+
+dmenu.selforeground:	    #FFFFFF
+dmenu.background:	        #0c1018
+dmenu.selbackground:	    #0C73C2
+dmenu.foreground:	        #f1c4c0
+dmenu.font:	                "DroidSansMono-9"

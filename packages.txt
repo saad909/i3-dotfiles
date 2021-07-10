@@ -72,3 +72,4 @@ mpv
 zathura
 zathura-pdf-mupdf
 xarchiver
+trash-cli

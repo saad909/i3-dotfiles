@@ -7,7 +7,7 @@
 		<DpiFactorY>1</DpiFactorY>
 	</Meta>
 	<Application>
-		<LastUpdateCheck>2021-07-05T17:42:58Z</LastUpdateCheck>
+		<LastUpdateCheck>2021-07-09T09:48:35Z</LastUpdateCheck>
 		<LastUsedFile>
 			<Path>../../../home/saad/keepass/keepass_database.kdbx</Path>
 			<CredProtMode>Obf</CredProtMode>
@@ -168,7 +168,9 @@
 	</MainWindow>
 	<UI>
 		<TrayIcon />
-		<Hiding />
+		<Hiding>
+			<HideInEntryWindow>false</HideInEntryWindow>
+		</Hiding>
 		<StandardFont>
 			<Family>Fantasque Sans Mono</Family>
 			<Size>11</Size>
@@ -250,7 +252,7 @@
 			</Association>
 			<Association>
 				<DatabasePath>../../../home/saad/keepass/keepass_database_backup.kdbx</DatabasePath>
-				<KeyFilePath>../../../home/saad/keepass/keepass_database.keyx</KeyFilePath>
+				<KeyFilePath>../../../home/saad/keepass/key.keyx</KeyFilePath>
 			</Association>
 		</KeySources>
 	</Defaults>
@@ -319,7 +321,7 @@
 		</Item>
 		<Item>
 			<Key>KeeOneDrive</Key>
-			<Value>{"/home/saad/Dropbox/.keys_database (latitude's conflicted copy 2021-03-29).kdbx":{"RefreshToken":null,"RefreshTokenStorage":null,"OneDriveName":null,"RemoteDatabasePath":null,"RemoteFolderId":null,"RemoteDriveId":null,"RemoteItemId":null,"RemoteFileName":null,"DoNotSync":false,"LocalFileHash":null,"ETag":null,"LastSyncedAt":null,"LastCheckedAt":null,"CloudStorageType":4},"/home/saad/keepass/keepass_database.kdbx":{"RefreshToken":"M.R3_BAY.-CYbTn9HLV5n93uGN3Qiid*PkulzrU0c8pn9*QJ4KOILZtItulrP10flIQtNTFkLX0W1JWaJRoQDUhoas0M0czhO9Bzs6BvzC8NdTdgmrG6DcYB4rWHsJ9G*DkwSTUWQLIuMbKU5cGcpXkPnHYVNvCy39Hy!jHLV6d4sG*mMW62QkpV5ocqgsMnjl87xv2Qr3LoHI2lx!nZ0mRKIk3CyWQuoMZSLrmZ*YLIoEPDJSVNEiaaVbfHF9vozHh4tqJapPToATWFGCB4r6vJ6ZmtEC73bAikMz1VXuC5l*ri5QQBMk18yN02hbzQ4qrF6ZJFpidg$$","RefreshTokenStorage":null,"OneDriveName":"Abuhurraira Saad","RemoteDatabasePath":"/root/keepass_database.kdbx","RemoteFolderId":"45C5ABEDE57012E8!199","RemoteDriveId":"45c5abede57012e8","RemoteItemId":"45C5ABEDE57012E8!208","RemoteFileName":"keepass_database.kdbx","DoNotSync":false,"LocalFileHash":"C3CE2583100D14E3CD15DC40DF22D0B6BC5BE06F","ETag":"aYzo0NUM1QUJFREU1NzAxMkU4ITIwOC4zNzI","LastSyncedAt":"2021-07-06T00:24:57.074494+05:00","LastCheckedAt":"2021-07-06T00:24:57.074499+05:00","CloudStorageType":4},"/home/saad/keepass/keepass_database_backup.kdbx":{"RefreshToken":null,"RefreshTokenStorage":null,"OneDriveName":null,"RemoteDatabasePath":null,"RemoteFolderId":null,"RemoteDriveId":null,"RemoteItemId":null,"RemoteFileName":null,"DoNotSync":true,"LocalFileHash":null,"ETag":null,"LastSyncedAt":null,"LastCheckedAt":null,"CloudStorageType":null}}</Value>
+			<Value>{"/home/saad/Dropbox/.keys_database (latitude's conflicted copy 2021-03-29).kdbx":{"RefreshToken":null,"RefreshTokenStorage":null,"OneDriveName":null,"RemoteDatabasePath":null,"RemoteFolderId":null,"RemoteDriveId":null,"RemoteItemId":null,"RemoteFileName":null,"DoNotSync":false,"LocalFileHash":null,"ETag":null,"LastSyncedAt":null,"LastCheckedAt":null,"CloudStorageType":4},"/home/saad/keepass/keepass_database.kdbx":{"RefreshToken":"M.R3_BAY.-CXqpsGnhuKwCNlFB**DVUPpRECwxtyL9CS6lhzCE9!ecSgIL*Mf!pfrkdFY8wQH6siyFdfS1up97csOMNY!e7M077sF8Kt5m2vEJC9mv8yYjlSt*kCswF!54r0tk6xyzdl0wbAekmaDVl94Q!xbhss5901t9rsVJcHa*ncPPabqKK7*GtSooPKJp3ZoRBWnLToZGY28wzwPwANJozd0n7OnJNUnKzZKM3expY*Y2oHJfhMoY*jz8XCSUzed0j8IeJYcVVH6XmMNpz8l8lCJ8uWrEY3XT0Ltp6ZR5EpFUQbytIl7soPg2G4bh!TBPdr*cFg$$","RefreshTokenStorage":null,"OneDriveName":"Abuhurraira Saad","RemoteDatabasePath":"/root/keepass_database.kdbx","RemoteFolderId":"45C5ABEDE57012E8!199","RemoteDriveId":"45c5abede57012e8","RemoteItemId":"45C5ABEDE57012E8!208","RemoteFileName":"keepass_database.kdbx","DoNotSync":false,"LocalFileHash":"A662D1C0309F52980E98E2DB3820C7341F89ABC0","ETag":"aYzo0NUM1QUJFREU1NzAxMkU4ITIwOC4zODQ","LastSyncedAt":"2021-07-09T15:16:30.734317+05:00","LastCheckedAt":"2021-07-09T15:16:30.734322+05:00","CloudStorageType":4},"/home/saad/keepass/keepass_database_backup.kdbx":{"RefreshToken":null,"RefreshTokenStorage":null,"OneDriveName":null,"RemoteDatabasePath":null,"RemoteFolderId":null,"RemoteDriveId":null,"RemoteItemId":null,"RemoteFileName":null,"DoNotSync":true,"LocalFileHash":null,"ETag":null,"LastSyncedAt":null,"LastCheckedAt":null,"CloudStorageType":null}}</Value>
 		</Item>
 		<Item>
 			<Key>KeePassRPC.Key.2d37640c-aa71-45e4-8ad8-8d7b8b9a46f6</Key>

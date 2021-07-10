@@ -162,6 +162,9 @@ F12
 super n
   screenshot
 
+alt k
+    quickeepass --rofiargs '-matching fuzzy' ~/keepass/keepass_database.kdbx
+
 # layout
 
 # super+h
